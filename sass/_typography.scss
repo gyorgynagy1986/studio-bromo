@@ -1,0 +1,399 @@
+
+//HEADER
+//HEADER TITLE
+
+h1 {
+    font-size: 3.6rem;
+    font-family: $font-primary;
+    font-weight: 700;
+    line-height: 4.68rem;
+    
+    @include respond (phone) {
+        font-size: 2.1rem;
+        line-height: 2.2rem;
+    }
+}
+
+// TEXT UNDER THE H1 IN THE HEADER'S TITLE
+
+h3 {
+    font-family: $font-display;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.34rem;
+
+    @include respond (phone) {
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+    }
+
+    span {
+        font-weight: 600;
+    }
+  
+}
+
+h4 {
+    font-family: $font-display;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.08rem; 
+    margin-top:3rem;
+    text-transform: uppercase;
+    
+    @include respond (phone) {
+        margin-top:0;
+    }
+
+}
+
+.header_main-services-box-text {
+    @include greyParagraph;
+}
+
+
+/*****************************************************************************************************/
+
+// NAME OF EACH SECTION AT THE TOP OF THE SECTIONS
+
+h2 {
+    font-family:$font-primary;
+    font-size: 4.8rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+
+    @include respond (phone) {
+        font-size: 3rem;
+        width: 50%;
+        line-height: 3rem;
+    }
+}
+
+// H2 COLOR WHITE (CONTACT FORM)
+.color-white {
+    color: white;
+}
+
+/*****************************************************************************************************/
+
+// OUR WORKS (SECTION 2 AFTER HEADER)
+
+
+.clinet {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #184293;
+    line-height: 19.5px;
+    margin-top: 10px;
+}
+
+.name-of-business {
+    font-size: 28px;
+    margin-top: 1px;
+    font-weight: 700;
+    line-height: 42px;
+   
+    @include linearBlue;
+   
+}
+
+.name-of-business-text {
+    @include greyParagraph;
+}
+
+.name-of-business-text {
+    line-height: 20px;
+}
+
+.name-of-business-2 {
+    @include greyParagraph;
+    margin-top: 5px;
+}
+
+.visit-the-website {
+    font-family: $font-display;
+    padding: 2rem 0;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 2rem;
+    line-height: 19.5px;
+    text-transform: uppercase;
+    background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+/*****************************************************************************************************/
+
+// PROCESES 
+
+
+.head-number {
+    
+    font-family: $font-primary;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 6rem;
+    @include linearBlue;
+    padding: 0 1rem;
+
+}
+
+.head-text {
+    font-family: $font-display;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.08rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.process-text {
+    @include greyParagraph;
+    font-weight: 400 !important;
+
+}
+
+
+/*****************************************************************************************************/
+
+//PACKAGES
+
+.packages_container-box {
+
+    &-popular {
+
+        p {
+
+        font-family: $font-display;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.95rem;
+        text-align: center;
+        text-transform: uppercase;
+        @include linearOrange;
+        }
+
+    }
+   
+   &-title {
+        @include linearBlue;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 3.8rem;
+        line-height: 5.7rem;
+    }
+
+    &-text {
+        @include greyParagraph;
+    }
+
+    &-featuresbox {
+        
+        p {
+            font-family: $font-display;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: #6F6F6F;
+
+        }
+    }
+
+}
+
+.from {
+    font-family: $font-display;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.95rem;
+    font-weight: 500;
+}
+
+.price {
+    @include linearOrange;
+    font-family: $font-primary;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+
+    &-break {  
+        line-height: 3.6rem;      
+        text-align: center;
+        
+    }
+
+}
+
+.learnmore {
+    font-family: $font-display;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.9rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.4s;
+
+
+}
+
+/*****************************************************************************************************/
+
+/*****************************************************************************************************/
+
+//REVIEWS
+
+.reviews_container_box {
+
+    &-name {
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
+        text-align: center;
+        @include linearBlue;
+
+
+    }
+
+    &-filed {
+        font-family: $font-display;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        text-align: center;
+    }
+
+    &-website {
+        font-family: $font-display;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &-text {
+        font-family: $font-display;
+        font-weight: 400;
+        max-width: 25rem;
+        margin-top: 3rem;
+        position: relative;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+
+        @include respond (phone) {
+            max-width:100%
+        }
+        
+        span {
+            @include linearOrange;
+            font-weight: 500;
+            font-family: inherit;
+            display: inline-block;
+            font-size: 1.3rem;
+            line-height: 150%;
+            cursor: pointer;
+            position: relative;
+
+            &::after {
+                content: "";
+                height: 1.6px;
+                width: 100%;
+                display: block;
+                background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+                top: 1.5rem;
+                opacity: 0;
+                transition: 0.2s;
+                position: absolute;
+            }
+        
+            &:hover {
+        
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+
+        }
+
+        &::before {
+            content: "";
+            background-image: url('/img/idj.svg');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            top:-1.5rem;
+            font-size: 5.3rem;
+            position: absolute;
+            color: rgba(255, 0, 122, 0.2);
+
+        }
+    }
+
+}
+
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+
+//DETAILED PACKAGES TABLE
+
+    .packagetitle {
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 3.8rem;
+        line-height: 5.8rem;
+        text-align: center;
+        @include linearBlue;
+        position: relative;
+
+    }
+
+
+    .descript  {     
+            font-family: $font-display; 
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22.5px;
+            color: #6F6F6F;
+
+            
+    }
+
+    .bposi,
+    .bp {
+            font-family: $font-display; 
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 2.1rem;
+            color: #6F6F6F;
+
+            span {
+                line-height: 2rem;
+                color: $color-primary;
+
+                @include respond (phone) {
+                    line-height: 1.5rem;  
+                    text-align: center;
+                    font-weight: bold;
+
+                }
+            }
+
+            @include respond (phone) {
+                font-size: 10px;
+                line-height: 1.5rem;
+            }
+
+    }
+
+  
+

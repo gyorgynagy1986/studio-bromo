@@ -1,0 +1,182 @@
+
+.nav {
+        
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+
+        @include respond (phone) {
+        display: none;
+    }
+
+    &_logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        grid-column: 2;
+        grid-row: 1;
+        
+        img {
+            height: 5rem;
+        }
+        
+        &-mobile {
+
+            position: absolute;
+            top:1.5rem;
+            left: 1rem;
+
+            img {
+                height: 4.5rem;
+            }
+            
+        }
+        
+    }
+
+        
+    &_list {    
+            display: flex;
+            grid-column: 2;
+            grid-row: 1;
+            list-style: none;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+
+           
+        }
+
+    &_item:not(:last-child) {
+            margin-right: 4rem;
+            
+            
+        }
+
+    &_link:link,
+    &_link:visited {
+         text-transform: uppercase;
+         text-decoration: none;
+         font-family: $font-display;
+         font-size: 1.5rem;
+         font-weight: 500;
+         color: $color-primary;
+         
+            span {  
+                @include linearOrange;
+              } 
+            
+         }
+  
+}
+
+.nav-secound {
+    width: 100%;
+    min-height: 8rem;
+    display: flex;
+    background-color: $color-main-backgroung;  
+
+
+
+}
+
+
+
+//NAV BOTTOM
+
+
+.nav_bottom {
+        
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+
+        @include respond (phone) {
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        grid-column: 2;
+        grid-row: 1;
+        cursor: pointer;
+        
+        img {
+            height: 5rem;
+
+        }
+        
+        &-mobile {
+
+            position: absolute;
+            top:1rem;
+            left: 1rem;
+
+            img {
+                height: 4.5rem;
+            }
+            
+        }
+        
+    }
+
+        
+    &_list {    
+            display: flex;
+            grid-column: 2;
+            grid-row: 1;
+            list-style: none;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+
+            @include respond (phone) {
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
+
+    &_item:not(:last-child) {
+            margin-right: 4rem;
+            
+            @include respond (phone) {
+                margin-right: 0;
+
+            }
+        }
+
+    &_item {
+               
+        @include respond (phone) {
+            margin-bottom: 3rem;
+            }
+        }
+
+    &_link:link,
+    &_link:visited {
+         text-transform: uppercase;
+         text-decoration: none;
+         font-family: $font-display;
+         font-size: 1.5rem;
+         font-weight: 500;
+         color: $color-primary;
+         
+            span {  
+                @include linearOrange;
+              } 
+            
+         }
+  
+}
+
+.navlogoreszletektop2rem {
+    top:-8rem;
+}

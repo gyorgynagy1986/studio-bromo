@@ -1,0 +1,24 @@
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16xp = 62.5% = 1 rem
+    scroll-behavior: smooth;
+    @include respond (phone) {
+        scroll-behavior: auto;
+     }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-primary;
+    background-color: $color-secondary-backgroung;
+}

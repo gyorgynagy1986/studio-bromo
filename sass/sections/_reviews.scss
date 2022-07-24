@@ -1,0 +1,68 @@
+.reviews {
+    @include sectionPosition;
+
+
+    &_main-head {
+        @include mainHeadTextPosition;
+    }
+
+    background-color: $color-main-backgroung;
+
+    &_container {
+
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 7rem;
+        width: 90%;
+        height: 100%;
+        max-width:110rem;
+        @include respond (phone) {
+        display:flex;
+        width: 100%;
+        }
+
+        &_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-photo {
+                
+                width: 100%;
+                height: 100%;
+                
+                .img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &-name {
+                margin-top:2rem;}
+
+            &-filed {
+                margin-top: 5px;}
+
+        
+        }
+
+    }
+
+}
+
+
+// SLIDERS VISIBLITY
+
+.review-mobile-invisible {
+    @include respond (phone) {
+    display: none;    }
+}
+
+
+.invisible {
+    display: none;
+   
+    @include respond (phone) {
+      display: block; }
+  }

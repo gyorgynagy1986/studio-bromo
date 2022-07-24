@@ -1,0 +1,77 @@
+.footer {
+    width: 100%;
+    min-height: 5rem; 
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-row: 1;
+
+    @include respond (phone) {
+        min-height: 20rem; 
+    }
+
+    color: white;
+    background-color: $color-primary;
+
+    &_container {
+        width: 100%;
+        grid-column: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond (phone) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+    }
+
+    &_copiright {
+        font-size: 1.4rem;
+        @include respond (phone) {
+            margin-bottom: 3rem;
+        }
+    }
+
+
+    &_nav-list {
+        display: flex;
+
+        @include respond (phone) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &_nav-link {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        
+        
+    }
+
+    &_nav-item {
+        list-style: none;
+        font-size: 1.4rem;
+        text-decoration-line: underline;
+        
+
+    }
+
+    &_nav-item:not(:last-child){
+        margin-right: 5rem;
+
+        @include respond (phone) {
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
+    }
+
+}

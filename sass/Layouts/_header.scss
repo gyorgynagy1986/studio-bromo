@@ -1,0 +1,139 @@
+.header {
+    width: 100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: $color-main-backgroung;
+
+    
+    &_title {
+        width: 90%;
+        max-width:110rem;
+        margin-top: 15.7rem;
+        margin-bottom: 5.5rem;
+        padding-right: 30rem;
+
+        @media only screen and (max-width:70em ) {
+            padding-right: 0;
+
+         }
+
+    }
+    
+    &_main-text-container {
+        width: 90%;
+        max-width:110rem;
+        display: flex;
+        margin-bottom: 15rem;
+
+        @include respond (phone) {
+            flex-direction: column;
+            margin-bottom: 10rem;
+        }
+
+        &-1 {
+            width: 100%;
+            max-width: 54rem;
+
+            h3 { 
+                margin-bottom: 2rem;
+            }
+
+            .dot {
+                @include dots;
+                transform: translateY(-1rem);
+            }
+
+            .text-bx-size {
+                height: 66px;
+            
+                @media only screen and (max-width:67.500em ) {height: 78px;}
+                @media only screen and (max-width:45.188em ) {height: 100px;}
+                @include respond (phone) {height: auto;}
+            }
+
+            .multiply-dot {
+                display: flex;
+                margin-right: 20px;
+            }
+        } 
+
+        &-1:not(:last-child){
+            margin-right: 3rem;
+            
+            @include respond (phone) {
+                margin-bottom: 6.5rem;
+            }
+        }
+    }
+
+    &_main-services
+    {
+        width: 90%;
+        max-width:110rem; 
+        margin-bottom: 9rem;
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(19rem, 1fr));
+        grid-gap:3rem;
+
+        @media only screen and (max-width:72.5em ) {
+             grid-template-columns: repeat(2, 1fr);
+             grid-row-gap: 10rem;
+
+          }
+
+        @include respond (phone) {
+            width: 90%;
+            margin-bottom: 4rem;
+            grid-template-columns:1fr;
+        }
+
+        &-box {
+            background-color:rgba(255, 255, 255, 0.9);
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.2);
+            padding: 7rem 2rem 3rem 2rem;
+            border-radius: 6px;
+            height: 25rem;
+
+
+            @include respond (phone) {
+                padding: 10rem 2rem 2rem 2rem;
+                height: 23rem;
+
+            }
+
+           // transition: transform .3s;
+
+           /* &:hover {
+               transform: translateY(-1rem) scale(1.03);
+           } */ 
+
+            img {
+                width:12.8rem;
+                height:12.8rem;
+                position: absolute;
+                top:-6rem;
+
+
+            }
+        
+
+            &-text {
+                margin-top: 1rem;
+            }
+
+        }
+
+    }
+}
+
+
+
+
+  

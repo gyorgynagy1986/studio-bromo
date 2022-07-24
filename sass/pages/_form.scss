@@ -1,0 +1,543 @@
+.form_logo {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 15rem;
+        height: 15rem;
+  }
+
+}
+
+.section {
+    @include sectionFromPosition;
+    margin-top: 3rem; // IDEIGLENES MARGIN
+  
+    .igfelm {
+        width: 90%;
+        max-width: 70rem;
+        margin-bottom: 9rem;
+
+    
+        &-title {
+            text-align: center;
+            font-family: $font-primary;
+            font-weight: 700;
+            line-height: 7.5rem;
+            font-size: 5rem;
+            @include linearBlue;
+            margin-bottom: 4rem;
+
+            @include respond (phone) {
+                font-size: 3.5rem;
+            }
+
+        }
+
+        &-text {
+            font-family: $font-display;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+            color: $color-primary;
+
+            span {
+                font-family: $font-display;
+                font-weight: 700;
+                color: red;
+            }
+        }
+
+        //SECOUND P POSITION
+
+        .text-position {
+            margin-bottom: 4rem;
+        }
+
+        &-line {
+            max-width: 73rem;
+            border:   1px solid rgba(24, 66, 147, 0.2);
+            margin-bottom: 4rem;
+        }
+
+        &-boxtitle {
+            @include formTitleInTheForm;
+        }
+
+        &-text-2 {
+            @include greyParagraph;
+            margin-bottom: 4rem;
+        }
+
+        // FORM iNPUT
+
+        .inputbox {
+
+            background-color: $color-secondary-backgroung;
+            height: 55rem;
+            box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.25);
+            border-radius: 6px;
+            padding-top: 5rem;
+            
+            &_group {
+                margin: 0 auto;
+                width: 85%;
+                padding:2rem 0;
+                position: relative;
+            }
+
+            &_input {
+                @include textBoxInput;
+                height: 5rem;
+    
+                &::placeholder {
+                    opacity: 0;
+                 } 
+
+                 &:focus {
+                    outline: none;
+                    border: 0 1rem 2rem rgba(black, .1);
+                    border-bottom: 3px solid $color-primary;
+                }
+
+                &:focus:invalid {
+                    border-bottom: 3px solid orangered;
+                }
+                
+                
+            }
+
+            //INPUT NAMES
+
+            &_name {
+            @include texaAboveInputElemnt; 
+            top:6%;}
+            &_company {
+            @include texaAboveInputElemnt;
+            top:6%; }
+            &_position {
+            @include texaAboveInputElemnt; 
+            top:6% 
+            }
+            &_email {
+            @include texaAboveInputElemnt;
+            top:6%  
+            }
+                    
+        }
+    }
+
+}
+
+.section-secoundary {
+    @include sectionFromPosition;
+    background-color: $color-main-backgroung;
+
+    .abyourb {
+        width: 90%;
+        max-width: 70rem;
+        margin-top: 9rem;
+        margin-bottom: 7rem; // 7+2 = rem. 2 rem the last box since I was lazy to set not-last child element :D 
+
+        &-titlebox {
+            @include formTitleInTheForm;
+            margin-bottom: 4rem; 
+        }
+
+        
+
+        &-group {
+            width: 100%;
+            height: 31rem;
+            background: #FFFFFF;
+            box-shadow: 10px 10px 30px rgba(24, 166, 245, 0.2), -10px -10px 30px rgba(240, 250, 255, 0.6);
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            padding: 5rem;
+            position: relative;
+
+            @include respond (phone) {
+                height: auto;
+                padding: 3rem;
+
+                }
+
+
+
+            &-title {
+                @include formBoxTitles;
+
+                @include respond (phone) {
+                    font-size: 2rem;
+                    line-height:2.3rem;
+                    }
+            }
+
+            &-text {
+                @include greyParagraph;
+            }
+
+            &-name {
+                 @include texaAboveInputElemnt; 
+                 left:10%;
+                 top:49%;
+
+                 &-corrigation {
+                    top:42%;
+                 }
+
+                 @include respond (phone) {
+                    visibility: hidden;
+                    }
+            }
+
+            &-input {
+                @include textBoxInput;
+                margin-top: 3.4rem;
+                
+                &::placeholder {
+                    opacity: 0;
+                 } 
+
+                 &:focus {
+                    outline: none;
+                    border: 0 1rem 2rem rgba(black, .1);
+                    border-bottom: 3px solid $color-primary;
+                }
+
+                &:focus:invalid {
+                    border-bottom: 3px solid orangered;
+                }
+            
+
+            }
+
+        }
+    }
+}
+
+.section-tertiary {
+    @include sectionFromPosition;
+
+    .megtar {
+        width: 90%;
+        max-width: 70rem;
+        margin-top: 9rem;
+        margin-bottom: 9rem;
+        @include respond (phone) {
+            margin-top: 7rem;
+            margin-bottom: 7rem;
+             }
+
+        &-title {
+            @include formTitleInTheForm;
+            @include respond (phone) {
+               width: auto;
+                }
+        }
+
+        &-text {
+            @include greyParagraph;
+            margin-bottom: 4rem;
+        }
+
+        &-input {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap:3rem;
+
+            @include respond (phone) {
+                grid-gap:1rem;
+                }
+
+            &_group {
+                max-width: 33.5rem;
+                height: 9rem;
+                box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.2);
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+
+                font-family: $font-display;
+                font-weight: 500;
+                font-size: 2.2rem;
+                color:$color-primary;
+
+                
+                @include respond (phone) {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+
+                }
+
+                &-check {
+                    width: 3rem;
+                    height: 3rem;
+                    margin-left: 2rem;
+                    margin-right: 3rem;
+
+                    @include respond (phone) {
+                        margin-right: 1.5rem;
+                        width: auto;
+                        height: auto;
+                    }
+                    
+                }
+            }
+        }
+
+
+    }
+}
+
+.section-quarter {
+    @include sectionFromPosition;
+    background-color: $color-main-backgroung;
+
+    .webem {
+        width: 90%;
+        max-width: 70rem;
+        margin-top: 9rem;
+        margin-bottom: 7rem;
+
+        &-title {
+            @include formTitleInTheForm;
+        }
+
+        &-text {
+            @include greyParagraph;
+            margin-bottom: 4rem;
+        }
+
+        &-group  {
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.2);
+            padding: 5rem;
+            border-radius: 6px;
+            display: flex;
+            margin-bottom: 2rem;
+
+            @include respond (phone) {
+                padding: 4rem 2rem 4rem 1rem;
+            }
+
+            &-checkbox {
+                width: 3rem;
+                height: 3rem;
+                margin-right: 1rem;
+                
+                @include respond (phone) {
+                    margin-right: -0.5rem;
+
+                }
+            
+            
+            }
+
+            &-label {
+                @include greyParagraph;
+                float: left;
+            }
+
+
+            &-position {
+                max-width: 57rem;
+                margin-left: 2rem;
+
+                &-cbxname {
+                    @include formBoxTitles;
+                    margin-bottom: 1rem;
+                }
+
+                &-cbxtext {
+                    @include greyParagraph;
+                }
+
+                &-margintext {
+                    margin-bottom: 3rem;
+                }
+
+            }
+
+            .checkboxcontainer {
+                margin-top: 3rem;
+                margin-bottom: 6rem;
+            }
+
+            &-checkboxposition {
+                display: flex;
+                margin-top: 2rem;
+               
+                &-mainposition {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+
+                    @include respond (phone) {
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                    }
+                }
+            
+            
+            }
+
+            &-textbox {
+                position: relative;
+
+                &-name {
+                    @include texaAboveInputElemnt; 
+                }
+
+                &-input {
+                    @include textBoxInput;
+        
+                    &::placeholder {
+                        opacity: 0;
+                     } 
+    
+                     &:focus {
+                        outline: none;
+                        border: 0 1rem 2rem rgba(black, .1);
+                        border-bottom: 3px solid $color-primary;
+                    }
+    
+                    &:focus:invalid {
+                        border-bottom: 3px solid orangered;
+                    }
+                }
+                
+            }
+
+        }
+
+    }
+
+}
+
+
+.section-fifth {
+    @include sectionFromPosition;
+
+    .tovinf {
+        width: 90%;
+        max-width: 70rem;
+        margin-top: 9rem;
+        margin-bottom: 7rem;
+
+
+        &-title {
+            @include formTitleInTheForm;
+        }
+
+        &-text {
+            @include greyParagraph;
+            margin-bottom: 4rem;
+        }
+    
+        &-textbox {
+            position: relative;
+
+            &-name {
+                @include texaAboveInputElemnt; 
+                top:-7%;
+            }
+
+            &-input {
+                @include textBoxInput;
+                height: 20rem;
+
+                &::placeholder {
+                    opacity: 0;
+                 } 
+
+                 &:focus {
+                    outline: none;
+                    border: 0 1rem 2rem rgba(black, .1);
+                    border-bottom: 3px solid $color-primary;
+                }
+
+                &:focus:invalid {
+                    border-bottom: 3px solid orangered;
+                }
+            }
+
+
+        }
+    
+    
+    }
+}
+
+
+.section-send {
+    @include sectionFromPosition;
+    background-color: $color-main-backgroung;
+
+    .send {
+        width: 90%;
+        max-width: 70rem;
+        margin-top: 9rem;
+        margin-bottom: 7rem;
+
+        &-title {
+            @include formTitleInTheForm;
+
+        }
+
+        &-text {
+            font-family: $font-display;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.25rem;
+            color: $color-primary;
+
+            span {
+                font-weight: 500;
+                color: red;
+
+            }
+        }
+
+
+    }
+
+}
+
+
+.mmt4rem {
+    margin-top: 4.4rem;
+}
+
+.mmt6rem {
+    margin-top: 6rem;
+}
+
+.mmb3rem {
+    margin-bottom:3rem;
+}
+
+.noresize {
+    resize: none;
+}
+
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.resize {
+    width: 13rem;
+    height: 5rem;
+}
+
+.whitecolor {
+    background-color: white;
+}
+

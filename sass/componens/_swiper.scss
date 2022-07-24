@@ -1,0 +1,65 @@
+.swiper-container {
+  width: 70%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+
+  @include respond (phone) {
+    width: 80%;
+
+
+}
+  
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination-bullet-active {
+background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%) !important;
+}
+
+
+.swiper-pagination {
+position: relative !important;
+margin-top: 4rem !important;
+}
+
+.swiper-pagination-bullet {
+width:1.5rem !important;
+height: 1.5rem !important;
+display: none !important;
+
+@include respond (phone) {
+  display: inline-block !important;
+
+}
+
+}
+
+.swiper-button-left, .swiper-button-right {
+cursor: pointer;
+z-index: 20;
+}
+
+
+.swpb {
+display: flex;
+justify-content: center;
+align-items: center;
+width: auto;
+}
+

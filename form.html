@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Weblap készítés kis és középvállalatoknak megfizethető áron. Kiemelkedő ár-érték arányú weboldalak micro-, kis- és középvállalkozásoknak.
+        ">
+        <meta name="keywords" content="HTML,CSS,UI,UX, webdesign, design, weblap készítés, weblap üzemeltetés, webfejlesztés, weblap, wordpress,">
+        <meta name="author" content="Team of Studio Bromo">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="/favicon/favicon-32x32.png" sizes="16x16 32x32" type="image/png">
+        
+        <title>Studio Bromo&mdash;Webdesign</title>
+    </head>
+   
+    <body>
+        <form action="https://formspree.io/f/meqvqqne" method="POST" class="form">
+            
+            <div class="form_logo">
+                <a href="index.php"><img src="/img/StudioBromo_logo_portrait.svg" alt="logo"> </a>
+            </div>
+
+            <section class="section">   
+
+                <div class="igfelm">
+                    <h1 class="igfelm-title">Igényfelmérés</h1>
+                    <p class="igfelm-text mmb3rem">Az űrlap kitöltése nagyjából 20 percet vesz igénybe.</p>
+                   <!-- <p class="igfelm-text text-position">Amennyiben segítségre van szüksége, kérjük hívjon minket a <span>+36*******</span>-ös telefonszámon.</p> -->
+                    <div class="igfelm-line"></div>
+
+                    <h2 class="igfelm-boxtitle">Alapadatok</h2>
+                    <p class="igfelm-text-2">Kérjük, adja meg adatait. A későbbiekben a megadott elérhetőségeken keressük majd.</p>
+                    
+                    <div class="inputbox">
+                        <div class="inputbox_group">
+                            <div class="inputbox_name">Teljes név*</div>
+                            <input type="text" name="Teljes név" class="inputbox_input" placeholder="FULL NAME" id="fullname" required>
+                            <label for="fullname" class="inputbox_label"></label> 
+                        </div>
+                        <div class="inputbox_group ">
+                            <div class="inputbox_company">Cég/vállakozás*</div>
+                            <input type="text" name="Cég/vállakozás" class="inputbox_input" placeholder="COMPANY" id="company" required>
+                            <label for="company" class="inputbox_label"></label> 
+                        </div>
+
+                        <div class="inputbox_group">
+                            <div class="inputbox_position">Telefonszám*</div>
+                            <input type="text" name="Telefonszám" class="inputbox_input" placeholder="PHONE NUMBER" id="phonenumber" >
+                            <label for="phonenumber" class="inputbox_label"></label> 
+                        </div>
+
+                        <div class="inputbox_group">
+                            <div class="inputbox_position">Az ön poziciója*</div>
+                            <input type="text" name="Az ön poziciója" class="inputbox_input" placeholder="POSITION" id="position" >
+                            <label for="position" class="inputbox_label"></label> 
+                        </div>
+
+                        <div class="inputbox_group">
+                            <div class="inputbox_email">E-MAIL cím*</div>
+                            <input type="email" name="E-MAIL cím" class="inputbox_input" placeholder="EMAIL" id="email" required>
+                            <label for="email" class="inputbox_label"></label> 
+                        </div>
+                </div>
+            </section>
+
+            <section class="section-secoundary">
+                <div class="abyourb">
+                    <h2 class="abyourb-titlebox">Az ön vállalkozásáról</h2>
+                        <div class="abyourb-group">
+                            <h3 class="abyourb-group-title">Mivel foglalkozik vállalkozása?</h3>
+                             <p class="abyourb-group-text">Ha szeretne letölthető dokumentumokat biztosítani a látogatói számára, válassza ki ezt az opciót.</p>
+                            
+                             <div class="abyourb-group-name">megjegyzés*</div> 
+                            <textarea type="textarea" name="Vállalkozás profilja" class="abyourb-group-input noresize" placeholder="FULL NAME" id="profile" ></textarea>
+                            <label for="profile" class="inputbox_label"></label> 
+                        </div>
+                        <div class="abyourb-group">
+                            <h3 class="abyourb-group-title">Mik a legfőbb elvárásai az új weboldalával kapcsolatban?</h3>
+                            <p class="abyourb-group-text">Ha szeretne letölthető dokumentumokat biztosítani a látogatói számára, válassza ki ezt az opciót.</p>
+
+                            <div class="abyourb-group-name">megjegyzés*</div>
+                            <textarea type="textarea" name="Legfőbb elvárás" class="abyourb-group-input noresize" placeholder="FULL NAME" id="requirement" ></textarea>
+                            <label for="requirement" class="inputbox_label"></label> 
+                        </div>
+
+                        <div class="abyourb-group">
+                            <h3 class="abyourb-group-title">Kérjük, adja meg legfőbb versenytársai weboldalait!</h3>
+                            <p class="abyourb-group-text">Kérjük, adja meg legfőbb versenytársai weboldalait!</p>
+
+                            <div class="abyourb-group-name abyourb-group-name-corrigation">megjegyzés*</div>
+                            <textarea type="textarea" name="Versenytársak weboldala" class="abyourb-group-input noresize" placeholder="FULL NAME" id="concurente" ></textarea>
+                            <label for="concurente" class="inputbox_label"></label> 
+                        </div>
+            </section>
+
+            <section class="section-tertiary">
+
+                <div class="megtar">
+                    <h2 class="megtar-title">Megjelenés és tartalom</h2>
+                    <p class="megtar-text">Kérjük jelölje be azon elmeket, melyek jelenleg rendelkezésére állnak. Ezek megléte segíthet az oldal megjelenésének, 
+                        struktúrájának kialakításában, illetve a projekt mihamarabbi elkészültében.</p>
+                    <div class="megtar-input">
+                       
+                        <div class="megtar-input_group">
+                            <input type="checkbox" id="logo" name="Logó" class="megtar-input_group-check" value="igen" required>
+                            <label for="logo">Logo</label>
+                        </div>
+                        
+                        <div class="megtar-input_group ">
+                                <input type="checkbox" id="arculat" name="Arculat" class="megtar-input_group-check" value="igen">
+                                <label for="arculat">Arculat</label>
+                        </div>
+
+                        <div class="megtar-input_group">
+                                <input type="checkbox" id="szovegestart" name="Szöveges tartalom" class="megtar-input_group-check" value="igen">
+                                <label for="szovegestart">Szöveges tartalom</label>
+                        </div>
+
+                        <div class="megtar-input_group">
+                                <input type="checkbox" id="photoandmedia" name="Képek/média" class="megtar-input_group-check" value="igen">
+                                <label for="photoandmedia">Képek, média</label>
+                        </div>
+                </div>
+            </section>
+
+            <section class="section-quarter">
+
+                <div class="webem">
+                    <h2 class="webem-title">Weboldal elemei</h2>
+                    <p class="webem-text">Itt találhatja a weboldalakon leggyakrabban használt elemeket, funkciókat. Kérjük, pipálja be azokat, melyekre úgy érzi, hogy mindenképp szüksége lesz.
+                         A blokk alján szövegesen is megfogalmazhatja egyedi igényeit, kiegészítő információkat szolgáltathat ahhoz, hogy jobban megértsük elképzeléseit.</p>
+                
+                    <div class="webem-group">
+                        <div><input id="galeria" type="checkbox" name="Galéria" class="webem-group-checkbox" value="igen"></div>
+                        <label for="galeria"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Galéria</h3>
+                            <p class="webem-group-position-cbxtext">Galériára legtöbbször akkor van szükség, ha egy adott témában nagyobb mennyiségű kép feltöltésére van igény. 
+                                Általában jobbra és balra nyilakkal lehet lapozni a képek között.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="kapcsolatiurlap" name="Kapcsolati űrlap" class="webem-group-checkbox" value="igen"></div>
+                        <label for="kapcsolatiurlap"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Kapcsolati űrlap</h3>
+                            <p class="webem-group-position-cbxtext">Ha szüksége van arra, hogy a látogatói ne csak egy megjelenített e-mail címen vagy telefonszámon érjék el önt, 
+                                hanem a weboldalon keresztül közvetlenül üzenetet tudjanak küldeni, úgy kapcsolati űrlapra van szükség.</p>
+                            <div class="webem-group-position-margintext"></div>
+                            <p class="webem-group-position-cbxtext">Kérjük, pipálja be vagy adja meg szövegesen, milyen adatok megadását kérné az önnek üzenni kívánó felhasználóktól!</p>
+                        
+                         <div class="checkboxcontainer">    
+                            <div class="webem-group-checkboxposition">
+                                <div class="webem-group-checkboxposition-mainposition"><input id="vezeteknev" type="checkbox" name="Vezeték név" class="webem-group-checkbox" value="igen">
+                                <label for="vezeteknev" class="webem-group-label">Vezetéknév</label> </div>
+
+                                <div class="webem-group-checkboxposition-mainposition"> <input id="cegvallakozas" type="checkbox"  name="Cég/vállalkozás" class="webem-group-checkbox" value="igen">
+                                <label for="cegvallakozas" class="webem-group-label">Cég / Vállalkozás</label> </div>
+                            </div>
+                           
+                            <div class="webem-group-checkboxposition">
+                                <div class="webem-group-checkboxposition-mainposition"> <input id="keresztnev" type="checkbox" name="Kereszt név" class="webem-group-checkbox" value="igen">
+                                <label for="keresztnev" class="webem-group-label">Keresztnév</label> </div>
+
+                                <div class="webem-group-checkboxposition-mainposition"> <input id="pozicio" type="checkbox" name="Pozíció" class="webem-group-checkbox" value="igen">
+                                <label for="pozicio" class="webem-group-label" >Pozíció</label> </div>
+                            </div>
+                           
+                            <div class="webem-group-checkboxposition">
+                                <div class="webem-group-checkboxposition-mainposition">  <input id="emailcim" type="checkbox" name="Email-cím" class="webem-group-checkbox" value="igen">
+                                <label for="emailcim" class="webem-group-label">E-mail cím</label> </div>
+                               
+                                <div class="webem-group-checkboxposition-mainposition">  <input id="uzenettargya" type="checkbox" name="Üzenet tárgya" class="webem-group-checkbox" value="igen">
+                                <label for="uzenettargya" class="webem-group-label">Üzenet tárgya</label> </div>
+                            </div>
+                           
+                            <div class="webem-group-checkboxposition">
+                                <div class="webem-group-checkboxposition-mainposition"> <input id="telszam"type="checkbox" name="Telefonszám" class="webem-group-checkbox" value="igen">
+                                <label for="telszam" class="webem-group-label">Telefonszám</label> </div>
+                               
+                                <div class="webem-group-checkboxposition-mainposition"> <input id="uzenet" type="checkbox"  name="Üzenet" class="webem-group-checkbox" value="igen">
+                                <label for="uzenet" class="webem-group-label">Üzenet</label> </div>
+                            </div>
+                          
+                            <div class="webem-group-checkboxposition">
+                                <div class="webem-group-checkboxposition-mainposition"> <input id="korszul" type="checkbox"  name="Kor/születési év" class="webem-group-checkbox" value="igen">
+                                <label for="korszul" class="webem-group-label">Kor / Születési év</label> </div>
+                               
+                                <div class="webem-group-checkboxposition-mainposition"> <input id="datumset" type="checkbox" name="Dátumválasztó" class="webem-group-checkbox" value="igen">
+                                <label for="datumset" class="webem-group-label">Dátumválasztó</label> </div>
+                            </div>
+
+                        </div>
+                             <div class="webem-group-textbox">
+                                <div class="webem-group-textbox-name">megjegyzés*</div>
+                                <textarea type="textarea" name="Kapcsolati űrlap megjegyzés" class="webem-group-textbox-input noresize" placeholder="FULL NAME" id="staycontact" ></textarea>
+                                <label for="staycontact" class="inputbox_label"></label> 
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="terkep" name="Térkép" class="webem-group-checkbox" value="igen"></div>
+                        <label for="terkep"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Térkép</h3>
+                            <p class="webem-group-position-cbxtext">A térkép segíthet az ön üzletének, telephelyének megtalálásában, 
+                                sőt, lehetővé teheti az egy kattintásra indított navigációt is. Általában a kapcsolati adatok mellett, vagy az oldalak alján jelenik meg.</p>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="social" name="Social media linkek" class="webem-group-checkbox" value="igen"></div>
+                        <label for="social"></label>
+                            <div class="webem-group-position">
+                             <h3 class="webem-group-position-cbxname">Social media linkek</h3>
+                            <p class="webem-group-position-cbxtext">Szükség esetén linkelni tudjuk Facebook, Instagram, vagy egyéb közösségi platformokon megjelenő oldalát.
+                                 A megjegyzés mezőbe akár már most is bemásolhatja profiljai linkjeit.</p>
+                                
+                                 <div class="webem-group-textbox mmt4rem">
+                                   <div class="webem-group-textbox-name">megjegyzés*</div>
+                                   <textarea type="textarea" name="Social media linkek megjegyzés" class="webem-group-textbox-input noresize" placeholder="FULL NAME" id="socialmedias"></textarea>
+                                   <label for="socialmedias" class="inputbox_label"></label> 
+                                </div>
+                           </div>  
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="faq" name="FAQ" class="webem-group-checkbox" value="igen"></div>
+                        <label for="faq"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Gyakran ismételt kérdések (FAQ)</h3>
+                            <p class="webem-group-position-cbxtext">Sokszor keresik önt vagy vállalkozását ismétlődő kérdésekkel? Ebben az esetben érdemes egy “Gyakran ismételt kérdések” funkciót implementálni, ahol kérdés-válasz 
+                                formájában jeleníthet meg a felhasználói számára fontos, általuk gyakran keresett kérdéseket és az azokra adott válaszokat.</p>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="statcegesdata" name="Statisztika" class="webem-group-checkbox" value="igen"></div>
+                        <label for="statcegesdata"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Statisztika / Céges adatok</h3>
+                            <p class="webem-group-position-cbxtext">Legtöbbször a cég / vállalkozás tapasztalatának igazolásaként jelennek meg. (Pl. 20 év tapasztalat, 200+ ügyfél, stb.).
+                                 Az adatok elhelyezésének általában az a célja, hogy a látogatóban a megbízhatóság érzését keltse.</p>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="team" name="Csapattagok bemutatása" class="webem-group-checkbox" value="igen"></div>
+                        <label for="team"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Csapattagok / Munkatársak bemutatása</h3>
+                            <p class="webem-group-position-cbxtext">A csapattagok, munkatársak fényképes bemutatása személyesebbé teheti honlapját, sokszor bizalmat ébreszt a látogatókban. A bemutatás történhet egy egyszerű kép + név kombinációval, 
+                                vagy ezt kiegészítve akár hosszabb leírásokkal, munkaeredményekkel, “fun fact”-ekkel kiegészítve.</p>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="review" name="Ügyfél vélemények" class="webem-group-checkbox" value="igen"></div>
+                        <label for="review"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Ügyfél / Megrendelő idézetek</h3>
+                            <p class="webem-group-position-cbxtext">Ha szeretne ügyfeleitől idézeteket megjeleníteni (akár képpel, akár kép nélkül), pipálja be ezt az opciót is.</p>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="arlista" name="Árak/árlista" class="webem-group-checkbox" value="igen"></div>
+                        <label for="arlista"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Árak / Árlista</h3>
+                            <p class="webem-group-position-cbxtext"> Lehetőség van az esetlegesen ön által biztosított szolgáltatások, termékek (nem webshop), csomagok árának egyedi megjelenítésére, árlista feltöltésére. </p>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="cikkblog" name="Cikkek/blogbejegyzések" class="webem-group-checkbox" value="igen"></div>
+                        <label for="cikkblog"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Cikkek / Blogbejegyzések</h3>
+                            <p class="webem-group-position-cbxtext"> Ha rendszeresen frissülő cikkekre, blogbejegyzésekre van szüksége, válassza ki ezt az opciót. A tartalomért ön lesz felelős, de az ön által választott 
+                                csomagtól függő rendszerességgel mi is fel tudjuk majd tölteni ezeket a weblapjára. </p>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="komment" name="komment funkciók" class="webem-group-checkbox" value="igen"></div>
+                        <label for="komment"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Komment funkció</h3>
+                            <p class="webem-group-position-cbxtext"> Amennyiben szeretné megadni a lehetőséget a weboldal látogatóinak, hogy a megjelenő cikkeket, híreket, vagy egyéb tartalmakat hozzászólásaikkal egészítsék ki, pipálja be ezt a funkciót. A funkció javíthatja a keresők 
+                                (pl. Google) oldalán elért pozícióját, ám az esetleges moderáció extra feladatokat ruházhat önre.</p>
+                        </div>
+                    </div>
+
+                    <div class="webem-group">
+                        <div><input type="checkbox" id="dokletoltes" name="Dokumentum letöltés lehetősége" class="webem-group-checkbox" value="igen"></div>
+                        <label for="dokletoltes"></label>
+                        <div class="webem-group-position">
+                            <h3 class="webem-group-position-cbxname">Dokumentumok letöltése</h3>
+                            <p class="webem-group-position-cbxtext"> Ha szeretne letölthető dokumentumokat biztosítani a látogatói számára, válassza ki ezt az opciót.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-fifth">
+                <div class="tovinf">
+                    <h2 class="tovinf-title">További információk</h2>
+                    <p class="tovinf-text">Nem talált egy funkciót a listában, amire szüksége lenne? Egyéb megjegyzése, közlendője lenne a projekt elkezdése előtt? Írjon ide bármit,
+                        ami könnyítheti a közös munkát, ami segítségével jobban megérthetjük céljait, elképzeléseit!</p>
+                
+                    <div class="tovinf-textbox mmt4rem">
+                        <div class="tovinf-textbox-name">megjegyzés*</div>
+                        <textarea type="textarea" name="További megyjegyzés" class="tovinf-textbox-input noresize" placeholder="FULL NAME" ></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-send">
+                <div class="send">
+                    <h2 class="send-title">Küldés</h2>
+                    <p class="send-text">Köszönjük, hogy az űrlap elküldésével segíti munkánkat!</p>
+                    <p class="send-text mmb3rem">A megadott adatok, igények elküldése után további egyeztetés, az igények fixálása céljából <br><span>24 órán belül</span> jelentkezünk!</p>
+                    <p class="send-text">A küldés gombra kattintva a megadott e-mail címére visszaigazoló levelet kap, benne a megadott igényeivel.</p>
+                   
+                    <div class="btn-form mmt6rem flexcenter">
+                        <input type="submit" value="Küldés" class="btn resize">
+                    </div>
+
+                </div>
+            </section>
+
+        <!-- SECOUNDARY NAVIGATION  -->
+
+            <section class="nav-secound whitecolor">
+                <nav class="nav margin-top-middle-2">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="index.php" class="nav_link"><span>Tovább a circle slash weboldalára</span></a></li>
+                </ul>
+                </nav>
+            </section>
+
+        <!-- SECOUNDARY NAVIGATION END-->
+         <!-- FOOTER -->
+
+            <footer class="footer">
+                <div class="footer_container">
+                    <div class="footer_copiright">2021 All rights reserved</div>
+                        <ul class="footer_nav-list">
+                            <li class="footer_nav-item"><a href="#" class="footer_nav-link">Privacy policy</a></li>
+                            <li class="footer_nav-item"><a href="#" class="footer_nav-link">Who knows what else</a></li>
+                        </ul>
+                </div> 
+            </footer>
+
+        <!-- FOOTER END-->
+
+            
+        
+        </form>
+    </body>
+</html>

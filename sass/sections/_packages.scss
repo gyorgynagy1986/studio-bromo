@@ -1,0 +1,99 @@
+.packages {
+    @include sectionPosition;
+    background-color:$color-secondary-backgroung;
+    
+    &_main-head {
+        @include mainHeadTextPosition;
+    }
+
+    &_container {
+        width: 90%;
+        max-width:110rem;
+        display: grid;
+        grid-gap:3rem;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        @include respond (phone) { 
+            grid-template-columns: repeat(1, 1fr);
+            width: 90%;
+        }
+       
+        &-box {
+            width: 100%;
+            padding: 3rem;
+            display: grid;
+            grid-template-rows: 6rem 1fr 27rem 8.5rem 4.7rem;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.2);
+            border-radius: 6px;
+
+            &-popular {
+                width: 100%;
+                padding: 1rem;
+                background: linear-gradient(270deg, rgba(255, 92, 0, 0.1) 0%, rgba(255, 0, 107, 0.1) 100%);
+                border-radius: 6px;
+                margin-bottom: 1rem;
+            }
+
+            &-title {
+                width: 100%;
+                text-align: center;
+            }
+
+            &-text {
+                margin-top: 1rem;
+            }
+
+            &-learnmore {
+
+                text-align: center;
+                margin-top: -0.2rem;
+                padding: 2rem;
+                border: none;
+                background: unset;
+                color: #184293;
+                
+                @include respond (phone) {
+                    padding: 0 0;
+                }
+            }
+
+            &-featuresbox {
+                width: 100%;
+                .feature {
+                    display: flex;
+                    width: 100%;
+                    margin-top: 2.4rem;
+                   
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: 5px;
+                        line-height: 0;
+                        }
+                 }
+            }
+
+            &-pricebox {
+                width: 100%;
+                height: 8.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: rgba(167, 223, 255, 0.2);
+                border-radius: 6px;
+
+                @include respond (phone) {
+                .price {
+                    width: 60%;
+                    text-align: center;                     
+                }
+             }
+
+            }
+        }
+    }
+}
+
