@@ -575,9 +575,6 @@ h2 {
   transition: 0.5s;
   background-image: linear-gradient(to right, #FF5C00 0%, #FF006B 30%, #590672 90%);
   background-size: 300% auto; }
-  @media only screen and (max-width: 37.5em) {
-    .btn {
-      height: 4rem; } }
   .btn:hover {
     background-position: right center;
     /* change the direction of the change here */ }
