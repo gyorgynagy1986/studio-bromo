@@ -46,6 +46,7 @@
                 display:block;
                 border-radius: 3px;
                 cursor:none;
+                clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0% 100%);
             }
 
             @include respond (phone) {

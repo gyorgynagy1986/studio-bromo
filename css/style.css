@@ -27,6 +27,9 @@
 
 
 } */
+a {
+  color: inherit; }
+
 h1 {
   font-size: 3.6rem;
   font-family: "Inter", sans-serif;
@@ -806,7 +809,8 @@ h2 {
         object-fit: cover;
         display: block;
         border-radius: 3px;
-        cursor: none; }
+        cursor: none;
+        clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0% 100%); }
       @media only screen and (max-width: 37.5em) {
         .works_contanier-photo {
           margin-bottom: 5rem;
