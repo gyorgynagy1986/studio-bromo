@@ -16,9 +16,10 @@
     &_container {
         width: 90%;
         display: grid;
-        grid-template-rows: 17rem 18rem 6.1rem repeat(24, 8.2rem);
-        grid-template-columns: repeat(4, minmax(min-content, 27rem));
+        grid-template-rows: 17rem 18rem 6.1rem repeat(21, 8.2rem);
+        grid-template-columns: repeat(4, minmax(min-content, 21rem));
         justify-content: center;
+        margin-bottom: 10rem;
 
         @include respond (phone) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
