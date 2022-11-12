@@ -138,3 +138,4 @@ const hoverHandler = function(e, opacity) {
 nav.addEventListener('mouseover', hoverHandler.bind(1))
 
 nav.addEventListener('mouseout', hoverHandler.bind(0));
+

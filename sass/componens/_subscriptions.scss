@@ -1,0 +1,33 @@
+.subscribe{
+    margin-inline: auto;
+    width: 50%;
+    min-width: 35rem;
+    min-height: 20rem;
+    height: 100%;
+    padding: 1rem;
+
+    &-container {
+
+        &__text {
+
+            display: none;
+           
+            p {
+                font-size: 1.8rem;
+            }
+        
+        }
+       
+    }
+}
+
+
+.button-effect-active {
+    color: rgb(255, 0, 0);
+}
+
+
+.subscribe-active {
+    display: block;
+}
+

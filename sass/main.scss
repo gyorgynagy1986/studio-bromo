@@ -5,6 +5,8 @@
 
 //ABSTARCT
 @import "abstract/effects";
+@import "abstract/gridposition";
+
 
 //COMPONENS
 @import "componens/swiper";
@@ -12,6 +14,7 @@
 @import "componens/button";
 @import "componens/navigation";
 @import "componens/popup";
+@import "componens/subscriptions";
 
 
 // SECTIONS
@@ -25,7 +28,6 @@
 @import "layouts/home";
 @import "layouts/header";
 @import "layouts/footer";
-@import "layouts/gridposition";
 
 //PAGES
 @import "pages/detailed";
