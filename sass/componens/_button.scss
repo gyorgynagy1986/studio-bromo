@@ -13,7 +13,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: 0.5s;
-    background-image: linear-gradient(to right, #FF5C00 0%, #FF006B 30%, #590672 90%);   
+    background-image: linear-gradient(to right, #184293 0%, #FF006B 30%, #590672 90%);   
     background-size: 300% auto;
 
 
@@ -55,7 +55,7 @@
     background: unset;
 
     width: 25.8rem;
-    border: 1px solid red;
+    border: 1px solid #184293;
     box-shadow: 0;
     border-radius: 6px;
     cursor: pointer;
@@ -63,9 +63,9 @@
 
 
     .btnlineartrick {
-    @include linearOrange;
+     @include linearOrange;
     font-size: 1.7rem;
-    font-weight:600;
+    font-weight:700;
     text-transform: uppercase;
     transition: all 300ms ease-in-out;
     } 

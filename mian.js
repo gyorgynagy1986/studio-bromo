@@ -139,3 +139,30 @@ nav.addEventListener('mouseover', hoverHandler.bind(1))
 
 nav.addEventListener('mouseout', hoverHandler.bind(0));
 
+// Dark mode
+
+// COLOR FOR BOXES
+
+const darkModeButton = document.querySelector('h1');
+console.log(darkModeButton);
+
+darkModeButton.style.cursor = 'pointer';
+
+
+darkModeButton.addEventListener('click', () => {
+ 
+
+  document.documentElement.style.setProperty();
+ 
+})
+  
+
+
+// darkModeButton.addEventListener('click', () => {
+//   document.documentElement.style.setProperty("--mainBcGroung", "black");
+//   document.documentElement.style.setProperty("--secBcground", "black");
+//   document.documentElement.style.setProperty(""--secBcground", "black");
+//   document.documentElement.style.setProperty("--nav", "white");
+//   document.documentElement.style.setProperty("--boxes", "#1a1a1b");
+// 
+// })

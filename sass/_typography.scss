@@ -200,11 +200,13 @@ h2 {
         
         p {
             font-family: $font-display;
-            font-weight: 500;
-            font-size: 1.6rem;
+           // old font-weight: 500;
+            
+           font-size: 1.6rem;
             line-height: 2rem;
-            color: #6F6F6F;
-
+           // OLD color: #6F6F6F;
+            color: #4c4c4c;
+            
         }
     }
 
@@ -378,7 +380,7 @@ h2 {
             font-weight: 500;
             font-size: 15px;
             line-height: 2.1rem;
-            color: #6F6F6F;
+            color: #494949;
 
             span {
                 line-height: 2rem;

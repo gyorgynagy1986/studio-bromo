@@ -23,7 +23,8 @@
 }
 
 @mixin linearOrange {
-    background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+   // old background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+    background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -31,7 +32,8 @@
 @mixin greyParagraph {
     font-family: $font-display;
     font-size: 1.6rem;
-    color: #4b4848; //color: rgba(111, 111, 111, 1);
+   // color: #4b4848; //color: rgba(111, 111, 111, 1);
+    color: $color-paragraph;
     line-height: 22.5px;
     font-weight: 400;
     span {
@@ -123,13 +125,30 @@
     }
 }
 
+
+// darker prime color #132953;
+// softer dark color #375691;
+
+:root {
+   --primecolor: #375691;
+   --mainBcGroung:#f5faff;
+   --secBcground:#ffff;
+   --nav:#283c61;
+   --boxes:rgba(255, 255, 255, 0.9);
+}
+
+
 // COLOR VARIABLES
-$color-primary: rgba(24, 66, 147, 1);
-$color-nav: rgb(49, 114, 151);
-$color-main-backgroung: rgba(167, 223, 255, 0.2);
-$color-secondary-backgroung: #ffff;
+// old $color-primary: rgba(24, 66, 147, 1);
+$color-primary: var(--primecolor);
 
+//$color-nav: rgb(49, 114, 151);
+$color-nav:var(--nav);
+$color-paragraph: #272727;
 
+// $color-main-backgroung: rgba(167, 223, 255, 0.2);
+$color-secondary-backgroung: var( --secBcground);
+$color-main-backgroung: var(--mainBcGroung);
 // FONT VARIABLES
 $font-primary: 'Inter', sans-serif;
 $font-display: 'Rubik', sans-serif;

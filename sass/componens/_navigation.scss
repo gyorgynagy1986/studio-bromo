@@ -62,12 +62,23 @@
          font-family: $font-display;
          font-size: 1.5rem;
          font-weight: 500;
-         color: $color-primary;
+         color: $color-nav;
          
          span {  
-                @include linearOrange;
-              } 
-            
+            color: #ffffff;
+            background: #253e6c;
+            padding: 1.5rem 2rem 1.5rem1.5rem;
+            border-radius: 1rem;
+            padding: 2rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);              
+        } 
+         }
+
+         span:hover {
+            background: #354c77;
+
          }
   
 }
@@ -168,7 +179,7 @@
          font-family: $font-display;
          font-size: 1.5rem;
          font-weight: 500;
-         color: $color-primary;
+         color: $color-nav;
          
             span {  
                 @include linearOrange;
