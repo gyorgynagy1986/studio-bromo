@@ -1342,6 +1342,11 @@ nav.sticky {
   box-shadow: 10px 10px 30px rgba(240, 250, 255, 0.9), -10px -10px 30px rgba(240, 250, 255, 0.9);
   margin-top: 10rem;
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .subscribe {
+      padding-top: 6rem;
+      padding-left: 2rem;
+      padding-right: 2rem; } }
   .subscribe-container__text {
     display: none; }
     .subscribe-container__text h1 {
@@ -1359,10 +1364,16 @@ nav.sticky {
       align-items: center;
       letter-spacing: 0.085em;
       color: rgba(8, 31, 77, 0.88); }
+      @media only screen and (max-width: 37.5em) {
+        .subscribe-container__text p {
+          font-size: 15px; } }
   .subscribe .design-pattern {
     position: absolute;
     right: 0;
     top: -8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .subscribe .design-pattern {
+        top: -22rem; } }
     .subscribe .design-pattern img {
       height: 100%;
       width: 100%; }
