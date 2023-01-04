@@ -17,9 +17,9 @@
 
     <div class="mobilenav">
 
-        <div class="nav_logo-mobile navlogoreszletektop2rem">
+        <div class="nav_logo-mobile">
                <a href="index.html"><img src="/img/StudioBromo_logo_landscape.svg" alt="logo"></a>
-            </div>
+        </div>
 
         <input type="checkbox" class="mobilenav_checkbox " id="navi-toogle">
         <label for="navi-toogle" class="mobilenav_button"><span class="mobilenav_icon"></span></label>
@@ -39,24 +39,27 @@
 
     <body id="reszletek">
         
-        <header class="header_secoundary">  
+        <header class="header header_secoundary">  
             
            
-            <nav class="nav margin-top-middle-2">
+            <div class="nav-sticky-prefix ">
+                <nav class="nav">
+                    <div class="nav_logo dark-mode">
+                        <img src="/img/StudioBromo_logo_landscape.svg" alt="logo">
+                    </div>
+    
+                    <ul class="nav_list">
+                            <li class="nav_item"><a href="#featured" class="nav_link">kiemelt munkáink</a></li>
+                             <li class="nav_item"><a href="#process" class="nav_link">hogyan dolgozunk</a></li> 
+                            <li class="nav_item"><a href="#packages" class="nav_link">csomagjaink</a></li>
+                            <li class="nav_item"><a href="#packages" class="nav_link">árak</a></li>
+                           <li class="nav_item"><a href="#reviews" class="nav_link">ügyfeleink rólunk</a></li> 
+                            <li class="nav_item"><a href="#touch" class="nav_link"> <span> Kapcsolat</span></a></li>
+                    </ul>
+                </nav>
+            </div>
 
-                <div class="nav_logo">
-                   <a href="index.html"><img src="/img/StudioBromo_logo_landscape.svg" alt="logo"></a>
-                </div>
-                <ul class="nav_list">
-                        <li class="nav_item"><a href="index.html" class="nav_link">home</a></li>
-                        <li class="nav_item"><a href="index.html#featured" class="nav_link">kiemelt munkáink</a></li>
-                        <li class="nav_item"><a href="index.html#process" class="nav_link">hogyan dolgozunk</a></li>
-                        <li class="nav_item"><a href="index.html#packages" class="nav_link">csomagjaink</a></li>
-                        <li class="nav_item"><a href="index.html#reviews" class="nav_link">ügyfeleink rólunk</a></li>
-                        <li class="nav_item"><a href="index.html#touch" class="nav_link"><span>Kapcsolat</span></a></li>
-                </ul>
-            </nav>
-
+        </header>
      <section class="detailed">
         <div class="detailed_main-head">
             <h2>Csomagjaink</h2>
@@ -72,9 +75,9 @@
                 <div class="b2 packagetitle">Creative</div>
                 <div class="b3 packagetitle">Extra</div>
             
-                <div class="b4 bposi-title descript"></div>
-                <div class="b5 bposi-title descript"></div>
-                <div class="b6 bposi-title descript"></div>
+                <div class="b4 bposi-title"><div class="price fonst-size-price">250 000 ft <br/> -tól</div></div>
+                <div class="b5 bposi-title descript"><div class="price fonst-size-price">350 000 ft<br/>-tól</div></div>
+                <div class="b6 bposi-title descript"><div class="price fonst-size-price">499 000 ft<br/>-tól</div></div>
 
                 <div class="b7 bp">Fejlesztési technológia</div>
                 <div class="b8 bposi"><span>Egyedi fejlesztés</span></div>
@@ -141,12 +144,12 @@
                 <div class="b57 bposi"><img src="/img/checknegative.svg" alt="#"></div>
                 <div class="b58 bposi"><img src="/img/check.svg" alt="#"></div>
 
-                <div class="b59 bp">Keresőoptimalizálás<br> (SEO + Google search Console)</div>
+                <div class="b59 bp">Keresőoptimalizálás<br> (+ Google search Console)</div>
                 <div class="b60 bposi"><img src="/img/check.svg" alt="#"></div>
                 <div class="b61 bposi"><img src="/img/check.svg" alt="#"></div>
                 <div class="b62 bposi"><img src="/img/check.svg" alt="#"></div>
 
-                <div class="b63 bp">Látogatói statisztikák <br>(Google Analytics integrálás)</div>
+                <div class="b63 bp">Látogatói statisztikák<br>(Google Analytics)</div>
                 <div class="b64 bposi"><img src="/img/checknegative.svg" alt="#"></div>
                 <div class="b65 bposi"><img src="/img/check.svg" alt="#"></div>
                 <div class="b66 bposi"><img src="/img/check.svg" alt="#"></div>
@@ -181,10 +184,10 @@
                 <div class="b89 bposi"><img src="/img/check.svg" alt="#"></div>
                 <div class="b90 bposi"><img src="/img/check.svg" alt="#"></div>
 
-                <div class="b91 bp">Mobile-interaktív<br>fotó galéria</div>
-                <div class="b92 bposi"><img src="/img/check.svg" alt="#"></div>
-                <div class="b93 bposi"><img src="/img/check.svg" alt="#"></div>
-                <div class="b94 bposi"><img src="/img/check.svg" alt="#"></div>
+                <div class="b91 bp">Aloldalak száma</div>
+                <div class="b92 bposi"><span>1 (landing)</span></div>
+                <div class="b93 bposi"><span>1-5</span></div>
+                <div class="b94 bposi"><span>5 +</span></div>
          
         </div>
 
@@ -337,7 +340,6 @@
     </footer>
     
     <!-- FOOTER END-->
-    
-    <script src="/reszletek.js"></script>
+    <script src="js/reszletek.js"></script>
     </body>
 </html>

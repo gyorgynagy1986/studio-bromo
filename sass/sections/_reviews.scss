@@ -16,9 +16,10 @@
         width: 90%;
         height: 100%;
         max-width:110rem;
-        @include respond (phone) {
-        display:flex;
-        width: 100%;
+        
+        @include respond (SCtablet) {
+        display:block;
+        width: auto;
         }
 
         &_box {
@@ -55,7 +56,7 @@
 // SLIDERS VISIBLITY
 
 .review-mobile-invisible {
-    @include respond (phone) {
+    @include respond (SCtablet) {
     display: none;    }
 }
 
@@ -63,6 +64,6 @@
 .invisible {
     display: none;
    
-    @include respond (phone) {
+    @include respond (SCtablet) {
       display: block; }
   }

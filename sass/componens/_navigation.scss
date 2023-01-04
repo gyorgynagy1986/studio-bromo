@@ -6,9 +6,10 @@
     position: relative;
     grid-template-columns: 5% 90% 5%;
 
-        @include respond (phone) {
+        @include respond (tablet) {
         display: none;
     }
+
 
     &_logo {
         height: 100%;
@@ -51,7 +52,10 @@
 
     &_item:not(:last-child) {
             margin-right: 4rem;
-            
+
+            @include respond (SCLaptop) {
+                margin-right: 2rem;
+            }
             
         }
 
@@ -63,6 +67,11 @@
          font-size: 1.5rem;
          font-weight: 500;
          color: $color-nav;
+
+         @include respond (SCLaptop) {
+            font-size: 1.4rem;
+        }
+        
          
          span {  
             color: #ffffff;
@@ -88,8 +97,12 @@
     min-height: 8rem;
     display: flex;
     background-color: $color-main-backgroung;  
+    display: none;
 
-
+    @include respond (phone) {
+        display: flex;
+      
+    }
 
 }
 
@@ -189,9 +202,6 @@
   
 }
 
-.navlogoreszletektop2rem {
-    top:-8rem;
-}
 
 
 // STICKY NAVIGATION WHEN WE REACH A CERTAIN POSITION

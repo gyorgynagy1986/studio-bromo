@@ -119,15 +119,41 @@
     display: block;
 }
 
+
+
+
 @mixin respond($breakpoint) {
+
+    @if $breakpoint == SMphone {
+        @media only screen and (max-width: 22.5em) { @content };    //360px
+    }
+
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content };    //600px
     }
+
+    @if $breakpoint == SCtablet {
+        @media only screen and (max-width: 51.25em ) { @content };    //820px
+    }
+
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 64.5em) { @content };    //1032px
+    }
+
+    @if $breakpoint == SCLaptop {
+        @media only screen and (max-width: 76.25em) { @content };    //1220px
+    }
+
 }
 
 
 // darker prime color #132953;
 // softer dark color #375691;
+
+//$color-paragraph: #272727;
+
+// --primecolor: #375691;
+//--primecolor: #283c61;
 
 :root {
    --primecolor: #375691;
@@ -144,7 +170,7 @@ $color-primary: var(--primecolor);
 
 //$color-nav: rgb(49, 114, 151);
 $color-nav:var(--nav);
-$color-paragraph: #272727;
+$color-paragraph: #3b3a3a;
 
 // $color-main-backgroung: rgba(167, 223, 255, 0.2);
 $color-secondary-backgroung: var( --secBcground);

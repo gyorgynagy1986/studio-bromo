@@ -1,7 +1,7 @@
 .mobilenav {
 
     display: none;
-    @include respond (phone) {
+    @include respond (tablet) {
         position: relative;
         display: block;
         }

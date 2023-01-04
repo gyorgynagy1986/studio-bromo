@@ -1,26 +1,3 @@
-//CURSOR                
-           
-//   const photoWork = document.querySelectorAll(".forefect");    
-//   const cursorMove = document.querySelector(".cursor"); 
-//   photoWork.forEach(element => {
-//     element.addEventListener("mousemove" , cursor);
-//     function cursor(e) {
-//     
-//     cursorMove.style.top = e.pageY + 'px';
-//     cursorMove.style.left = e.pageX + 'px';
-// }
-//         
-// element.addEventListener("mouseleave", () => {
-//     cursorMove.classList.remove("cursor-addclass");
-//     cursorMove.classList.add("cursor");
-//             
-//         });
-//       
-// element.addEventListener("mouseover", () => {
-//     cursorMove.classList.add("cursor-addclass");
-//     cursorMove.classList.add("cursor");
-//         });
-//   }); 
 
   //MOBILE NAV HANDELER
 
@@ -41,23 +18,6 @@
  });
  
 
- // SWIPER
-
- const swiper = new Swiper('.swiper-container', {
-
-   slidesPerView: 1,
-   spaceBetween: 130,
-   loop: false,
-   pagination: {
-     el: '.swiper-pagination',
-     clickable: true,
-   },
-   navigation: {
-     nextEl: '.swiper-button-left',
-     prevEl: '.swiper-button-right',
-   },
- });
-
 
 
 // STICKY NAVIGATIOn
@@ -66,46 +26,19 @@
 const sectionWorks = document.querySelector('.works');
 const nav = document.querySelector('.nav');
 
-//initialCord = sectionWorks.getBoundingClientRect();
-//
-//window.addEventListener('scroll', () => {
-//// console.log(window.scrollY, 'from scroll'); 
-//
-//if(window.scrollY > initialCord.top ) {
-// nav.classList.add('sticky')
-//} else {
-//  nav.classList.remove('sticky')
-//
-//}
-//
-//});
-
-
-//const observCb = function (entries, observer) {
-//  const [entry] = entries;
-//
-//  if(!entry.isIntersecting) nav.classList.add('sticky');
-//  else nav.classList.remove('sticky');
-//};
-//
-//const observOption = {
-//  root: null,
-//  treshold: 0,
-//  rootmargin: '0px'
-//};
-//
-//const observer = new IntersectionObserver 
-//  (observCb, observOption);
-//  observer.observe(sectionWorks);
-//
 
 const header = document.querySelector('.header');
 
 const stickyNav = function(entries) {
   const [entry] = entries;
-  if(!entry.isIntersecting) nav.classList.add('sticky');
-  else nav.classList.remove('sticky');
+  if(!entry.isIntersecting) {
+    nav.classList.add('sticky');
+    nav.classList.add('slide-in-top');
+  } else {
+    nav.classList.remove('sticky');
+    nav.classList.remove('slide-in-top');
   }
+}
 
 
 const headerObserver = new IntersectionObserver(
