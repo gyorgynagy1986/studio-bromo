@@ -20,7 +20,7 @@
     &_container {
         width: 90%;
         display: grid;
-        grid-template-rows: 17rem 8rem 6.1rem repeat(21, 8.2rem);
+        grid-template-rows: 17rem 8rem 6.1rem repeat(22, 8.2rem);
         grid-template-columns: repeat(4, minmax(min-content, 23rem));
         justify-content: center;
         margin-bottom: 10rem;
@@ -111,6 +111,7 @@
             img {
                 width: 2.5rem;
                 height: 2.5rem;
+                opacity: .7;
 
                 @include respond (phone) {    
                     width: 1.5rem;

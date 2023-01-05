@@ -33,9 +33,9 @@
     font-family: $font-display;
     font-size: 1.6rem;
    // color: #4b4848; //color: rgba(111, 111, 111, 1);
-    color: $color-paragraph;
+    color: $color-paragraph-new;
     line-height: 22.5px;
-    font-weight: 400;
+    font-weight: 300;
     span {
         font-weight: 500;
     }
@@ -171,6 +171,7 @@ $color-primary: var(--primecolor);
 //$color-nav: rgb(49, 114, 151);
 $color-nav:var(--nav);
 $color-paragraph: #3b3a3a;
+$color-paragraph-new: #000c24;
 
 // $color-main-backgroung: rgba(167, 223, 255, 0.2);
 $color-secondary-backgroung: var( --secBcground);

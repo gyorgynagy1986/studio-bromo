@@ -5,7 +5,7 @@
   margin-right: auto;
   margin-bottom: 10rem;
 
-  @include respond (SCtablet) {
+  @include respond (tablet) {
     width: 80%;
 }
 
@@ -47,7 +47,7 @@ width:1.5rem !important;
 height: 1.5rem !important;
 display: none !important;
 
-@include respond (SCtablet) {
+@include respond (tablet) {
   display: inline-block !important;
 
 }
