@@ -110,6 +110,8 @@
             @include respond (phone) {
                 padding: 10rem 2rem 2rem 2rem;
                 height: 23rem;
+                max-width: 40rem;
+                margin-inline: auto;
 
             }
 

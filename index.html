@@ -440,7 +440,7 @@
                         </div>
                         <div class="feature">
                             <img loading="lazy"  src="/img/check-circle.svg" alt="#">
-                            <p>Landing csomag</p>
+                            <p>Minden ami Landing</p>
                         </div>
                         <div class="feature">
                             <img loading="lazy" src="/img/check-circle.svg" alt="#">
@@ -516,7 +516,7 @@
                             <div class="reviews_container_box-text">Miután elfogadtuk a design tervet, az oldal gyorsan elkészült. Elégedettek vagyunk az eredménnyel, és az üzemeltetéssel. A weboldalnak köszönhetően rendszeresen jelentkeznek be új vendégek és eredményesen fejlődik a vállalkozásunk.  <span onclick="location.href='https://devayoga.hu/'">WEBOLDAL</span></div>
                         </div>
                         <div class="reviews_container_box review-mobile-invisible">
-                            <img src="/img/hlilla.png" width="100px" height="100px" alt="Étrendműhely" class="reviews_container_box-pho">
+                            <img src="/img/hlilla.png" width="110px" height="110px" alt="Étrendműhely" class="reviews_container_box-pho">
                             <div class="reviews_container_box-name">Étrendműhely</div>
                             <div class="reviews_container_box-filed">Tanácsadás</div>
                             <div class="reviews_container_box-website">Étrend</div>
@@ -538,7 +538,7 @@
                  <div class="reviews_container">
                     
                         <div class="reviews_container_box ">
-                        <img src="/img/hlilla.png" width="100px" height="100px" alt="Étrendműhely logo" class="reviews_container_box-pho">
+                        <img src="/img/hlilla.png" width="110px" height="110px" alt="Étrendműhely logo" class="reviews_container_box-pho">
                         <div class="reviews_container_box-name">Étrendműhely</div>
                         <div class="reviews_container_box-filed">Tanácsadás</div>
                         <div class="reviews_container_box-website">Étrend</div>
@@ -597,19 +597,19 @@
 
                         <div class="form_group">
                             <div class="contact_name">Teljes név*</div>
-                            <input type="text" class="form_input" placeholder="FULL NAME" name ="name" id="name" required>
+                            <input type="text" class="form_input" placeholder="FULL NAME" name ="name" id="name">
                             <label for="name" class="form_label"> </label> 
                         </div>
 
                         <div class="form_group ">
                             <div class="contact_company">Cég/vállakozás*</div>
-                            <input type="text" name="company" class="form_input" placeholder="COMPANY" id="company"  >
+                            <input type="text" name="company" class="form_input" placeholder="COMPANY" id="company">
                             <label for="company" class="form_label"></label> 
                         </div>
 
                         <div class="form_group">
                             <div class="contact_phone">Telefonszám*</div>
-                            <input type="number" name="phone" class="form_input" placeholder="YOUR POSITION" id="phone"required>
+                            <input type="number" name="phone" class="form_input" placeholder="YOUR POSITION" id="phone">
                             <label for="position" class="form_label"> </label> 
                         </div>
 
@@ -646,16 +646,21 @@
                             <textarea type="message" name="message"class="form_input form_input-textbox" placeholder="message" id="message" required ></textarea>
                             <label for="message" class="form_label"></label>  
                         </div>
-
+                        <div class="policy-input">
+                            <input type="checkbox" name="policy" class="policy-cbox" id="policy" required>
+                            <label for="policy" class="policy-input"> <p> Elolvastam, tudomásul vettem, és hozzájárulok adataim kezeléséhez az &nbsp;<a href="/adatvedelem.html">adatvédelmi irányelvek</a>&nbsp;alapján.</p>
+                            </label> 
+                        
+                        </div>
                         <div class="btn-form">
                             <input  id="submitBtn" type="submit" value="Üzenet Küldése" class="btn">
                             
                         </div>
-                      <!--  <input type="hidden" id="captchaResponse" name="g-recaptcha-response"> -->
-                       <!-- <div class="form-input"> -->
-                            <!-- Google reCAPTCHA box -->
-                            <!-- <div class="g-recaptcha" data-sitekey="6LcohXkdAAAAAOs9h1sTCOF9HPclUezN4cfTjTxa"></div>
-                        </div> -->
+                        <div class="captcha">
+                            <div class="g-recaptcha" data-sitekey="6LcohXkdAAAAAOs9h1sTCOF9HPclUezN4cfTjTxa" data-callback="removeFakeCaptcha"></div>
+                            <input type="checkbox" name="recaptcha" class="captcha-fake-field" tabindex="-1" required>
+                            <label for="recaptcha"></label>
+                        </div>
                     </form> 
                 </div>
             </div>
@@ -692,8 +697,8 @@
         <div class="footer_container">
             <div class="footer_copiright">2023 All rights reserved</div>
                 <ul class="footer_nav-list">
-                    <li class="footer_nav-item"><a href="#" class="footer_nav-link">Privacy policy</a></li>
-                    <li class="footer_nav-item"><a href="#" class="footer_nav-link">Who knows what else</a></li>
+                    <li class="footer_nav-item"><a href="/adatvedelem.html" class="footer_nav-link">Adatkezelési tájékoztató</a></li>
+                    <li class="footer_nav-item"><a href="#" class="footer_nav-link">Rólunk</a></li>
                 </ul>
         </div> 
     </footer>
@@ -706,8 +711,8 @@
         </div>
     </div>
     <!-- POP UP GALLERY END --> 
-  <!--  <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script> --> 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/mian.js"></script>
         <script src="js/swiper.js"></script>
 

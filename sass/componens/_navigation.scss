@@ -15,10 +15,8 @@
         height: 100%;
         display: flex;
         align-items: center;
-
         grid-column: 2;
-        grid-row: 1;
-        
+        grid-row: 1;    
         img {
             height: 5rem;
         }
@@ -51,7 +49,7 @@
         }
 
     &_item:not(:last-child) {
-            margin-right: 4rem;
+            margin-right: 2.5rem;
 
             @include respond (SCLaptop) {
                 margin-right: 2rem;

@@ -236,6 +236,9 @@ h2 {
   font-size: 2.8rem;
   line-height: 4.2rem;
   font-weight: 700; }
+  @media only screen and (max-width: 22.5em) {
+    .price {
+      font-size: 2.5rem; } }
   .price-break {
     line-height: 3.6rem;
     text-align: center; }
@@ -378,6 +381,34 @@ h2 {
     .bp {
       font-size: 12px;
       line-height: 1.5rem; } }
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+.policy-title-mian {
+  font-size: 4rem !important;
+  color: var(--nav);
+  margin-bottom: 1.2rem !important; }
+
+.policy-title {
+  font-size: 3rem !important;
+  color: var(--nav);
+  margin-bottom: 1.2rem !important; }
+
+.policy-txt {
+  font-size: 1.6rem;
+  color: #3b3a3a;
+  font-family: "Rubik", sans-serif; }
+
+.policy-margin {
+  margin-top: 3rem !important;
+  margin-bottom: 1rem; }
+
+.policy-margin-bottom {
+  margin-bottom: 1rem; }
+
+.policy-margin-bottom li {
+  margin-left: 2rem;
+  margin-bottom: 1rem; }
 
 @keyframes pulsate {
   0% {
@@ -1253,7 +1284,7 @@ h2 {
     align-items: center;
     width: 100%; }
   .nav_item:not(:last-child) {
-    margin-right: 4rem; }
+    margin-right: 2.5rem; }
     @media only screen and (max-width: 76.25em) {
       .nav_item:not(:last-child) {
         margin-right: 2rem; } }
@@ -1998,6 +2029,19 @@ nav.sticky {
 .bgclr {
   background-color: #dff0fa; }
 
+.policy-input {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  color: #020202;
+  font-weight: 300;
+  display: flex; }
+
+.policy-cbox {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem; }
+
 .packages {
   height: 100%;
   width: 100%;
@@ -2070,6 +2114,12 @@ nav.sticky {
           display: flex;
           width: 100%;
           margin-top: 2.4rem; }
+          @media only screen and (max-width: 64.5em) {
+            .packages_container-box-featuresbox .feature {
+              margin-top: 1.8rem; } }
+          @media only screen and (max-width: 51.25em) {
+            .packages_container-box-featuresbox .feature {
+              margin-top: 2.4rem; } }
           .packages_container-box-featuresbox .feature img {
             width: 2rem;
             height: 2rem;
@@ -2266,6 +2316,23 @@ body {
   color: var(--primecolor);
   background-color: var(--secBcground); }
 
+.captcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+
+.captcha-fake-field {
+  background: yellow;
+  bottom: 0;
+  border: none;
+  display: block;
+  height: 1px;
+  left: 12px;
+  width: 1px;
+  position: absolute;
+  z-index: -1; }
+
 .header {
   width: 100%;
   height: 100%;
@@ -2359,7 +2426,9 @@ body {
       @media only screen and (max-width: 37.5em) {
         .header_main-services-box {
           padding: 10rem 2rem 2rem 2rem;
-          height: 23rem; } }
+          height: 23rem;
+          max-width: 40rem;
+          margin-inline: auto; } }
       .header_main-services-box img {
         width: 12.8rem;
         height: 12.8rem;

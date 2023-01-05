@@ -236,6 +236,11 @@ h2 {
     line-height: 4.2rem;
     font-weight: 700;
 
+    @include respond (SMphone) {
+        font-size: 2.5rem;
+
+    }
+
     &-break {  
         line-height: 3.6rem;      
         text-align: center;
@@ -432,5 +437,41 @@ h2 {
 
     }
 
-  
 
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+
+//PROVATE POLICY 
+  
+.policy-title-mian {
+    font-size: 4rem !important;
+    color: $color-nav;
+    margin-bottom: 1.2rem !important;
+}
+
+.policy-title {
+    font-size: 3rem !important;
+    color: $color-nav;
+    margin-bottom: 1.2rem !important;
+
+}
+
+.policy-txt {
+    font-size: 1.6rem;
+    color: $color-paragraph;
+    font-family: $font-display;
+}
+
+.policy-margin {
+    margin-top: 3rem !important;
+    margin-bottom: 1rem;
+}
+
+.policy-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.policy-margin-bottom li{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}

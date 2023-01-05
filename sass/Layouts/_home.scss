@@ -21,3 +21,24 @@ body {
     color: $color-primary;
     background-color: $color-secondary-backgroung;
 }
+
+
+
+.captcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.captcha-fake-field {
+    background: yellow;
+    bottom: 0;
+    border: none;
+    display: block;
+    height: 1px;
+    left: 12px;
+    width: 1px;
+    position: absolute;
+    z-index: -1;
+  }
