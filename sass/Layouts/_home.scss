@@ -29,6 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .captcha-fake-field {
@@ -38,7 +39,7 @@ body {
     display: block;
     height: 1px;
     left: 12px;
-    width: 1px;
+    width: 10px;
     position: absolute;
     z-index: -1;
   }
