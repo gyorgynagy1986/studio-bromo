@@ -593,7 +593,7 @@
                 </div>
 
                 <div class="contact_container-form-mainbox">
-                    <form class="form" action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458" method="post">
+                    <form  onsubmit="return validateRecaptcha();" class="form" action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458" method="post">
 
                         <div class="form_group">
                             <div class="contact_name">Teljes név*</div>
@@ -658,7 +658,6 @@
                         </div>
                         <div class="captcha">
                             <div class="g-recaptcha" data-sitekey="6LcohXkdAAAAAOs9h1sTCOF9HPclUezN4cfTjTxa" data-callback="removeFakeCaptcha"></div>
-                            <input type="checkbox" name="recaptcha" class="captcha-fake-field" tabindex="-1" required>
                             <label for="recaptcha"></label>
                         </div>
                     </form> 
@@ -711,6 +710,21 @@
         </div>
     </div>
     <!-- POP UP GALLERY END --> 
+
+    <script>
+        function validateRecaptcha() {
+          var response = grecaptcha.getResponse();
+          if (response.length == 0) {
+            // Captcha is not filled out
+            alert("Please complete the reCAPTCHA to continue.");
+            return false;
+          } else {
+            // Captcha is filled out, so submit the form
+            return true;
+          }
+        }
+      </script>
+
         <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script> 
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/mian.js"></script>
