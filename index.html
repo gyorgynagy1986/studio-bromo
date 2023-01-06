@@ -16,7 +16,7 @@
          />        
         <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
         <link rel="icon" href="/favicon/favicon-32x32.png" sizes="16x16 32x32" type="image/png">
-        
+        <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
         <title>Studio Bromo&mdash;Weboldal készítés</title>
     </head>
     <body>
@@ -592,8 +592,11 @@
                         <div class="text-1"> <p><span>1 munkanapon belül </span> megkeressük!</p></div>
                 </div>
 
+
+                <!-- onsubmit="return validateRecaptcha();" -->
+
                 <div class="contact_container-form-mainbox">
-                    <form onsubmit="return validateRecaptcha();" class="form" action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458" method="post">
+                    <form  class="form" action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458" method="post">
 
                         <div class="form_group">
                             <div class="contact_name">Teljes név*</div>
@@ -656,10 +659,12 @@
                             <input  id="submitBtn" type="submit" value="Üzenet Küldése" class="btn">
                             
                         </div>
-                        <div class="captcha">
+                        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+
+                      <!--  <div class="captcha"> 
                             <div class="g-recaptcha" data-sitekey="6LcohXkdAAAAAOs9h1sTCOF9HPclUezN4cfTjTxa"></div>
                             <label for="recaptcha"></label>
-                        </div>
+                        </div> -->
                     </form> 
                 </div>
             </div>
@@ -709,23 +714,33 @@
         <div class="popup_element"><a href="#works">BEZÁR (IDEIGLENES)</a>
         </div>
     </div>
-    <!-- POP UP GALLERY END --> 
 
     <script>
-        function validateRecaptcha() {
-          const response = grecaptcha.getResponse();
-          if (response.length == 0) {
-            // Captcha is not filled out
-            alert("Kérem erősítse meg hogy ön NEM egy robot! köszönöm :) ");
-            return false;
-          } else {
-            // Captcha is filled out, so submit the form
-            return true;
-          }
-        }
-      </script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('YOUR_SITE_KEY', {action: 'homepage'})
+            .then(function(token) {
+              document.getElementById('captchaResponse').value = token;
+            });
+          });
+     </script>
 
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- POP UP GALLERY END --> 
+    <!-- RECAPCHA V2 VERIFICATION 
+        <script>
+       function validateRecaptcha() {
+           const response = grecaptcha.getResponse();
+           if (response.length == 0) {
+               // Captcha is not filled out
+               alert("Kérem erősítse meg hogy ön NEM egy robot! köszönöm :) ");
+               return false;
+            } else {
+                // Captcha is filled out, so submit the form
+                return true;
+            }
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+    --> 
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/mian.js"></script>
         <script src="js/swiper.js"></script>
