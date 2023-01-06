@@ -1,3 +1,18 @@
+const ulList = document.querySelectorAll('.nav_item');
+
+
+  ulList.forEach((e)=> {
+
+    e.addEventListener('mouseover', (el)=> {
+      
+      if(el.target.dataset.id === '1') {
+        console.log(true);
+      }
+    
+    })
+
+  })
+
 
   //MOBILE NAV HANDELER
 
@@ -77,7 +92,6 @@ nav.addEventListener('mouseout', hoverHandler.bind(0));
 // COLOR FOR BOXES
 
 const darkModeButton = document.querySelector('h1');
-console.log(darkModeButton);
 
 darkModeButton.style.cursor = 'pointer';
 
@@ -105,6 +119,5 @@ grecaptcha.ready(function() {
     grecaptcha.execute('6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag', {action: 'homepage'})
     .then(function(token) {
       document.getElementById('captchaResponse').value = token;
-      console.log( document.getElementById('captchaResponse').value = token);
     });
   });

@@ -24,22 +24,13 @@ body {
 
 
 
-.captcha {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
     position: relative;
-}
-
-.captcha-fake-field {
-    background: yellow;
-    bottom: 0;
-    border: none;
-    display: block;
-    height: 1px;
-    left: 12px;
-    width: 10px;
-    position: absolute;
-    z-index: -1;
+    z-index: 9999; /* or any other value you want */
   }
+
+
+.grecaptcha-badge {
+    z-index: 99999;
+    display:block !important;
+ }
