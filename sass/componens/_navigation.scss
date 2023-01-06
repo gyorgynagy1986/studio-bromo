@@ -10,8 +10,10 @@
         display: none;
     }
 
- 
-
+    &_dropdown {
+        display: flex;
+        flex-direction: column;
+    }
 
     &_logo {
         height: 100%;
@@ -227,3 +229,60 @@ nav.sticky {
     height: 10rem;
     width: 100%;
 }
+
+// DROPDOWN MENU
+
+.dd-menu {
+    color: #FF006B;
+}
+
+.nav_dropdown {
+    position: relative;
+    transition: all 75ms ease-in;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    width: 30rem;
+    height: 5rem;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-nav;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hidden:nth-child(2) {
+    top: 40px;
+    
+}
+
+.hidden:nth-child(3) {
+    top: 80px;
+}
+
+.hidden:nth-child(4) {
+    top: 120px;
+}
+
+.hidden:hover {
+    background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav_dropdown:hover .hidden {
+    display: block;   
+}
+
+.nav_dropdown:hover  {
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.nav_dropdown:hover .dd-menu {
+    color: $color-nav;
+}
+

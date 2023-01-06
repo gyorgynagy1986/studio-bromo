@@ -1,18 +1,3 @@
-const ulList = document.querySelectorAll('.nav_item');
-
-
-  ulList.forEach((e)=> {
-
-    e.addEventListener('mouseover', (el)=> {
-      
-      if(el.target.dataset.id === '1') {
-        console.log(true);
-      }
-    
-    })
-
-  })
-
 
   //MOBILE NAV HANDELER
 
@@ -33,15 +18,10 @@ const ulList = document.querySelectorAll('.nav_item');
  });
  
 
-
-
 // STICKY NAVIGATIOn
-
 
 const sectionWorks = document.querySelector('.works');
 const nav = document.querySelector('.nav');
-
-
 const header = document.querySelector('.header');
 
 const stickyNav = function(entries) {
@@ -55,7 +35,6 @@ const stickyNav = function(entries) {
   }
 }
 
-
 const headerObserver = new IntersectionObserver(
   stickyNav, {
     root:  null,
@@ -66,9 +45,7 @@ const headerObserver = new IntersectionObserver(
 
 headerObserver.observe(header);
 
-
 // NAV HOVER
-
 
 const hoverHandler = function(e, opacity) {
   if(e.target.classList.contains('nav_link')) {
@@ -82,38 +59,10 @@ const hoverHandler = function(e, opacity) {
   }
 }
 
-
 nav.addEventListener('mouseover', hoverHandler.bind(1))
-
 nav.addEventListener('mouseout', hoverHandler.bind(0));
 
-// Dark mode
-
-// COLOR FOR BOXES
-
-const darkModeButton = document.querySelector('h1');
-
-darkModeButton.style.cursor = 'pointer';
-
-
-darkModeButton.addEventListener('click', () => {
- 
-
-  document.documentElement.style.setProperty();
- 
-})
-  
-
-
-// darkModeButton.addEventListener('click', () => {
-//   document.documentElement.style.setProperty("--mainBcGroung", "black");
-//   document.documentElement.style.setProperty("--secBcground", "black");
-//   document.documentElement.style.setProperty(""--secBcground", "black");
-//   document.documentElement.style.setProperty("--nav", "white");
-//   document.documentElement.style.setProperty("--boxes", "#1a1a1b");
-// 
-// })
-
+// recaptcha
 
 grecaptcha.ready(function() {
     grecaptcha.execute('6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag', {action: 'homepage'})
