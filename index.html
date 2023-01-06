@@ -593,7 +593,7 @@
                 </div>
 
                 <div class="contact_container-form-mainbox">
-                    <form  onsubmit="return validateRecaptcha();" class="form" action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458" method="post">
+                    <form onsubmit="return validateRecaptcha();" class="form" action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458" method="post">
 
                         <div class="form_group">
                             <div class="contact_name">Teljes név*</div>
@@ -657,7 +657,7 @@
                             
                         </div>
                         <div class="captcha">
-                            <div class="g-recaptcha" data-sitekey="6LcohXkdAAAAAOs9h1sTCOF9HPclUezN4cfTjTxa" data-callback="removeFakeCaptcha"></div>
+                            <div class="g-recaptcha" data-sitekey="6LcohXkdAAAAAOs9h1sTCOF9HPclUezN4cfTjTxa"></div>
                             <label for="recaptcha"></label>
                         </div>
                     </form> 
@@ -713,10 +713,10 @@
 
     <script>
         function validateRecaptcha() {
-          var response = grecaptcha.getResponse();
+          const response = grecaptcha.getResponse();
           if (response.length == 0) {
             // Captcha is not filled out
-            alert("Please complete the reCAPTCHA to continue.");
+            alert("Kérem erősítse meg hogy ön NEM egy robot! köszönöm :) ");
             return false;
           } else {
             // Captcha is filled out, so submit the form
@@ -725,7 +725,7 @@
         }
       </script>
 
-        <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script> 
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/mian.js"></script>
         <script src="js/swiper.js"></script>
