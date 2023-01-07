@@ -241,6 +241,25 @@ nav.sticky {
     transition: all 75ms ease-in;
 }
 
+.nav_dropdown:before {
+    content: '';
+    background-color: $color-main-backgroung;
+    width: 22rem;
+    height: 12rem;
+    position: absolute;
+    top: 30px;
+    right: -79px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.nav_dropdown:hover:before {
+    opacity: 1;
+
+}
+
+
+
 .hidden {
     display: none;
     position: absolute;
@@ -273,7 +292,7 @@ nav.sticky {
     color: transparent;
 }
 
-.nav_dropdown:hover .hidden {
+.nav_dropdown:hover .hidden  {
     display: block;   
 }
 
@@ -285,4 +304,3 @@ nav.sticky {
 .nav_dropdown:hover .dd-menu {
     color: $color-nav;
 }
-

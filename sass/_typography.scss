@@ -446,18 +446,28 @@ h2 {
 .policy-title-mian {
     font-size: 4rem !important;
     color: $color-nav;
-    margin-bottom: 1.2rem !important;
+    margin-bottom: 2rem !important;
+
+    @include respond (phone) {
+        font-size: 3rem !important;
+    }
 }
 
 .policy-title {
     font-size: 3rem !important;
     color: $color-nav;
     margin-bottom: 1.2rem !important;
+    
+    @include respond (phone) {
+        font-size: 2.5rem !important;
+        width: 100%;
+    }
 
 }
 
 .policy-txt {
     font-size: 1.6rem;
+    line-height: 2.2rem;
     color: $color-paragraph;
     font-family: $font-display;
 }
