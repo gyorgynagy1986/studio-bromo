@@ -434,58 +434,6 @@ h2 {
     transform: scale(1);
     box-shadow: none; } }
 
-.cursor {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  opacity: 0;
-  justify-content: center;
-  align-items: center;
-  font-weight: 300;
-  text-align: center;
-  font-size: .5rem;
-  line-height: 15px;
-  letter-spacing: 2px;
-  backdrop-filter: blur(3px);
-  background-image: url(/img/pointer.png);
-  background-size: cover;
-  background-color: transparent;
-  background-position-x: -2px;
-  overflow: visible; }
-
-.cursor-addclass {
-  opacity: 1;
-  transform: scale(2);
-  animation: cursoreMove 3s infinite;
-  color: rgba(255, 255, 255, 0.863); }
-
-/* @keyframes cursoreMove // {
-    0% {
-        transform: scale(2);
-        box-shadow: none;
-        color:rgb(212, 197, 197);
-    }
-
-    50% {
-        transform: scale(2.5);
-        box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.25);
-    }
-
-    70% {
-        transform: scale(2.5);
-        box-shadow: 0 1rem 4rem rgba(250, 59, 59, 0.25);
-    }
-
-    100% {
-        transform: scale(2);
-        box-shadow: none;
-    }
-    
-
-
-}*/
 .b1 {
   font-size: 3.8rem;
   grid-column: 2;
@@ -1284,7 +1232,8 @@ h2 {
     grid-column: 2;
     grid-row: 1; }
     .nav_logo img {
-      height: 5rem; }
+      height: 5rem;
+      width: auto; }
     .nav_logo-mobile {
       position: absolute;
       top: 1.5rem;
@@ -2507,7 +2456,6 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
   min-height: 5rem;
   display: grid;
   grid-template-columns: 5% 90% 5%;
-  grid-row: 1;
   color: white;
   background-color: var(--primecolor); }
   @media only screen and (max-width: 37.5em) {

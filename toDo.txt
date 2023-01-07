@@ -1,21 +1,6 @@
 
-TO DO LIST ! ✔️ 🔥
-
-******************************
-
-2022.11.07 Hét
-
-[✔️] Menu hover Effect ********* TESTED [✔️] *************
-[✔️] Linkek 
-[✔️] Linkek a feltöltött referenciákhoz ********* TESTED [✔️] *************
-[✔️] Ismertető szöveg kitöltése a referenciához ********* TESTED [🔥] *************
-[🔥] Form kiegészítés, Analitics , ill. CloudFare // Lehetne exrta biztosnási feture ********* TESTED [] *************
-[🔥] Review kitöltése ********* TESTED [] *************
-
-*********************************************************
-
-[✔️] Sticky navigation ********* TESTED [✔️] *************
-[🔥] Term of use , private policy ********* TESTED [] *************
-[] cooky info ********* TESTED [] *************
+*********************** TO DO *********************
 
 
+
+Mobil menu logo space left and righ! []

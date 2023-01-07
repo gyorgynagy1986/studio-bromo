@@ -3,7 +3,6 @@
     min-height: 5rem; 
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-row: 1;
 
     @include respond (phone) {
         min-height: 20rem; 
