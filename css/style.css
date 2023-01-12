@@ -43,6 +43,15 @@
 .h-a-im {
   height: auto !important; }
 
+.fs-3 {
+  font-size: 3rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.lh-134 {
+  line-height: 134% !important; }
+
 a {
   color: inherit; }
 
