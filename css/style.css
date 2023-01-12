@@ -1110,7 +1110,7 @@ h2 {
       .mobilenav_list {
         text-align: left;
         width: 100%;
-        top: 44%; } }
+        top: 50%; } }
   .mobilenav_link {
     font-family: "Rubik", sans-serif;
     display: inline-block;
@@ -1129,6 +1129,12 @@ h2 {
     @media only screen and (max-width: 37.5em) {
       .mobilenav_link {
         margin-left: 2rem; } }
+    @media screen and (max-height: 692px) {
+      .mobilenav_link {
+        font-size: 1.6rem; } }
+    @media screen and (min-height: 1024px) {
+      .mobilenav_link {
+        font-size: 3rem; } }
   .mobilenav_checkbox:checked ~ .mobilenav_background {
     transform: scale(500); }
   .mobilenav_checkbox:checked ~ .close {
@@ -1168,6 +1174,12 @@ h2 {
   @media only screen and (max-width: 37.5em) {
     .modilnav-left-extra-item {
       margin-left: 3rem; } }
+  @media screen and (max-height: 692px) {
+    .modilnav-left-extra-item {
+      font-size: 1.5rem; } }
+  @media screen and (min-height: 1024px) {
+    .modilnav-left-extra-item {
+      font-size: 2.5rem; } }
 
 .btn {
   border-radius: 6px;

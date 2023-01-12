@@ -72,9 +72,9 @@
         @include respond (phone) {
             text-align: left;
             width: 100%;
-            top:44%;
+            top:50%;
         }
-            
+  
     }
 
 
@@ -99,8 +99,17 @@
                 margin-left: 2rem;
              }
 
-    
+           
+             @media screen and (max-height: 692px) {
+                font-size: 1.6rem;
 
+            }
+            
+            @media screen and (min-height: 1024px) {
+                font-size: 3rem;
+
+            }
+          
     }
 
     &_checkbox:checked ~ &_background {
@@ -179,6 +188,16 @@
     @include respond (phone) {
         margin-left: 3rem;
     
+    }
+
+    @media screen and (max-height: 692px) {
+        font-size: 1.5rem;
+
+    }
+
+    @media screen and (min-height: 1024px) {
+        font-size: 2.5rem;
+
     }
 
 }
