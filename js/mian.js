@@ -62,11 +62,4 @@ const hoverHandler = function(e, opacity) {
 nav.addEventListener('mouseover', hoverHandler.bind(1))
 nav.addEventListener('mouseout', hoverHandler.bind(0));
 
-// recaptcha
 
-grecaptcha.ready(function() {
-    grecaptcha.execute('6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag', {action: 'homepage'})
-    .then(function(token) {
-      document.getElementById('captchaResponse').value = token;
-    });
-  });
