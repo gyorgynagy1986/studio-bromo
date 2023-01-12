@@ -1,6 +1,7 @@
 .mobilenav {
 
     display: none;
+    
     @include respond (tablet) {
         position: relative;
         display: block;
@@ -9,6 +10,15 @@
     &_checkbox {
         display: none;
 
+    }
+
+    &_item {
+        
+        @include respond (phone) {
+           border-bottom: 1px solid rgba(136, 136, 136, 0.089);
+        
+        }
+        
     }
 
     &_button {
@@ -32,7 +42,7 @@
      top: 0rem;
      right: -1rem;
      z-index:1000;
-     background-color: rgb(235, 251, 255);
+     background-color: rgb(255, 255, 255);
      transition: .4s;
     }
 
@@ -56,19 +66,25 @@
         left: 50%;
         transform: translate(-50%, -50%);
         list-style: none;
-        text-align: center;
         z-index: 1;
+        text-align: center;
 
+        @include respond (phone) {
+            text-align: left;
+            width: 100%;
+            top:44%;
+        }
+            
     }
 
 
     &_link {
             font-family: $font-display;
             display:inline-block;
-            margin-top: 3.5rem;
+            margin-top: 2.5rem;
             font-size: 2rem;
             font-weight: 500;
-            color: $color-primary;
+            color: #2b3d60;
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
@@ -78,6 +94,10 @@
                         {
                 @include linearOrange;
             }
+
+            @include respond (phone) {
+                margin-left: 2rem;
+             }
 
     
 
@@ -151,3 +171,15 @@
     }
     
 }
+
+.modilnav-left-extra-item {
+    font-size: 1.8rem;
+    text-align: left;
+
+    @include respond (phone) {
+        margin-left: 3rem;
+    
+    }
+
+}
+

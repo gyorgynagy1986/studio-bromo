@@ -37,6 +37,12 @@
 
 
 } */
+.mbz {
+  margin-bottom: 0 !important; }
+
+.h-a-im {
+  height: auto !important; }
+
 a {
   color: inherit; }
 
@@ -1032,8 +1038,8 @@ h2 {
   margin-top: 4rem !important; }
 
 .swiper-pagination-bullet {
-  width: 2rem !important;
-  height: 2rem !important;
+  width: 2.3rem !important;
+  height: 2.3rem !important;
   display: none !important; }
   @media only screen and (max-width: 64.5em) {
     .swiper-pagination-bullet {
@@ -1057,6 +1063,9 @@ h2 {
       display: block; } }
   .mobilenav_checkbox {
     display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .mobilenav_item {
+      border-bottom: 1px solid rgba(136, 136, 136, 0.089); } }
   .mobilenav_button {
     position: fixed;
     border-radius: 50%;
@@ -1076,7 +1085,7 @@ h2 {
     top: 0rem;
     right: -1rem;
     z-index: 1000;
-    background-color: #ebfbff;
+    background-color: white;
     transition: .4s; }
   .mobilenav_nav {
     height: 100vh;
@@ -1095,15 +1104,20 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
-    text-align: center;
-    z-index: 1; }
+    z-index: 1;
+    text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .mobilenav_list {
+        text-align: left;
+        width: 100%;
+        top: 44%; } }
   .mobilenav_link {
     font-family: "Rubik", sans-serif;
     display: inline-block;
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
     font-size: 2rem;
     font-weight: 500;
-    color: var(--primecolor);
+    color: #2b3d60;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -1112,6 +1126,9 @@ h2 {
       background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
       -webkit-background-clip: text;
       color: transparent; }
+    @media only screen and (max-width: 37.5em) {
+      .mobilenav_link {
+        margin-left: 2rem; } }
   .mobilenav_checkbox:checked ~ .mobilenav_background {
     transform: scale(500); }
   .mobilenav_checkbox:checked ~ .close {
@@ -1144,6 +1161,13 @@ h2 {
   .mobilenav_checkbox:checked + .mobilenav_button .mobilenav_icon::after {
     top: 0;
     transform: rotate(-135deg); }
+
+.modilnav-left-extra-item {
+  font-size: 1.8rem;
+  text-align: left; }
+  @media only screen and (max-width: 37.5em) {
+    .modilnav-left-extra-item {
+      margin-left: 3rem; } }
 
 .btn {
   border-radius: 6px;
@@ -1237,7 +1261,7 @@ h2 {
     .nav_logo-mobile {
       position: absolute;
       top: 1.5rem;
-      left: 1rem; }
+      left: 1.5rem; }
       .nav_logo-mobile img {
         height: 4.5rem; }
   .nav_list {
