@@ -3,6 +3,15 @@
     background-color: white;
 }
 
+.head-text {
+    @include greyParagraph;
+    text-transform: none;
+    color: $color-paragraph-2;
+    @include respond (phone) {
+       font-size: 1.4rem;
+    }
+
+}
 
 .detailed {
     background-color: white;

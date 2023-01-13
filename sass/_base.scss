@@ -172,6 +172,7 @@ $color-primary: var(--primecolor);
 $color-nav:var(--nav);
 $color-paragraph: #3b3a3a;
 $color-paragraph-new: #000c24;
+$color-paragraph-2: #494949;
 
 // $color-main-backgroung: rgba(167, 223, 255, 0.2);
 $color-secondary-backgroung: var( --secBcground);
@@ -231,8 +232,27 @@ $font-display: 'Rubik', sans-serif;
     font-size: 3rem;
 }
 
+.fs-3-mobil {
+    @include respond (phone) {
+        font-size: 3rem;
+    }
+}
+
 .mb-3 {
     margin-bottom: 3rem !important;
+}
+
+.mb-1 {
+    margin-bottom: 1rem !important;
+}
+
+.mt-1 {
+    margin-top: 1rem !important;
+
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
 }
 
 .lh-134 {
