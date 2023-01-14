@@ -53,6 +53,9 @@
 .mb-3 {
   margin-bottom: 3rem !important; }
 
+.mb-5 {
+  margin-bottom: 5rem !important; }
+
 .mb-1 {
   margin-bottom: 1rem !important; }
 
@@ -61,6 +64,9 @@
 
 .mt-2 {
   margin-top: 2rem !important; }
+
+.mt-5 {
+  margin-top: 5rem !important; }
 
 .lh-134 {
   line-height: 134% !important; }
@@ -74,6 +80,17 @@
   /* IE10+/Edge */
   user-select: none !important;
   /* Standard */ }
+
+.min-h-100vh {
+  min-height: 100vh; }
+
+.w10-h10 {
+  width: 80%;
+  height: 100%; }
+
+.w50-h10 {
+  width: 50%;
+  height: 100%; }
 
 a {
   color: inherit; }

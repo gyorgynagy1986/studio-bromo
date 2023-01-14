@@ -151,6 +151,8 @@
 // softer dark color #375691;
 
 //$color-paragraph: #272727;
+    
+// #184293 main head title ?! 
 
 // --primecolor: #375691;
 //--primecolor: #283c61;
@@ -242,6 +244,10 @@ $font-display: 'Rubik', sans-serif;
     margin-bottom: 3rem !important;
 }
 
+.mb-5 {
+    margin-bottom: 5rem !important;
+}
+
 .mb-1 {
     margin-bottom: 1rem !important;
 }
@@ -255,6 +261,11 @@ $font-display: 'Rubik', sans-serif;
     margin-top: 2rem !important;
 }
 
+.mt-5 {
+    margin-top: 5rem !important;
+
+}
+
 .lh-134 {
     line-height: 134% !important;
 }
@@ -264,4 +275,18 @@ $font-display: 'Rubik', sans-serif;
     -moz-user-select: none  !important; /* Firefox */
     -ms-user-select: none  !important; /* IE10+/Edge */
     user-select: none !important; /* Standard */
+}
+
+.min-h-100vh {
+    min-height: 100vh;
+}
+
+.w10-h10{
+    width: 80%;
+    height: 100%;
+}
+
+.w50-h10{
+    width: 50%;
+    height: 100%;
 }
