@@ -1143,6 +1143,12 @@ h2 {
         text-align: left;
         width: 100%;
         top: 50%; } }
+    @media screen and (max-height: 568px) {
+      .mobilenav_list {
+        top: 50%; } }
+    @media screen and (max-height: 500px) {
+      .mobilenav_list {
+        top: 55%; } }
   .mobilenav_link {
     font-family: "Rubik", sans-serif;
     display: inline-block;
@@ -1164,6 +1170,9 @@ h2 {
     @media screen and (max-height: 692px) {
       .mobilenav_link {
         font-size: 1.6rem; } }
+    @media screen and (max-height: 500px) {
+      .mobilenav_link {
+        font-size: 1.4rem; } }
     @media screen and (min-height: 1024px) {
       .mobilenav_link {
         font-size: 3rem; } }

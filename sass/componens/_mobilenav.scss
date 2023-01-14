@@ -74,7 +74,14 @@
             width: 100%;
             top:50%;
         }
-  
+
+        @media screen and (max-height: 568px) {
+            top:50%;
+        }
+
+        @media screen and (max-height: 500px) {
+            top:55%;
+        }
     }
 
 
@@ -102,6 +109,11 @@
            
              @media screen and (max-height: 692px) {
                 font-size: 1.6rem;
+
+            }
+
+            @media screen and (max-height: 500px) {
+                font-size: 1.4rem;
 
             }
             
