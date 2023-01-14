@@ -65,6 +65,16 @@
 .lh-134 {
   line-height: 134% !important; }
 
+.off-text-selection {
+  -webkit-user-select: none  !important;
+  /* Safari */
+  -moz-user-select: none  !important;
+  /* Firefox */
+  -ms-user-select: none  !important;
+  /* IE10+/Edge */
+  user-select: none !important;
+  /* Standard */ }
+
 a {
   color: inherit; }
 
@@ -73,7 +83,7 @@ h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 4.68rem; }
-  @media only screen and (max-width: 76.25em) {
+  @media only screen and (max-width: 80em) {
     h1 {
       font-size: 3.4rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -86,7 +96,7 @@ h3 {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.34rem; }
-  @media only screen and (max-width: 76.25em) {
+  @media only screen and (max-width: 80em) {
     h3 {
       font-size: 1.6rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -380,7 +390,7 @@ h2 {
   -webkit-background-clip: text;
   color: transparent;
   position: relative; }
-  @media only screen and (max-width: 76.25em) {
+  @media only screen and (max-width: 80em) {
     .packagetitle {
       font-size: 3rem; } }
 
@@ -1136,7 +1146,7 @@ h2 {
   .mobilenav_link {
     font-family: "Rubik", sans-serif;
     display: inline-block;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     font-size: 2rem;
     font-weight: 500;
     color: #2b3d60;
@@ -1311,17 +1321,17 @@ h2 {
     width: 100%; }
   .nav_item:not(:last-child) {
     margin-right: 2.5rem; }
-    @media only screen and (max-width: 76.25em) {
+    @media only screen and (max-width: 80em) {
       .nav_item:not(:last-child) {
         margin-right: 2rem; } }
   .nav_link:link, .nav_link:visited {
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: var(--nav); }
-    @media only screen and (max-width: 76.25em) {
+    @media only screen and (max-width: 80em) {
       .nav_link:link, .nav_link:visited {
         font-size: 1.4rem; } }
     .nav_link:link span, .nav_link:visited span {
@@ -1442,7 +1452,7 @@ nav.sticky {
   width: 30rem;
   height: 5rem;
   font-family: "Rubik", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--nav);
   text-decoration: none;
@@ -1997,7 +2007,7 @@ nav.sticky {
       position: absolute;
       top: 8rem;
       left: 20rem; }
-      @media only screen and (max-width: 76.25em) {
+      @media only screen and (max-width: 80em) {
         .contact_container_picture {
           width: 80%; } }
       .contact_container_picture img {

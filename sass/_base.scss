@@ -141,7 +141,7 @@
     }
 
     @if $breakpoint == SCLaptop {
-        @media only screen and (max-width: 76.25em) { @content };    //1220px
+        @media only screen and (max-width: 80em) { @content };    //76.25em_1220px => 1280px
     }
 
 }
@@ -257,4 +257,11 @@ $font-display: 'Rubik', sans-serif;
 
 .lh-134 {
     line-height: 134% !important;
+}
+
+.off-text-selection {
+    -webkit-user-select: none  !important; /* Safari */
+    -moz-user-select: none  !important; /* Firefox */
+    -ms-user-select: none  !important; /* IE10+/Edge */
+    user-select: none !important; /* Standard */
 }
