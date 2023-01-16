@@ -65,7 +65,39 @@ const hoverHandler = function(e, opacity) {
   }
 }
 
-
 nav.addEventListener('mouseover', hoverHandler.bind(1))
-
 nav.addEventListener('mouseout', hoverHandler.bind(0));
+
+
+
+// COOKIES 
+
+
+const message = document.createElement('div');
+
+
+ function cookieHandvet () {
+
+  if(localStorage.getItem('Cookie')) {
+    console.log('A stüik 🍪🍪🍪🍪 már el vannak fogadva :)')
+    return
+  } else {
+  
+    message.classList.add('cookie-message');
+    message.innerHTML = '<div class="cookie-container">Kedves Látogató 😊 Weboldalunk sütiket 🍪🍪 használ elemzési célokra. <a href="/sutik.html">Látogass ide ha többet szeretnél tudni erről, illetve ha információra van szükséged a kikapcsolásukhoz.</a></div><button class="btn-cookie btn--close--cookie">Elfogadom</button>';
+  
+    header.append(message);
+  
+    document.querySelector('.btn--close--cookie')?.
+      addEventListener('click',  () => {
+        localStorage.setItem("Cookie", "Cookie Accepted");
+        cookieStatus.innerHTML = 'Sütik státusza : ELFOGADOTT!'
+        message.remove() // NEW METHOD
+    console.log("hello");
+    })
+  
+  }
+}
+
+setTimeout(cookieHandvet, 0);
+

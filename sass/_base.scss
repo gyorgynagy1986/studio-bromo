@@ -161,8 +161,10 @@
    --primecolor: #375691;
    --mainBcGroung:#f5faff;
    --secBcground:#ffff;
+   --thrdBcground:#253e6c;
    --nav:#283c61;
    --boxes:rgba(255, 255, 255, 0.9);
+
 }
 
 
@@ -172,6 +174,8 @@ $color-primary: var(--primecolor);
 
 //$color-nav: rgb(49, 114, 151);
 $color-nav:var(--nav);
+$color-footer:var(--nav);
+
 $color-paragraph: #3b3a3a;
 $color-paragraph-new: #000c24;
 $color-paragraph-2: #494949;
@@ -290,3 +294,4 @@ $font-display: 'Rubik', sans-serif;
     width: 50%;
     height: 100%;
 }
+
