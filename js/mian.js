@@ -91,7 +91,7 @@ const message = document.createElement('div');
   }
 }
 
-setTimeout(cookieHandvet, 0);
+setTimeout(cookieHandvet, 3000);
 
 
 
