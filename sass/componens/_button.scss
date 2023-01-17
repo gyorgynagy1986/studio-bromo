@@ -17,6 +17,10 @@
     background-size: 300% auto;
 
 
+    @include respond (phone) {
+        height: 4.5rem;
+    } 
+
     &:hover {
          
             background-position: right center; /* change the direction of the change here */
@@ -53,6 +57,7 @@
     align-items: center;
     height: 5rem;
     background: unset;
+    font-family: $font-display;
 
     width: 25.8rem;
     border: 1px solid #184293;
@@ -81,7 +86,7 @@
      cursor: pointer; */
 
    @include respond (phone) {
-        height: 4rem;
+        height: 4.5rem;
     } 
 
 

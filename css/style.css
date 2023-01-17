@@ -1307,6 +1307,9 @@ h2 {
   transition: 0.5s;
   background-image: linear-gradient(to right, #184293 0%, #FF006B 30%, #590672 90%);
   background-size: 300% auto; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      height: 4.5rem; } }
   .btn:hover {
     background-position: right center;
     /* change the direction of the change here */ }
@@ -1333,6 +1336,7 @@ h2 {
   align-items: center;
   height: 5rem;
   background: unset;
+  font-family: "Rubik", sans-serif;
   width: 25.8rem;
   border: 1px solid #184293;
   box-shadow: 0;
@@ -1357,7 +1361,7 @@ h2 {
     transition: all 300ms ease-in-out; }
   @media only screen and (max-width: 37.5em) {
     .btn-2 {
-      height: 4rem; } }
+      height: 4.5rem; } }
 
 .nav {
   width: 100%;
