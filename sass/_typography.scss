@@ -7,13 +7,15 @@ a {
 }
 
 h1 {
-    font-size: 4.2rem;
+    font-size: 5.2rem;
     font-family: $font-primary;
     font-weight: 700;
-    line-height: 4.68rem;
+    line-height: 6.68rem;
+    letter-spacing: -0.03em;
 
     @include respond (SCLaptop) {
         font-size: 4rem;
+        line-height: 4.68rem;
     }
     
     @include respond (phone) {
