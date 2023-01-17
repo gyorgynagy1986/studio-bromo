@@ -97,13 +97,13 @@ a {
   color: inherit; }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 4.2rem;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 4.68rem; }
   @media only screen and (max-width: 80em) {
     h1 {
-      font-size: 4.4rem; } }
+      font-size: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     h1 {
       font-size: 2.6rem;
@@ -2511,8 +2511,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
     width: 90%;
     max-width: 110rem;
     margin-top: 15.7rem;
-    margin-bottom: 5.5rem;
-    padding-right: 30rem; }
+    margin-bottom: 5.5rem; }
     @media only screen and (max-width: 37.5em) {
       .header_title {
         margin-top: 6rem; } }
