@@ -103,11 +103,11 @@ h1 {
   line-height: 4.68rem; }
   @media only screen and (max-width: 80em) {
     h1 {
-      font-size: 3.4rem; } }
+      font-size: 4.4rem; } }
   @media only screen and (max-width: 37.5em) {
     h1 {
-      font-size: 2.1rem;
-      line-height: 2.2rem; } }
+      font-size: 2.6rem;
+      line-height: 2.8rem; } }
 
 h3 {
   font-family: "Rubik", sans-serif;
@@ -2658,7 +2658,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
 .header_secoundary {
   background-color: white; }
 
-.head-text {
+.head-text-packages {
   font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
   color: #000c24;
@@ -2666,10 +2666,10 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
   font-weight: 300;
   text-transform: none;
   color: #494949; }
-  .head-text span {
+  .head-text-packages span {
     font-weight: 500; }
   @media only screen and (max-width: 37.5em) {
-    .head-text {
+    .head-text-packages {
       font-size: 1.4rem; } }
 
 .detailed {
