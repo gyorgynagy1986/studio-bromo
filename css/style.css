@@ -57,6 +57,9 @@
 .mb-5 {
   margin-bottom: 5rem !important; }
 
+.mb-10 {
+  margin-bottom: 10rem !important; }
+
 .mb-1 {
   margin-bottom: 1rem !important; }
 
@@ -70,7 +73,7 @@
   margin-top: 5rem !important; }
 
 .lh-134 {
-  line-height: 134% !important; }
+  line-height: 140% !important; }
 
 .off-text-selection {
   -webkit-user-select: none  !important;
@@ -1643,8 +1646,8 @@ nav.sticky {
       font-size: 17px;
       line-height: 161%;
       align-items: center;
-      letter-spacing: 0.045em;
-      color: rgba(8, 31, 77, 0.88); }
+      letter-spacing: 0.025em;
+      color: #494949; }
       @media only screen and (max-width: 37.5em) {
         .subscribe-container__text p {
           font-size: 15px;
@@ -2781,6 +2784,35 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
           .detailed_container .bposi img {
             width: 1.5rem;
             height: 1.5rem; } }
+
+.extra-detailed {
+  width: 90%;
+  max-width: 920px;
+  background: white;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 30px rgba(240, 250, 255, 0.9), -10px -10px 30px rgba(240, 250, 255, 0.9);
+  padding: 3rem;
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 161%;
+  align-items: center;
+  letter-spacing: 0.025em;
+  padding-left: 10rem;
+  padding-right: 10rem; }
+  @media only screen and (max-width: 64.5em) {
+    .extra-detailed {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .extra-detailed {
+      padding-top: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .extra-detailed {
+      padding-top: 4rem; } }
 
 .slide-in-top {
   -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

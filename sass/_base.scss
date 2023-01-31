@@ -252,6 +252,10 @@ $font-display: 'Rubik', sans-serif;
     margin-bottom: 5rem !important;
 }
 
+.mb-10 {
+    margin-bottom: 10rem !important;
+}
+
 .mb-1 {
     margin-bottom: 1rem !important;
 }
@@ -271,8 +275,10 @@ $font-display: 'Rubik', sans-serif;
 }
 
 .lh-134 {
-    line-height: 134% !important;
+    line-height: 140% !important;
 }
+
+
 
 .off-text-selection {
     -webkit-user-select: none  !important; /* Safari */

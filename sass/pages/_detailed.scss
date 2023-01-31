@@ -134,6 +134,40 @@
 }
 
 
+.extra-detailed {
+    width: 90%;
+    max-width: 920px;
+    background: rgb(255, 255, 255);
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(240, 250, 255, 0.9), -10px -10px 30px rgba(240, 250, 255, 0.9);
+    padding: 3rem;
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 161%;
+    align-items: center;
+    letter-spacing: 0.025em;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    
+    @include respond (tablet) { 
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
+  
+      @include respond (phone) {
+        padding-top:3rem;
+        padding-left: 2rem;
+        padding-right: 2rem; 
+        padding-bottom: 2rem;  }
+  
+        @include respond (SMphone) {
+          padding-top:4rem;
+           }
+  
+}
+
+
 
 .slide-in-top {
 	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

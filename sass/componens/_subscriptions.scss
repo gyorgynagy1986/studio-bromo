@@ -59,8 +59,8 @@
                 font-size: 17px;
                 line-height: 161%;
                 align-items: center;
-                letter-spacing: 0.045em;
-                color: rgba(8, 31, 77, 0.88);
+                letter-spacing: 0.025em;
+                color: #494949;
 
                 @include respond (phone) {
                   font-size: 15px;
