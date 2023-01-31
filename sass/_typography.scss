@@ -65,6 +65,20 @@ h4 {
     @include greyParagraph;
 }
 
+.new-color {
+    color: #1f3d76 !important;
+}
+
+.background-h1-cover {
+    padding: .1rem;
+
+}
+
+.main-title-linear {
+    background-image: linear-gradient(to right, #a00dcc 0%, #FF006B 30%, #a00dcc 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 /*****************************************************************************************************/
 
