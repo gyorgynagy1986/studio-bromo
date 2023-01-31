@@ -10,7 +10,7 @@
     &_contanier {
         width: 90%;
         max-width:110rem;
-        height: 66rem;
+       /* height: 66rem; */
         display: grid;
         grid-template-columns:  repeat(12, minmax(min-content, 12rem));
         grid-template-rows: repeat(22, 1fr);
