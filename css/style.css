@@ -1534,11 +1534,11 @@ nav.sticky {
 .nav_dropdown:before {
   content: '';
   background-color: var(--mainBcGroung);
-  width: 22rem;
-  height: 12rem;
+  width: 26rem;
+  height: 17rem;
   position: absolute;
   top: 30px;
-  right: -79px;
+  right: -106px;
   border-radius: 10px;
   opacity: 0; }
 
@@ -1561,10 +1561,16 @@ nav.sticky {
   top: 40px; }
 
 .hidden:nth-child(3) {
-  top: 80px; }
+  top: 70px; }
 
 .hidden:nth-child(4) {
-  top: 120px; }
+  top: 100px; }
+
+.hidden:nth-child(5) {
+  top: 130px; }
+
+.hidden:nth-child(6) {
+  top: 160px; }
 
 .hidden:hover {
   background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
