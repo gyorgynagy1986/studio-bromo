@@ -4,3 +4,5 @@
 
 
 Mobil menu logo space left and righ! []
+Ne legyen átlátszó a sütik []
+Részletek karbantartás rész nem egyértlemű! []
