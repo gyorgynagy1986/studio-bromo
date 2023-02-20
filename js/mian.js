@@ -68,7 +68,6 @@ nav.addEventListener('mouseout', hoverHandler.bind(0));
 
 const message = document.createElement('div');
 
-
  function cookieHandvet () {
 
   if(localStorage.getItem('Cookie')) {

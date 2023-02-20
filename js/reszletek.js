@@ -72,7 +72,6 @@ nav.addEventListener('mouseout', hoverHandler.bind(0));
 
 // COOKIES 
 
-
 const message = document.createElement('div');
 
 
@@ -84,14 +83,13 @@ const message = document.createElement('div');
   } else {
   
     message.classList.add('cookie-message');
-    message.innerHTML = '<div class="cookie-container">Kedves Látogató 😊 Weboldalunk sütiket 🍪🍪 használ elemzési célokra. <a href="/sutik.html">Látogass ide ha többet szeretnél tudni erről, illetve ha információra van szükséged a kikapcsolásukhoz.</a></div><button class="btn-cookie btn--close--cookie">Elfogadom</button>';
+    message.innerHTML = '<div class="cookie-container">Kedves Látogató 😊 Weboldalunk alapértelmezés szerint sütiket 🍪🍪 használ elemzési célokra. <a href="/sutik.html">Látogass el ide ha többet szeretnél tudni erről, illetve ha információra van szükséged a kikapcsolásukhoz.</a></div><button class="btn-cookie btn--close--cookie">bezár</button>';
   
     header.append(message);
   
     document.querySelector('.btn--close--cookie')?.
       addEventListener('click',  () => {
         localStorage.setItem("Cookie", "Cookie Accepted");
-        cookieStatus.innerHTML = 'Sütik státusza : ELFOGADOTT!'
         message.remove() // NEW METHOD
     console.log("hello");
     })
@@ -100,4 +98,3 @@ const message = document.createElement('div');
 }
 
 setTimeout(cookieHandvet, 3000);
-
