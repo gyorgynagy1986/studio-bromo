@@ -98,3 +98,39 @@ const message = document.createElement('div');
 }
 
 setTimeout(cookieHandvet, 3000);
+
+
+// TOOGLE
+
+const packagesContainer = document.querySelector('.toogle-container_csomagok');
+const buttons = document.querySelectorAll('button');
+
+packagesContainer.addEventListener('click', (e) => {
+
+  const click = e.target.closest('button');
+  if (!click) return;
+
+  buttons.forEach(remove => remove.classList.remove('tg-bg') )
+  click.classList.add('tg-bg');
+
+
+  if (e.target.dataset.id === '1') {
+    console.log('works');
+    document.querySelector('.p-landing').textContent = '249 000 ft'
+    document.querySelector('.p-creative').textContent = '349 000 ft'
+    document.querySelector('.p-extra').textContent = '449 000 ft'
+    document.querySelectorAll('.fc-tech').forEach((el)=> el.textContent = 'Egyedi fejlesztés' )
+    document.querySelectorAll('.for-toogle-1').forEach((el)=> el.classList.remove('hidden-reszletek') )
+    document.querySelectorAll('.for-toogle').forEach((el)=> el.classList.add('hidden-reszletek') )
+
+  } else {
+    console.log('else');
+    document.querySelector('.p-landing').textContent = '149 000 ft'
+    document.querySelector('.p-creative').textContent = '249 000 ft'
+    document.querySelector('.p-extra').textContent = '349 000 ft'
+    document.querySelectorAll('.for-toogle').forEach((el)=> el.classList.remove('hidden-reszletek') )
+    document.querySelectorAll('.for-toogle-1').forEach((el)=> el.classList.add('hidden-reszletek') )
+    document.querySelectorAll('.fc-tech').forEach((el)=> el.textContent = 'WordPress' )
+  }
+
+})

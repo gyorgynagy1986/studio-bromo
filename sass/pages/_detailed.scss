@@ -7,23 +7,83 @@
     @include greyParagraph;
     text-transform: none;
     color: $color-paragraph-2;
+   
     @include respond (phone) {
        font-size: 1.4rem;
     }
 
 }
 
+.toogle-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .tg-bg {
+          background: rgb(255, 255, 255) !important;
+          border: 1px solid rgb(255, 255, 255) !important;
+          box-shadow: 3px 3px 8px rgba(83, 83, 83, 0.15);
+          color: #253e6c !important;
+
+    }
+
+    &_csomagok {
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        .toogle-egyedi, .toogle-wp {
+          border: none;
+          border-radius: 100px;
+          padding: 1rem;
+          cursor: pointer;
+          z-index: 1;
+          font-family: "Rubik", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          background:none;
+          color: white;
+
+          @include respond (phone) {
+            font-size: 15px;
+            padding: .9rem;
+        }
+       
+
+        span {
+          // background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+          // -webkit-background-clip: text;
+          // color: transparent;
+        
+          color: white;
+
+        }
+          
+          
+
+        }
+
+    }
+
+}
+
+
+
 .detailed {
     background-color: white;
     height: auto;
     width: 100%;
     @include sectionPosition;
+    position: relative;
 
 
     &_main-head {
         @include mainHeadTextPosition;
         z-index: 1;
-
+        margin-bottom: 13rem !important;
     }
 
     &_container {
@@ -54,19 +114,25 @@
 
             }
 
+
+            padding: .5rem;
             display: flex;
             align-items: center;
             text-align: center;
             grid-row: 1;
             grid-column: 3;
-            width: 19rem;
+            width: 22rem;
             height: 5.8rem;
-            background-image: linear-gradient(270deg, rgba(255, 92, 0, 0.1) 0%, rgba(255, 0, 107, 0.1) 100%);
-            border-radius: 6px;
+            background-image: linear-gradient(265.45deg, #7000FF -35.65%, #00B2FF 69.11%, #00D0DD 142.99%);            border-radius: 50px;
             justify-self: center;
             
             @include respond (phone) {
-                display: none;
+                position: absolute;
+                top: 5%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 18rem;
+                height: 5rem;
             }
         }
 
@@ -110,7 +176,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid rgba(24, 66, 147, 0.2);
+            border: 1px solid #18429333;
             padding: .3rem;
 
             span {
@@ -132,7 +198,6 @@
 
     }
 }
-
 
 .extra-detailed {
     width: 90%;
@@ -167,6 +232,9 @@
   
 }
 
+.hidden-reszletek {
+    display: none !important;
+}
 
 
 .slide-in-top {
