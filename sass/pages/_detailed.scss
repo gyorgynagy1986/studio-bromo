@@ -3,6 +3,10 @@
     background-color: white;
 }
 
+.header-mb {
+ margin-bottom: 15rem
+}
+
 .head-text-packages {
     @include greyParagraph;
     text-transform: none;
@@ -69,10 +73,10 @@
     @include sectionPosition;
     position: relative;
 
-
     &_main-head {
         @include mainHeadTextPosition;
         z-index: 1;
+        margin-top: 2rem !important;
         margin-bottom: 13rem !important;
     }
 

@@ -2698,6 +2698,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
 .header_secoundary {
   background-color: white; }
 
+.header-mb {
+  margin-bottom: 15rem; }
+
 .head-text-packages {
   font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
@@ -2762,6 +2765,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
     margin-top: 9rem;
     margin-bottom: 7rem;
     z-index: 1;
+    margin-top: 2rem !important;
     margin-bottom: 13rem !important; }
     @media only screen and (max-width: 37.5em) {
       .detailed_main-head {
