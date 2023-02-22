@@ -268,7 +268,7 @@ h2 {
   line-height: 1.95rem;
   text-align: center;
   text-transform: uppercase;
-  background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+  background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
   -webkit-background-clip: text;
   color: transparent; }
 
@@ -303,8 +303,22 @@ h2 {
   line-height: 1.95rem;
   font-weight: 500; }
 
+.from-p {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  /* darkblue */
+  color: #184293; }
+  @media only screen and (max-width: 37.5em) {
+    .from-p {
+      font-size: 10px; } }
+
 .price {
-  background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+  background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Inter", sans-serif;
@@ -363,7 +377,7 @@ h2 {
   font-size: 1.5rem;
   line-height: 2.25rem; }
   .reviews_container_box-text span {
-    background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+    background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 500;
@@ -1246,7 +1260,7 @@ h2 {
     cursor: pointer;
     z-index: 1; }
     .mobilenav_link span {
-      background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+      background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
       -webkit-background-clip: text;
       color: transparent; }
     @media only screen and (max-width: 37.5em) {
@@ -1368,7 +1382,7 @@ h2 {
      text-transform: uppercase;
      cursor: pointer; */ }
   .btn-2 .btnlineartrick {
-    background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+    background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
     -webkit-background-clip: text;
     color: transparent;
     font-size: 1.7rem;
@@ -1508,7 +1522,7 @@ h2 {
     font-weight: 500;
     color: var(--nav); }
     .nav_bottom_link:link span, .nav_bottom_link:visited span {
-      background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+      background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
       -webkit-background-clip: text;
       color: transparent; }
 
@@ -1870,7 +1884,7 @@ nav.sticky {
             font-size: 1.6rem;
             font-weight: 700;
             line-height: 2.4rem;
-            background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+            background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
             -webkit-background-clip: text;
             color: transparent; }
           .works_contanier_content-box-pricebox .pricebox-contanier-from {
@@ -1973,7 +1987,7 @@ nav.sticky {
           line-height: 3.64rem;
           color: inherit; }
           .contact_container-form .main-text .text-1 span {
-            background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+            background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
             -webkit-background-clip: text;
             color: transparent; }
           @media only screen and (max-width: 37.5em) {
@@ -2700,6 +2714,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
 
 .toogle-container {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center; }
   .toogle-container .tg-bg {
@@ -2715,6 +2730,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
     justify-content: space-between; }
     .toogle-container_csomagok .toogle-egyedi, .toogle-container_csomagok .toogle-wp {
       border: none;
+      min-width: 12rem;
       border-radius: 100px;
       padding: 1rem;
       cursor: pointer;
@@ -2728,9 +2744,8 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       @media only screen and (max-width: 37.5em) {
         .toogle-container_csomagok .toogle-egyedi, .toogle-container_csomagok .toogle-wp {
           font-size: 15px;
-          padding: .9rem; } }
-      .toogle-container_csomagok .toogle-egyedi span, .toogle-container_csomagok .toogle-wp span {
-        color: white; }
+          padding: .9rem;
+          min-width: 10rem; } }
 
 .detailed {
   background-color: white;
@@ -2766,19 +2781,19 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         grid-template-rows: 6rem 6rem 5.1rem repeat(24, 5.1rem);
         margin-bottom: 0rem; } }
     .detailed_container .featured-container {
-      padding: .5rem;
+      padding: .4rem;
       display: flex;
       align-items: center;
       text-align: center;
       grid-row: 1;
       grid-column: 3;
-      width: 22rem;
+      width: 26rem;
       height: 5.8rem;
       background-image: linear-gradient(265.45deg, #7000FF -35.65%, #00B2FF 69.11%, #00D0DD 142.99%);
       border-radius: 50px;
       justify-self: center; }
       .detailed_container .featured-container .featured-text {
-        background-image: linear-gradient(270deg, #184293 0%, #FF006B 100%);
+        background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
         -webkit-background-clip: text;
         color: transparent;
         font-family: "Rubik", sans-serif;
@@ -2792,7 +2807,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
           top: 5%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 18rem;
+          width: 23rem;
           height: 5rem; } }
     .detailed_container .packagetitle {
       padding-top: 9.5rem; }

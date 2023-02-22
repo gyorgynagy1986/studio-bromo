@@ -245,8 +245,27 @@ h2 {
     font-weight: 500;
 }
 
+.from-p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* darkblue */
+
+    color: #184293;
+
+    @include respond (phone) {
+        font-size: 10px;
+
+    }
+}
+
 .price {
-    @include linearOrange;
+     @include linearOrange;
     font-family: $font-primary;
     font-size: 2.8rem;
     line-height: 4.2rem;
