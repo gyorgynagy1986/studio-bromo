@@ -2748,7 +2748,6 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
           min-width: 10rem; } }
 
 .detailed {
-  background-color: white;
   height: auto;
   width: 100%;
   height: 100%;

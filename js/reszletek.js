@@ -43,7 +43,7 @@ const headerObserver = new IntersectionObserver(
   stickyNav, {
     root:  null,
     threshold: 0,
-    rootMargin : '10px'
+    rootMargin : '300px'
   }
 );
 
