@@ -4,7 +4,8 @@
   --secBcground:#ffff;
   --thrdBcground:#253e6c;
   --nav:#283c61;
-  --boxes:rgba(255, 255, 255, 0.9); }
+  --boxes:rgba(255, 255, 255, 0.9);
+  --colrpPriceText:#184293; }
 
 .margin-bottom-big {
   margin-bottom: 10.5rem; }
@@ -71,6 +72,24 @@
 
 .mt-5 {
   margin-top: 5rem !important; }
+
+.w270 {
+  width: 270px; }
+  @media only screen and (max-width: 37.5em) {
+    .w270 {
+      width: auto;
+      max-width: 177px; } }
+  @media only screen and (max-width: 22.5em) {
+    .w270 {
+      width: auto;
+      max-width: 140px; } }
+
+.w420 {
+  width: 420px;
+  min-width: 117px; }
+
+.mgt8 {
+  margin-top: 8rem; }
 
 .lh-134 {
   line-height: 140% !important; }
@@ -509,6 +528,124 @@ h2 {
 
 /*****************************************************************************************************/
 /*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+.price-h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--colrpPriceText);
+  margin-bottom: 4rem; }
+  .price-h2 h2 {
+    font-size: 5rem !important;
+    text-align: center;
+    line-height: 140%; }
+    @media only screen and (max-width: 64.5em) {
+      .price-h2 h2 {
+        font-size: 4rem !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .price-h2 h2 {
+        font-size: 3rem !important;
+        width: 100% !important; } }
+    @media only screen and (max-width: 22.5em) {
+      .price-h2 h2 {
+        font-size: 2.6rem !important;
+        width: 100% !important; } }
+
+th p {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; }
+  @media only screen and (max-width: 64.5em) {
+    th p {
+      font-size: 22px; } }
+  @media only screen and (max-width: 37.5em) {
+    th p {
+      font-size: 15px; } }
+
+th span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 130%;
+  color: var(--colrpPriceText); }
+  @media only screen and (max-width: 64.5em) {
+    th span {
+      font-size: 18px !important; } }
+  @media only screen and (max-width: 37.5em) {
+    th span {
+      font-size: 14px !important; } }
+
+td .p-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  background: linear-gradient(265.45deg, #7000FF -35.65%, #00B2FF 69.11%, #00D0DD 142.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; }
+  @media only screen and (max-width: 64.5em) {
+    td .p-title {
+      font-size: 24px; } }
+  @media only screen and (max-width: 37.5em) {
+    td .p-title {
+      font-size: 20px; } }
+  @media only screen and (max-width: 22.5em) {
+    td .p-title {
+      font-size: 15px; } }
+
+td span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: var(--colrpPriceText); }
+  @media only screen and (max-width: 37.5em) {
+    td span {
+      font-size: 10px; } }
+
+.extra p {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 130%;
+  color: var(--colrpPriceText);
+  color: #FFFFFF !important;
+  text-align: center; }
+
+.aud-container a {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  margin-top: 1rem;
+  color: var(--colrpPriceText); }
+  @media only screen and (max-width: 37.5em) {
+    .aud-container a {
+      font-size: 14px !important; } }
+
+@media only screen and (max-width: 37.5em) {
+  .td-price {
+    font-size: 14px !important; } }
+
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -1080,6 +1217,70 @@ h2 {
   grid-column: 4;
   grid-row: 25;
   border-top: 0 !important; }
+
+.main-price {
+  padding: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .main-price {
+      padding: 1rem; } }
+
+.price-header {
+  margin-bottom: 15.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .price-header {
+      margin-bottom: 5.5rem; } }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1110px; }
+
+tr {
+  height: 127px; }
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #18429333; }
+
+.extra {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px 10px 10px;
+  width: 100%;
+  max-width: 1110px;
+  height: 57px;
+  background: linear-gradient(90deg, #00BA77 0%, #00BFBF 100%); }
+
+.border {
+  border: none; }
+
+.td-price {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 130%;
+  color: var(--colrpPriceText); }
+
+.aud-container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .aud-container img {
+    width: 100%;
+    max-width: 131.35px;
+    height: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .aud-container img {
+        width: 80%; } }
+
+.last-table {
+  margin-bottom: 8rem; }
 
 .swiper-container {
   width: 100%;

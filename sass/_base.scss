@@ -120,6 +120,14 @@
     display: block;
 }
 
+@mixin textprice {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 130%;
+    color: var(--colrpPriceText);
+}
 
 
 
@@ -165,7 +173,7 @@
    --thrdBcground:#253e6c;
    --nav:#283c61;
    --boxes:rgba(255, 255, 255, 0.9);
-
+   --colrpPriceText:#184293;   
 }
 
 
@@ -272,8 +280,32 @@ $font-display: 'Rubik', sans-serif;
 
 .mt-5 {
     margin-top: 5rem !important;
+}
+
+.w270 {
+    width: 270px;
+    @include respond (phone) {
+        width: auto;
+        max-width: 177px;
+}
+
+    @include respond (SMphone) {
+        width: auto;
+        max-width: 140px;
+    }
+
+   } 
+
+.w420 {
+ width: 420px;
+ min-width: 117px
 
 }
+ 
+.mgt8 {
+    margin-top: 8rem;
+  }
+  
 
 .lh-134 {
     line-height: 140% !important;

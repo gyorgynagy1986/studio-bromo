@@ -6,6 +6,8 @@
 //ABSTARCT
 @import "abstract/effects";
 @import "abstract/gridposition";
+@import "abstract/table";
+
 
 
 //COMPONENS
@@ -32,6 +34,7 @@
 
 //PAGES
 @import "pages/detailed";
+@import "pages/prices";
 @import "pages/form";
 
 
