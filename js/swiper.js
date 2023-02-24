@@ -32,7 +32,7 @@ window.addEventListener('load', function(load) {
   sr.reveal(`.header_title`, { origin: 'top', distance: '50px',} )
   sr.reveal(`.header_main-text-container`, { delay: 650, origin: 'top', distance: '0px',} )
   sr.reveal(`.header_main-services-box-h4`, {duration: 1700, origin: 'top', distance: '15px',} )
-  sr.reveal(`.btnUp`, {duration: 2000, delay: 100, opacity:1, origin: 'bottom', distance: '15px',} )
+  sr.reveal(`.btnUp`, {duration: 2000, delay: 100, opacity:1, origin: 'top', distance: '15px',} )
 
   if (window.matchMedia("(min-width: 1034px)").matches) {
     sr.reveal(`.works_contanier_content-box`, {duration: 2000, opacity:1, origin: 'left', distance: '150px',} )
