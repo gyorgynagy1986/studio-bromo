@@ -4,6 +4,11 @@
   background: #f5faff url(/img/preloader.gif) no-repeat center ;
   position: fixed;
   z-index: 1000000000000;
+
+  @include respond (phone) {
+    background-size: 25%;
+    }
+
 }
 
 
