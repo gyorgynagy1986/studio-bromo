@@ -21,7 +21,14 @@ const swiper = new Swiper('.swiper-container', {
     delay: 200,
     //reset: true
   })
-  
+
+
+  const loader = document.getElementById('preloader');
+
+window.addEventListener('load', function(load) {
+  window.removeEventListener('load', load, false);               
+  setTimeout(function(){loader.style.display = 'none'},500);
+
   sr.reveal(`.header_title`, { origin: 'top', distance: '50px',} )
   sr.reveal(`.header_main-text-container`, { delay: 650, origin: 'top', distance: '0px',} )
   sr.reveal(`.header_main-services-box-h4`, {duration: 1700, origin: 'top', distance: '15px',} )
@@ -53,6 +60,11 @@ const swiper = new Swiper('.swiper-container', {
 
     
   }
+ 
+
+},false);
+  
+  
   
   
   
