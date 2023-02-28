@@ -108,6 +108,10 @@
 
             &:hover {
                 transform: translateY(-10px);
+
+                @include respond (phone) {
+                    transform: translateY(0px);
+                }
             }
 
             @include respond (phone) {

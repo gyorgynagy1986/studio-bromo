@@ -47,7 +47,7 @@ headerObserver.observe(header);
 
 // NAV HOVER
 
-const hoverHandler = function(e, opacity) {
+const hoverHandler = function(e) {
   if(e.target.classList.contains('nav_link')) {
     const link = e.target;
     const siblings = link.closest('.nav').
@@ -59,7 +59,7 @@ const hoverHandler = function(e, opacity) {
   }
 }
 
-nav.addEventListener('mouseover', hoverHandler.bind(1))
+nav.addEventListener('mouseover', hoverHandler.bind(0.6))
 nav.addEventListener('mouseout', hoverHandler.bind(0));
 
 

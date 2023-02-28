@@ -1,7 +1,7 @@
 {
   "name": "STB",
   "version": "1.0.0",
-  "description": "This is the Étrend Műhely hivatalos weboldala",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
