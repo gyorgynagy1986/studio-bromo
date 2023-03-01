@@ -20,7 +20,15 @@ body {
     font-family: $font-primary;
     color: $color-primary;
     background-color: $color-secondary-backgroung;
+    zoom: 95%;
+    -ms-zoom: 95%;
+    -webkit-zoom: 95%;
 
+    @media screen and (max-width: 1500px) and (min-width: 600px) {
+            zoom: 85%;
+            -ms-zoom: 85%;
+            -webkit-zoom: 85%;
+      }
 }
 
 
