@@ -3983,12 +3983,15 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 142%;
         /* identical to box height, or 20px */
         letter-spacing: 0.035em;
         color: #595959;
         margin-bottom: 3rem; }
+        @media only screen and (max-width: 600px) {
+          .discount_section-list-items {
+            font-size: 14px; } }
         .discount_section-list-items img {
           margin-right: 1.8rem; }
     .discount_section-button {
