@@ -6,6 +6,13 @@
   z-index: 1000000000000;
   background-size: 10%;
 
+  zoom: 110%;
+
+  @media screen and (max-width: 1500px) and (min-width: 600px) {
+    zoom: 130%;
+    -ms-zoom: 130%;
+    -webkit-zoom: 130%;
+}
 
   @include respond (phone) {
     background-size: 25%;
