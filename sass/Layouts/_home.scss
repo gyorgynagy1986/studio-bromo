@@ -24,11 +24,16 @@ body {
     -ms-zoom: 95%;
     -webkit-zoom: 95%;
 
-    @media screen and (max-width: 1500px) and (min-width: 600px) {
+    @media screen and (max-width: 1600px) and (min-width: 600px) {
             zoom: 85%;
             -ms-zoom: 85%;
             -webkit-zoom: 85%;
       }
+
+      @media only screen and (max-width: 600px) {
+        zoom: 100%;
+
+  }
 }
 
 
