@@ -7,6 +7,10 @@
     text-align: center;    
     letter-spacing: 0.035em;
     color: #9F63FF;
+
+    @media only screen  and (max-width: 929px) {
+        font-size: 60px;
+    }
 }
 
 .h6-discount {
@@ -20,8 +24,11 @@
     letter-spacing: 0.035em;
     text-decoration-line: line-through;
     color: #FF0000;
-
     margin-bottom: 10rem;
+
+    @media only screen  and (max-width: 929px) {
+        font-size: 28px;
+    }
 }
 
 
@@ -43,6 +50,17 @@
     top: 20px;
     z-index: -1;
 
+    @media only screen  and (max-width: 1500px) {
+        background-size:contain;
+        background-position:center;
+
+    }
+
+    @media only screen  and (max-width: 929px) {
+        display: none;
+
+    }
+
 
     &_section {
         padding-top: 5rem;
@@ -55,8 +73,20 @@
             justify-content: center;
             margin-bottom: 10rem;
 
+            @media only screen  and (max-width: 929px) {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 5rem;
+            }
+
             &-text {
                 width: 50%;
+
+                @media only screen  and (max-width: 929px) {
+                    width: 100%;
+
+                }
+
 
                 .title {
 
@@ -72,6 +102,16 @@
                     span {
                         font-weight: 800;
                         color: #FEC245;
+                       
+                        @media only screen  and (max-width: 929px) {
+                            font-size: 40px;
+        
+                        }
+                    }
+
+                    @media only screen  and (max-width: 929px) {
+                        font-size: 30px;
+    
                     }
 
                 }
@@ -85,8 +125,14 @@
                     /* or 31px */
                     letter-spacing: 0.165em;
                     color: #2B2B2C;
-
                     margin-bottom: 3.4rem;
+                    width: 100% !important;
+
+
+                    @media only screen  and (max-width: 929px) {
+                        font-size: 18px;
+                       
+                    }
 
                 }
 
@@ -107,13 +153,17 @@
                         color: #FFC244;
                     }
                 }
-                
             }
 
             &-photo {
                 width: 50%;
                 display: flex;
                 justify-content: center;
+                
+                @media only screen  and (max-width: 929px) {
+                    display: none;
+                }
+
 
                 img {
                     width: 100%;
@@ -121,14 +171,9 @@
                 }
 
             }
-
         }
-
-
         &-list {
             margin-bottom: 7.6rem;
-
-
 
             &-items {
                 display: flex;
@@ -148,7 +193,6 @@
                 }
 
             } 
-
         }
 
         &-button {
@@ -169,7 +213,11 @@
             letter-spacing: 0.035em;
 
             color: #FFFFFF;
-        
+
+            @media only screen  and (max-width: 929px) {
+                width: 180px;
+                height: 45px;
+            }
         }
 
         &-button::after {
@@ -181,28 +229,185 @@
             left: 10px;
             content: "";
             background: #A67FF7;
+           
+            @media only screen  and (max-width: 929px) {
+                width: 180px;
+                height: 45px;
+            }
         }
-        
 
+        //SECTION 2
+
+        &_websites  {
+            padding-top: 5rem;
+            max-width: 1200px;
+            margin-inline: auto;
+    
+           &-title {
+                margin-bottom: 2rem;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 155.5%;
+                text-align: center;
+                width: 100% !important;
+                letter-spacing: 0.035em;
+                
+                color: #000000;
+
+                @media only screen  and (max-width: 929px) {
+                    font-size: 30px;
+
+                }
+           } 
+    
+           &-dots {
+            margin-bottom: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+    
+            img {
+                width: 100%;
+                max-width: 64px;
+                height: 100%;
+            }
+           }
+    
+           &-p {
+            margin-bottom: 8rem;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 142%;
+            /* or 20px */
+            
+            text-align: center;
+            letter-spacing: 0.035em;
+            
+            color: #010101;
+           }
+
+           &-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10rem;
+
+            @media only screen  and (max-width: 929px) {
+                flex-wrap: wrap;
+            }
+
+            @media only screen  and (max-width: 479px) {
+                flex-direction: column;
+            }
+
+                &-site {
+
+                    span {
+                        text-decoration-line: line-through;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 4rem;
+
+                        @media only screen  and (max-width: 626px) {
+                            margin-right: 2rem;
+                        }
+
+                        @media only screen  and (max-width: 479px) {
+                            margin-right: 0;
+                        }
+                    }
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @media only screen  and (max-width: 479px) {
+                       margin-bottom: 4rem;
+                    }
+
+
+                    &-logo {
+                        margin-bottom: 1rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            max-width: 7.5rem;
+                        }
+
+                        @media only screen  and (max-width: 600px) {
+                            max-width: 5rem;
+                        }
+                    }
+
+                    p {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 155.5%;
+                        /* or 31px */
+
+                        letter-spacing: 0.035em;
+
+                        color: #4D4D4D;
+                        margin-bottom: 3rem;
+                    }
+
+                    &-photo {
+                        margin-bottom: 2rem;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            max-width: 252px;
+
+                            
+                        @media only screen  and (max-width: 929px) {
+                            flex-direction: column;
+                        }
+
+                        @media only screen  and (max-width: 600px) {
+                            max-width: 200px;
+                        }
+                        
+                    }
+
+                    }
+
+                    &-link {
+                        a {
+                         font-family: 'Poppins';
+                         font-style: normal;
+                         font-weight: 500;
+                         font-size: 20px;
+                         line-height: 155.5%;
+                         /* or 31px */
+                         letter-spacing: 0.035em;
+                         text-decoration-line: underline;
+                         color: #17092E;
+
+                         @media only screen  and (max-width: 600px) {
+                            font-size: 18px;
+
+                        }
+
+                        }
+                    }
+                }
+           }
+        }
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .discountDash {
     margin-inline: auto;
-    width: 135rem;
+    width: 100%;
+    max-width: 135rem;
     height: 0px;
     margin-top: 4.5rem;
     margin-bottom: 4.5rem;

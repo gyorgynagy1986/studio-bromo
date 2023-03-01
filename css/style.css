@@ -3843,6 +3843,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
   text-align: center;
   letter-spacing: 0.035em;
   color: #9F63FF; }
+  @media only screen and (max-width: 929px) {
+    .h5-discount {
+      font-size: 60px; } }
 
 .h6-discount {
   font-family: 'Poppins';
@@ -3855,6 +3858,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
   text-decoration-line: line-through;
   color: #FF0000;
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 929px) {
+    .h6-discount {
+      font-size: 28px; } }
 
 .main-discount {
   padding-left: 2rem;
@@ -3872,6 +3878,13 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
   position: absolute;
   top: 20px;
   z-index: -1; }
+  @media only screen and (max-width: 1500px) {
+    .discount {
+      background-size: contain;
+      background-position: center; } }
+  @media only screen and (max-width: 929px) {
+    .discount {
+      display: none; } }
   .discount_section {
     padding-top: 5rem;
     max-width: 1200px;
@@ -3881,8 +3894,16 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       display: flex;
       justify-content: center;
       margin-bottom: 10rem; }
+      @media only screen and (max-width: 929px) {
+        .discount_section_container {
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 5rem; } }
       .discount_section_container-text {
         width: 50%; }
+        @media only screen and (max-width: 929px) {
+          .discount_section_container-text {
+            width: 100%; } }
         .discount_section_container-text .title {
           font-family: 'Poppins';
           font-style: normal;
@@ -3895,6 +3916,12 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
           .discount_section_container-text .title span {
             font-weight: 800;
             color: #FEC245; }
+            @media only screen and (max-width: 929px) {
+              .discount_section_container-text .title span {
+                font-size: 40px; } }
+          @media only screen and (max-width: 929px) {
+            .discount_section_container-text .title {
+              font-size: 30px; } }
         .discount_section_container-text .title-2 {
           font-family: 'Poppins';
           font-style: normal;
@@ -3904,7 +3931,11 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
           /* or 31px */
           letter-spacing: 0.165em;
           color: #2B2B2C;
-          margin-bottom: 3.4rem; }
+          margin-bottom: 3.4rem;
+          width: 100% !important; }
+          @media only screen and (max-width: 929px) {
+            .discount_section_container-text .title-2 {
+              font-size: 18px; } }
         .discount_section_container-text .title-3 {
           font-family: 'Poppins';
           font-style: normal;
@@ -3921,6 +3952,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         width: 50%;
         display: flex;
         justify-content: center; }
+        @media only screen and (max-width: 929px) {
+          .discount_section_container-photo {
+            display: none; } }
         .discount_section_container-photo img {
           width: 100%;
           max-width: 400px; }
@@ -3955,6 +3989,10 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       /* or 37px */
       letter-spacing: 0.035em;
       color: #FFFFFF; }
+      @media only screen and (max-width: 929px) {
+        .discount_section-button {
+          width: 180px;
+          height: 45px; } }
     .discount_section-button::after {
       position: absolute;
       z-index: -1;
@@ -3964,10 +4002,124 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       left: 10px;
       content: "";
       background: #A67FF7; }
+      @media only screen and (max-width: 929px) {
+        .discount_section-button::after {
+          width: 180px;
+          height: 45px; } }
+    .discount_section_websites {
+      padding-top: 5rem;
+      max-width: 1200px;
+      margin-inline: auto; }
+      .discount_section_websites-title {
+        margin-bottom: 2rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 155.5%;
+        text-align: center;
+        width: 100% !important;
+        letter-spacing: 0.035em;
+        color: #000000; }
+        @media only screen and (max-width: 929px) {
+          .discount_section_websites-title {
+            font-size: 30px; } }
+      .discount_section_websites-dots {
+        margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .discount_section_websites-dots img {
+          width: 100%;
+          max-width: 64px;
+          height: 100%; }
+      .discount_section_websites-p {
+        margin-bottom: 8rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 142%;
+        /* or 20px */
+        text-align: center;
+        letter-spacing: 0.035em;
+        color: #010101; }
+      .discount_section_websites-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10rem; }
+        @media only screen and (max-width: 929px) {
+          .discount_section_websites-container {
+            flex-wrap: wrap; } }
+        @media only screen and (max-width: 479px) {
+          .discount_section_websites-container {
+            flex-direction: column; } }
+        .discount_section_websites-container-site {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .discount_section_websites-container-site span {
+            text-decoration-line: line-through; }
+          .discount_section_websites-container-site:not(:last-child) {
+            margin-right: 4rem; }
+            @media only screen and (max-width: 626px) {
+              .discount_section_websites-container-site:not(:last-child) {
+                margin-right: 2rem; } }
+            @media only screen and (max-width: 479px) {
+              .discount_section_websites-container-site:not(:last-child) {
+                margin-right: 0; } }
+          @media only screen and (max-width: 479px) {
+            .discount_section_websites-container-site {
+              margin-bottom: 4rem; } }
+          .discount_section_websites-container-site-logo {
+            margin-bottom: 1rem; }
+            .discount_section_websites-container-site-logo img {
+              width: 100%;
+              height: 100%;
+              max-width: 7.5rem; }
+            @media only screen and (max-width: 600px) {
+              .discount_section_websites-container-site-logo {
+                max-width: 5rem; } }
+          .discount_section_websites-container-site p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 155.5%;
+            /* or 31px */
+            letter-spacing: 0.035em;
+            color: #4D4D4D;
+            margin-bottom: 3rem; }
+          .discount_section_websites-container-site-photo {
+            margin-bottom: 2rem; }
+            .discount_section_websites-container-site-photo img {
+              width: 100%;
+              height: 100%;
+              max-width: 252px; }
+              @media only screen and (max-width: 929px) {
+                .discount_section_websites-container-site-photo img {
+                  flex-direction: column; } }
+              @media only screen and (max-width: 600px) {
+                .discount_section_websites-container-site-photo img {
+                  max-width: 200px; } }
+          .discount_section_websites-container-site-link a {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 155.5%;
+            /* or 31px */
+            letter-spacing: 0.035em;
+            text-decoration-line: underline;
+            color: #17092E; }
+            @media only screen and (max-width: 600px) {
+              .discount_section_websites-container-site-link a {
+                font-size: 18px; } }
 
 .discountDash {
   margin-inline: auto;
-  width: 135rem;
+  width: 100%;
+  max-width: 135rem;
   height: 0px;
   margin-top: 4.5rem;
   margin-bottom: 4.5rem;
