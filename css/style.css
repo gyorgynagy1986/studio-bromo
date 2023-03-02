@@ -1537,6 +1537,66 @@ th, td {
   color: #8c72eb;
   margin-top: 3rem; }
 
+.modal-message {
+  padding: 4rem 2rem 2rem 2rem;
+  width: 90%;
+  height: auto;
+  background-color: #d1c5fc;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  z-index: 1111111111111111111111111;
+  font-family: "poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 37.5em) {
+    .modal-message {
+      height: 90%;
+      font-size: 1.6rem;
+      overflow-y: scroll; } }
+  .modal-message p:first-child {
+    font-size: 2.4rem;
+    font-weight: 400; }
+  .modal-message > * {
+    margin-bottom: 2rem; }
+
+.btn-modal {
+  padding: 1rem 2rem 1rem 2rem;
+  max-width: 20rem;
+  background-color: white;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-family: "poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0d1d3a;
+  text-transform: uppercase;
+  letter-spacing: 00.04em; }
+  .btn-modal:hover {
+    background-color: #8c72eb;
+    outline: 1px solid white;
+    color: #ffffff; }
+
+.modal-container {
+  width: 80%;
+  height: 100vh;
+  background-color: #ffffff; }
+  @media only screen and (max-width: 37.5em) {
+    .modal-container {
+      margin-bottom: 1rem;
+      width: 90%; } }
+
+.modal-status {
+  font-size: 1.5rem;
+  color: #8c72eb;
+  margin-top: 3rem; }
+
 .mobilenav {
   display: none; }
   @media only screen and (max-width: 64.5em) {
@@ -2877,18 +2937,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: var(--primecolor);
-  background-color: var(--secBcground);
-  zoom: 95%;
-  -ms-zoom: 95%;
-  -webkit-zoom: 95%; }
-  @media screen and (max-width: 1600px) and (min-width: 600px) {
-    body {
-      zoom: 85%;
-      -ms-zoom: 85%;
-      -webkit-zoom: 85%; } }
-  @media only screen and (max-width: 600px) {
-    body {
-      zoom: 100%; } }
+  background-color: var(--secBcground); }
 
 iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
   position: relative;
@@ -3850,6 +3899,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
 
 .whitecolor {
   background-color: white; }
+
+.body-discount {
+  position: inherit; }
 
 .h5-discount {
   font-family: 'Poppins';

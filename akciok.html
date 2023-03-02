@@ -12,12 +12,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-             
         <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
         <link rel="icon" href="/favicon/favicon-32x32.png" sizes="16x16 32x32" type="image/png"> 
         <title>Akciók &mdash; Akciós weboldal csomagok ingyenes weboldallal</title>
     </head>
-    <body>
+    <body class="body-discount-page" >
         
     <!-- MOBILE NAVIGATION // NO JS // CHECK BOX -->
         <div class="mobilenav">
@@ -46,6 +45,7 @@
                     <li class="mobilenav_item"><a href="/csomagok-kisokos.html" class="mobilenav_link modilnav-left-extra-item">szolgáltatás kisokos</a></li>
                     <li class="mobilenav_item"><a href="/arak.html" class="mobilenav_link">árak</a></li>
                     <li class="mobilenav_item"><a href="/#reviews" class="mobilenav_link">ügyfeleink rólunk</a></li> 
+                    <li class="mobilenav_item"><a href="/akciok.html" class="mobilenav_link">akciók</a></li> 
                     <li class="mobilenav_item"><a href="/#touch" class="mobilenav_link"><span >Kapcsolat</span></a></li>
                  </ul>
             </nav>
@@ -73,13 +73,14 @@
                     </li>
                     <li class="nav_item"><a href="/arak.html" class="nav_link discontLinkcolor">árak</a></li>
                     <li class="nav_item"><a href="/#reviews" class="nav_link discontLinkcolor">ügyfeleink rólunk</a></li> 
+                    <li class="nav_item"><a href="/akciok.html" class="nav_link discontLinkcolor">akciók</a></li> 
                     <li class="nav_item"><a href="/#touch" class="nav_link discontLinkcolor"> <span class="discontBtnColor"> Kapcsolat</span></a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="discount shake-vertical "></div>
-    <main class="main-discount">
+    <main class="main-discount body-discount">
     <section class="discount_section">
         <h5 class="h5-discount">79 000 ft</h5>
         <h6 class="h6-discount">150 000 ft </h6>
@@ -93,7 +94,7 @@
                 <img src="/img/discount-photo.svg" alt="weboldal akció fotó">
             </div>
         </div>
-        <div class="discount_section-list">
+        <div class="discount_section-list ">
             <ul>
                 <li class="discount_section-list-items"> <img src="/img/check-discount.svg" alt="check akciók"> Ingyenes webolal (csak a tartalom feltőltésért és az üzembehelyezésért számolunk fel díjat) </li>
                 <li class="discount_section-list-items"> <img src="/img/check-discount.svg" alt="check akciók"> Ingyenes gyors Webtárhely és .hu-s Domain az első évre</li>
@@ -140,9 +141,6 @@
             </div>
 
         </div>
-
-    
-
     </section>
     </main>
      <!-- SECOUNDARY NAVIGATION END-->
@@ -158,11 +156,9 @@
                 </ul>
         </div> 
     </footer>
-    
     <!-- FOOTER END-->
-
     <script src="js/mian.js"></script>
-
+    <script src="js/discount.js"></script>
     </body>
 </html>
 
