@@ -109,7 +109,7 @@
         width: 216px;
         height: 51px;
        
-        background: #D9E6FF;
+        background: #6381b9;
         border-radius: 6px;
         border: none;
         font-family: 'Rubik';
@@ -122,6 +122,10 @@
         cursor: pointer;
         transform: translateY(0);
         transition: all .1s;
+
+        &:hover {
+          background: #ff5c00;
+        }
 
         @include respond (tablet) {
           height: 45px;

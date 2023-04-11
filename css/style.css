@@ -129,7 +129,8 @@ h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 6.68rem;
-  letter-spacing: -0.03em; }
+  letter-spacing: -0.03em;
+  display: block; }
   @media only screen and (max-width: 80em) {
     h1 {
       font-size: 4rem;
@@ -146,7 +147,8 @@ h3 {
   font-family: "Rubik", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 2.34rem; }
+  line-height: 2.34rem;
+  display: inline-block; }
   @media only screen and (max-width: 80em) {
     h3 {
       font-size: 1.6rem; } }
@@ -163,7 +165,8 @@ h4 {
   font-size: 1.6rem;
   line-height: 2.08rem;
   margin-top: 3rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: inline-block; }
   @media only screen and (max-width: 37.5em) {
     h4 {
       margin-top: 0; } }
@@ -2096,7 +2099,7 @@ nav.sticky {
   .subscribe-btn__container .btns {
     width: 216px;
     height: 51px;
-    background: #D9E6FF;
+    background: #6381b9;
     border-radius: 6px;
     border: none;
     font-family: 'Rubik';
@@ -2109,6 +2112,8 @@ nav.sticky {
     cursor: pointer;
     transform: translateY(0);
     transition: all .1s; }
+    .subscribe-btn__container .btns:hover {
+      background: #ff5c00; }
     @media only screen and (max-width: 64.5em) {
       .subscribe-btn__container .btns {
         height: 45px;
@@ -3160,7 +3165,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
           height: 38px;
           width: auto; }
         .footer_container-text-logo img {
-          height: 45px;
+          height: 35px;
           width: auto;
           margin-right: 1.5rem; }
   .footer .footer_container-partners {
@@ -3977,82 +3982,100 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
 .whitecolor {
   background-color: white; }
 
+.maintence_main-head {
+  width: 90%;
+  max-width: 110rem;
+  margin-top: 9rem;
+  margin-bottom: 7rem;
+  margin-bottom: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .maintence_main-head {
+      margin-top: 4rem;
+      margin-bottom: 3rem; } }
+
+.processM_section-list {
+  width: 90%;
+  max-width: 110rem;
+  margin-inline: auto; }
+  .processM_section-list-items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: #000c24;
+    line-height: 22.5px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif; }
+    .processM_section-list-items img {
+      margin-right: 2rem;
+      width: 3rem;
+      height: 3rem; }
+
 .processM {
-  height: 100%;
+  width: 90%;
+  max-width: 110rem;
+  margin-inline: auto;
+  padding-top: 10rem;
+  margin-inline: auto; }
+
+.maintence_desc {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10rem; }
-  .processM_main-head {
+  background-color: var(--mainBcGroung); }
+  .maintence_desc_title {
     width: 90%;
-    max-width: 110rem;
-    margin-top: 9rem;
-    margin-bottom: 7rem; }
-    @media only screen and (max-width: 37.5em) {
-      .processM_main-head {
-        margin-top: 4rem;
-        margin-bottom: 3rem; } }
-    .processM_main-head h1 {
-      font-size: 4rem !important; }
-  .processM_section-list {
-    width: 100%;
-    max-width: 110rem;
-    margin-inline: auto; }
-    .processM_section-list-items {
-      display: flex;
-      align-items: center;
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
-      color: #000c24;
-      line-height: 22.5px;
-      font-weight: 100;
-      font-family: "Roboto", sans-serif; }
-      .processM_section-list-items img {
-        margin-right: 2rem;
-        width: 3rem;
-        height: 3rem; }
-  .processM_container {
-    width: 75%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2);
-    grid-gap: 3rem; }
-    @media only screen and (max-width: 37.5em) {
-      .processM_container {
-        grid-template-columns: auto;
-        width: 90%; } }
-    .processM_container-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #fff;
-      box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.2);
-      height: 25rem;
-      border-radius: 6px;
-      padding: 3rem;
-      z-index: 1; }
-      .processM_container-box-head {
-        width: 100%;
+    margin-inline: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem; }
+
+.mtServices_container {
+  margin-inline: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2);
+  grid-gap: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .mtServices_container {
+      grid-template-columns: auto;
+      width: 90%; } }
+  .mtServices_container-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.2);
+    height: 100%;
+    min-height: 25rem;
+    border-radius: 6px;
+    padding: 3rem;
+    z-index: 1; }
+    .mtServices_container-box-head {
+      width: 100%;
+      height: 6rem;
+      display: flex; }
+      .mtServices_container-box-head .head-number {
+        width: 6rem;
         height: 6rem;
-        display: flex; }
-        .processM_container-box-head .head-number {
-          width: 6rem;
-          height: 6rem;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-        .processM_container-box-head .head-text {
-          height: 6rem;
-          flex: 1;
-          display: flex;
-          align-items: center; }
-      .processM_container-box-text {
-        width: 100%;
-        height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between; }
+        justify-content: center;
+        align-items: center; }
+      .mtServices_container-box-head .head-text {
+        height: 6rem;
+        flex: 1;
+        display: flex;
+        align-items: center; }
+    .mtServices_container-box-text {
+      padding-top: 1rem;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem; }
+
+.processM-2-title {
+  padding-top: 2rem; }
 
 .bm1 {
   grid-column: 1;

@@ -12,6 +12,8 @@ h1 {
     font-weight: 700;
     line-height: 6.68rem;
     letter-spacing: -0.03em;
+    display: block;
+
 
     @include respond (SCLaptop) {
         font-size: 4rem;
@@ -28,6 +30,8 @@ h1 {
     }
 }
 
+
+
 // TEXT UNDER THE H1 IN THE HEADER'S TITLE
 
 h3 {
@@ -35,7 +39,8 @@ h3 {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.34rem;
-
+    display: inline-block;
+    
     @include respond (SCLaptop) {
         font-size: 1.6rem;
     }
@@ -58,6 +63,7 @@ h4 {
     line-height: 2.08rem; 
     margin-top:3rem;
     text-transform: uppercase;
+    display: inline-block;
     
     @include respond (phone) {
         margin-top:0;
