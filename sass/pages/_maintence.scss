@@ -23,10 +23,12 @@
             
             img {
                 margin-right: 2rem;
+                width: 3rem;
+                height: 3rem;
             }
        
-            font-size: 1.6rem;
-            color: #051d4e;
+            font-size: 1.8rem;
+            color: $color-paragraph;
             line-height: 22.5px;
             font-weight: 100;
             font-family: "Roboto", sans-serif;

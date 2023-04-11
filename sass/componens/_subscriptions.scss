@@ -60,7 +60,7 @@
                 line-height: 161%;
                 align-items: center;
                 letter-spacing: 0.025em;
-                color: #494949;
+                color: $color-paragraph-new;
 
                 @include respond (phone) {
                   font-size: 15px;
