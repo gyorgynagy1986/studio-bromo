@@ -70,7 +70,8 @@ h4 {
 }
 
 .new-color {
-    color: #1f3d76 !important;
+    color: #184293 !important;
+   /* color: #1f3d76 !important; */
 }
 
 .background-h1-cover {
@@ -505,10 +506,11 @@ h2 {
 }
 
 .policy-txt {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 2.2rem;
     color: $color-paragraph;
     font-family: $font-display;
+    font-weight: lighter;
 }
 
 .policy-margin {
@@ -688,8 +690,55 @@ h2 {
   
   }
 
+  // KARBANTARTÁS
+
+  .maintence-h1 {
+    h1 {
+        font-size: 5rem !important;
+    }
+  }
+
   .td-price {
     @include respond (phone) {
         font-size: 14px !important;
     }
   }
+
+  .head-number {
+    
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 6rem;
+    @include linearBlue;
+
+}
+
+.head-text {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 20.8px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text-1 {
+    @include greyParagraph;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+.text-2 {
+    @include greyParagraph;
+    font-family: "Roboto", sans-serif;
+    color: #6f6f6f;
+    font-size: 1.4rem;
+
+}
+
+.processM-2-title {
+    @include linearOrange;
+    font-size: 2rem;
+    font-weight: bold;
+}
