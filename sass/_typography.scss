@@ -21,12 +21,14 @@ h1 {
     }
     
     @include respond (phone) {
-        font-size: 2.6rem;
-        line-height: 3.1rem;
+        font-size: 3rem;
+        line-height: 4rem;
     }
 
     @include respond (SMphone) {
         font-size: 2.3rem;
+        line-height: 3.4rem;
+
     }
 }
 

@@ -42,6 +42,11 @@
 .tac {
   text-align: center; }
 
+@media only screen and (max-width: 37.5em) {
+  .title-prefix {
+    font-size: 3rem;
+    line-height: 3.5rem; } }
+
 .mbz {
   margin-bottom: 0 !important; }
 
@@ -78,6 +83,10 @@
 
 .mt-15 {
   margin-top: 15rem !important; }
+
+@media only screen and (max-width: 37.5em) {
+  .mw100 {
+    width: 100% !important; } }
 
 .w270 {
   width: 270px; }
@@ -143,11 +152,12 @@ h1 {
       line-height: 4.68rem; } }
   @media only screen and (max-width: 37.5em) {
     h1 {
-      font-size: 2.6rem;
-      line-height: 3.1rem; } }
+      font-size: 3rem;
+      line-height: 4rem; } }
   @media only screen and (max-width: 22.5em) {
     h1 {
-      font-size: 2.3rem; } }
+      font-size: 2.3rem;
+      line-height: 3.4rem; } }
 
 h3 {
   font-family: "Rubik", sans-serif;
@@ -493,7 +503,7 @@ h2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 2.1rem;
-  color: #000c24; }
+  color: #272727; }
   .bposi span,
   .bp span {
     line-height: 2rem;
@@ -531,7 +541,7 @@ h2 {
 .policy-txt {
   font-size: 1.7rem;
   line-height: 2.2rem;
-  color: #000c24;
+  color: #272727;
   font-family: "Rubik", sans-serif;
   font-weight: lighter; }
 
@@ -3227,7 +3237,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
   line-height: 22.5px;
   font-weight: 400;
   text-transform: none;
-  color: #000c24; }
+  color: #272727; }
   .head-text-packages span {
     font-weight: 500; }
   @media only screen and (max-width: 37.5em) {
@@ -4030,10 +4040,10 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
     align-items: center;
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    color: #000c24;
+    color: #272727;
     line-height: 22.5px;
-    font-weight: 100;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
     .processM_section-list-items img {
       margin-right: 2rem;
       width: 3rem;
@@ -4045,6 +4055,15 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
   margin-inline: auto;
   padding-top: 10rem;
   margin-inline: auto; }
+
+.processM_text-promo {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  color: #272727;
+  line-height: 25.5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
 
 .maintence_desc {
   width: 100%;

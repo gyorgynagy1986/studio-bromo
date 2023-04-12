@@ -192,11 +192,12 @@ $color-nav:var(--nav);
 $color-footer:var(--nav);
 
 //$color-paragraph: #3b3a3a;
-$color-paragraph: #000c24;
+$color-paragraph: #272727;
 $color-paragraph-new: #272727;
 //$color-paragraph-2: #494949;
-$color-paragraph-2: #000c24;
+$color-paragraph-2: #272727;
 
+//#000c24;
 
 // $color-main-backgroung: rgba(167, 223, 255, 0.2);
 $color-secondary-backgroung: var( --secBcground);
@@ -249,6 +250,12 @@ $font-display: 'Rubik', sans-serif;
     text-align: center;
 }
 
+.title-prefix {
+    @include respond (phone) {
+        font-size: 3rem;
+        line-height:3.5rem;;
+    }
+}
 .mbz {
     margin-bottom: 0 !important;
 }
@@ -298,6 +305,12 @@ $font-display: 'Rubik', sans-serif;
 
 .mt-15 {
     margin-top: 15rem !important;
+}
+
+.mw100 {
+    @include respond (phone) {
+        width: 100% !important;
+}
 }
 
 .w270 {
