@@ -39,6 +39,9 @@
 
 
 } */
+.tac {
+  text-align: center; }
+
 .mbz {
   margin-bottom: 0 !important; }
 
@@ -709,7 +712,11 @@ td span {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 2rem;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-top: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .processM-2-title {
+      font-size: 1.6rem; } }
 
 .b1 {
   font-size: 3.8rem;
@@ -4103,9 +4110,6 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem; }
-
-.processM-2-title {
-  padding-top: 2rem; }
 
 .bm1 {
   grid-column: 1;
