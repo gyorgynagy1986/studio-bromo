@@ -748,7 +748,7 @@ h2 {
     @include linearOrange;
     font-size: 2rem;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: .5rem;
 
     @include respond (phone) {
         font-size: 1.6rem;
