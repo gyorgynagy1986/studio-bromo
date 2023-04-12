@@ -293,6 +293,10 @@ $font-display: 'Rubik', sans-serif;
     margin-top: 5rem !important;
 }
 
+.mt-15 {
+    margin-top: 15rem !important;
+}
+
 .w270 {
     width: 270px;
     @include respond (phone) {

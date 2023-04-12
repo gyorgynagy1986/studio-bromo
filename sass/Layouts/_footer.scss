@@ -4,17 +4,17 @@
     
     .f-c {
         width: 100%;
-        min-height: 50rem; 
         background: linear-gradient(180deg, #184293 0%, #49089B 197.88%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-top: 10rem;
         padding-left: 2%;
         padding-right: 2%;
 
         @include respond (tablet) {
-            padding: 2rem;
+            padding: 8rem 2rem 2rem 2rem;
         }
     }
 
