@@ -342,7 +342,12 @@ $font-display: 'Rubik', sans-serif;
     line-height: 140% !important;
 }
 
-
+.header-mb {
+    margin-bottom: 15rem;
+    @include respond (phone) {
+        margin-bottom: 0rem;
+    }
+   }
 
 .off-text-selection {
     -webkit-user-select: none  !important; /* Safari */
