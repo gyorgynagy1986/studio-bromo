@@ -1,5 +1,6 @@
 .btn {
     // background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+    position: relative;
     border-radius: 6px;
     border:none;
     width: 25.8rem;
@@ -12,14 +13,36 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    transition: 0.5s ;
+    transition: all .2s ;
     background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
     /*background-image: linear-gradient(to right, #184293 0%, #FF006B 30%, #590672 90%);   */
 
 
+    &::before {
+        content: 'KAPCSOLATBA LÉPEK';
+        position: absolute;
+        padding: 15px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: linear-gradient(270deg, #FF5C00 50%, #FF5C00 100%);
+        opacity: 0;
+        transition: all .2s ease-in-out;
+       }
+
+   
+
     @include respond (phone) {
         height: 4.5rem;
     } 
+}
+
+.btn:hover::before {
+    opacity: 1;
+    @include respond (phone) {
+        opacity: 0;
+    }
 }
 
 
