@@ -1,5 +1,13 @@
+const effectPrefix = document.getElementById('effect-prefix');
+console.log(effectPrefix);
 
-  //MOBILE NAV HANDELER
+setTimeout(()=> {
+  effectPrefix.style.opacity = '1'
+
+}, 10)
+ 
+ 
+ //MOBILE NAV HANDELER
 
  function check(checked = true) {
    const cbs = document.querySelectorAll(".mobilenav_checkbox");
@@ -59,7 +67,7 @@ const hoverHandler = function(e) {
   }
 }
 
-nav.addEventListener('mouseover', hoverHandler.bind(0.6))
+nav.addEventListener('mouseover', hoverHandler.bind(0))
 nav.addEventListener('mouseout', hoverHandler.bind(0));
 
 

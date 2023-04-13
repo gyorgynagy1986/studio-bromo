@@ -3,9 +3,6 @@
     background-color: white;
 }
 
-.header-mb {
- margin-bottom: 15rem
-}
 
 .head-text-packages {
     @include greyParagraph;
@@ -15,7 +12,6 @@
     @include respond (phone) {
        font-size: 1.4rem;
     }
-
 }
 
 .toogle-container {
@@ -46,7 +42,7 @@
           padding: 1rem;
           cursor: pointer;
           z-index: 1;
-          font-family: "Rubik", sans-serif;
+          font-family: $font-display;
           font-weight: 400;
           font-size: 20px;
           line-height: 24px;
@@ -200,7 +196,7 @@
     background: #FFFFFF;
     box-shadow: 10px 10px 30px rgba(240, 250, 255, 0.9), -10px -10px 30px rgba(240, 250, 255, 0.9);
     padding: 3rem;
-    font-family: 'Rubik';
+    font-family: $font-display;
     font-weight: 300;
     font-size: 17px;
     line-height: 161%;

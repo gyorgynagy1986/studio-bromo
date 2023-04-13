@@ -12,6 +12,8 @@ h1 {
     font-weight: 700;
     line-height: 6.68rem;
     letter-spacing: -0.03em;
+    display: block;
+
 
     @include respond (SCLaptop) {
         font-size: 4rem;
@@ -25,8 +27,11 @@ h1 {
 
     @include respond (SMphone) {
         font-size: 2.3rem;
+
     }
 }
+
+
 
 // TEXT UNDER THE H1 IN THE HEADER'S TITLE
 
@@ -35,7 +40,8 @@ h3 {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.34rem;
-
+    display: inline-block;
+    
     @include respond (SCLaptop) {
         font-size: 1.6rem;
     }
@@ -58,6 +64,7 @@ h4 {
     line-height: 2.08rem; 
     margin-top:3rem;
     text-transform: uppercase;
+    display: inline-block;
     
     @include respond (phone) {
         margin-top:0;
@@ -70,7 +77,8 @@ h4 {
 }
 
 .new-color {
-    color: #1f3d76 !important;
+    color: #184293 !important;
+   /* color: #1f3d76 !important; */
 }
 
 .background-h1-cover {
@@ -297,7 +305,8 @@ h2 {
     margin-top: 2rem;
     text-decoration: underline;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.2s;
+
 
 
 }
@@ -457,7 +466,7 @@ h2 {
             font-weight: 400;
             font-size: 14px;
             line-height: 2.1rem;
-            color: #494949;
+            color: $color-paragraph-2;
 
             span {
                 line-height: 2rem;
@@ -480,7 +489,7 @@ h2 {
 /*****************************************************************************************************/
 /*****************************************************************************************************/
 
-//PROVATE POLICY 
+//PRIVATE POLICY 
   
 .policy-title-mian {
     font-size: 4rem !important;
@@ -505,10 +514,11 @@ h2 {
 }
 
 .policy-txt {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 2.2rem;
     color: $color-paragraph;
     font-family: $font-display;
+    font-weight: lighter;
 }
 
 .policy-margin {
@@ -688,8 +698,62 @@ h2 {
   
   }
 
+  // KARBANTARTÁS
+
+  .maintence-h1 {
+    h1 {
+        font-size: 5rem !important;
+    }
+  }
+
   .td-price {
     @include respond (phone) {
         font-size: 14px !important;
     }
   }
+
+  .head-number {
+    
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 6rem;
+    @include linearBlue;
+
+}
+
+.head-text {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 20.8px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text-1 {
+    @include greyParagraph;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+.text-2 {
+    @include greyParagraph;
+    font-family: "Roboto", sans-serif;
+    color: #6f6f6f;
+    font-size: 1.4rem;
+
+}
+
+.processM-2-title {
+    @include linearOrange;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: .5rem;
+
+    @include respond (phone) {
+        font-size: 1.6rem;
+    }
+
+}
+

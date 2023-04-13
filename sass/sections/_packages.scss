@@ -66,7 +66,10 @@
                 border: none;
                 background: unset;
                 color: #184293;
-                
+
+                &:hover {
+                    color: #0a214e;
+                }
                 @include respond (phone) {
                     padding: 0 0;
                 }

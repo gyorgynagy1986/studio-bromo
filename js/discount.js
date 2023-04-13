@@ -14,30 +14,28 @@ const textDiscount = {
 }
 
 
-console.log(btnDiscount, 'hello');
-
 function modal () {
-
-
     const message = document.createElement('div');
-
-   
-       message.classList.add('modal-message');
-
        
-       message.innerHTML = ` ${textDiscount.title} ${textDiscount.p1} ${textDiscount.p2} ${textDiscount.p3} ${textDiscount.p4} ${textDiscount.p5} <button class="btn-modal btn--close--cookie">bezár</button>`;
-     
+       message.classList.add('modal-message');  
+       
+       message.innerHTML = ` ${textDiscount.title} ${textDiscount.p1} ${textDiscount.p2} ${textDiscount.p3} ${textDiscount.p4} ${textDiscount.p5} <button class="btn-modal btn--close--modal">bezár</button>`;
+      
        bodyDiscount.appendChild(message);
        
-       document.querySelector('.btn--close--cookie')?.
+       document.querySelector('.btn--close--modal')?.
          addEventListener('click',  () => {
            message.remove() // NEW METHOD
-       console.log("hello");
+           btnDiscount.style.display = 'block'
        })
+  return
 }
 
 
-btnDiscount.addEventListener('click', modal)
+btnDiscount.addEventListener('click', () => {
+  modal ()
+  btnDiscount.style.display = 'none'
+})
 
 
 
