@@ -67,6 +67,15 @@
 .mb-5 {
   margin-bottom: 5rem !important; }
 
+.mb-9 {
+  margin-bottom: 9rem !important; }
+
+.mb-9-price {
+  margin-bottom: 9rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .mb-9-price {
+      margin-bottom: 2rem !important; } }
+
 .mb-10 {
   margin-bottom: 10rem !important; }
 
@@ -111,7 +120,7 @@
   line-height: 140% !important; }
 
 .header-mb {
-  margin-bottom: 15rem; }
+  margin-bottom: 9rem; }
   @media only screen and (max-width: 37.5em) {
     .header-mb {
       margin-bottom: 0rem; } }
@@ -4084,7 +4093,8 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .maintence_main-head {
-      padding-bottom: 5rem; } }
+      padding-bottom: 5rem;
+      margin-top: 2rem !important; } }
 
 .processM_section-list {
   width: 90%;
