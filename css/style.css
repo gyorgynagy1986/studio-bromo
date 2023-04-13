@@ -4575,7 +4575,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
 
 .discountNav {
   background-color: white;
-  box-shadow: 0px 15px 25px -4px rgba(150, 150, 150, 0.24); }
+  box-shadow: 0px 15px 25px -4px rgba(150, 150, 150, 0.096); }
 
 .colorFooterDiscount {
   background-color: #7749d4 !important; }
