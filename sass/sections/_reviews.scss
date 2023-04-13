@@ -16,9 +16,10 @@
         width: 90%;
         height: 100%;
         max-width:110rem;
-        @include respond (phone) {
-        display:flex;
-        width: 100%;
+        
+        @include respond (tablet) {
+        display:block;
+        width: auto;
         }
 
         &_box {
@@ -26,6 +27,29 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 18rem;
+                max-width: 35rem;
+                margin-top: 3rem;
+                position: relative;
+               
+             
+
+                @include respond (tablet) {
+                    min-height: 10rem;
+                    max-width:100%
+                    }
+
+                @include respond (SCtablet) {
+                     min-height: 12rem;
+                     max-width:100%
+                     }
+
+            }
 
             &-photo {
                 
@@ -55,7 +79,7 @@
 // SLIDERS VISIBLITY
 
 .review-mobile-invisible {
-    @include respond (phone) {
+    @include respond (tablet) {
     display: none;    }
 }
 
@@ -63,6 +87,6 @@
 .invisible {
     display: none;
    
-    @include respond (phone) {
+    @include respond (tablet) {
       display: block; }
   }

@@ -7,6 +7,12 @@
     grid-column: 1 / span 2;
     grid-row: 1;
     
+
+    @media only screen and (max-width: 1107px) {
+        display: none;
+    }
+
+
     @include respond (phone) {
         display: none;
 
@@ -28,9 +34,13 @@
     grid-column: 2 / span 2;
     grid-row: 1;
     
+    @media only screen and (max-width: 1107px) {
+        display: none;
+    }
+
     @include respond (phone) {
         display: none;
-
+       
     }
 
      &-half-top {
@@ -48,9 +58,12 @@
     display: flex;
     justify-content: center;
 
+    @media only screen and (max-width: 1107px) {
+        display: none;
+    }
+
     @include respond (phone) {
         display: none;
-
     }
     
     
@@ -69,9 +82,13 @@
     display: flex;
     justify-content: center;
 
+    @media only screen and (max-width: 1107px) {
+        display: none;
+    }
+
     @include respond (phone) {
         display: none;
-
+      
     }
     
     
@@ -91,6 +108,11 @@
     align-items: center;
     justify-content: flex-end;
 
+
+    @media only screen and (max-width: 1107px) {
+        display: none;
+    }
+
     @include respond (phone) {
         display: none;
 
@@ -101,7 +123,5 @@
         width: 6rem;
         @include circlehalf;
         transform: translateX(55%) rotate(90deg);
-
-
     }
 }

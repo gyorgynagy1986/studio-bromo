@@ -2,17 +2,36 @@
 //HEADER
 //HEADER TITLE
 
+a {
+    color: inherit;
+}
+
 h1 {
-    font-size: 3.6rem;
+    font-size: 5.2rem;
     font-family: $font-primary;
     font-weight: 700;
-    line-height: 4.68rem;
+    line-height: 6.68rem;
+    letter-spacing: -0.03em;
+    display: block;
+
+
+    @include respond (SCLaptop) {
+        font-size: 4rem;
+        line-height: 4.68rem;
+    }
     
     @include respond (phone) {
-        font-size: 2.1rem;
-        line-height: 2.2rem;
+        font-size: 2.6rem;
+        line-height: 3.1rem;
+    }
+
+    @include respond (SMphone) {
+        font-size: 2.3rem;
+
     }
 }
+
+
 
 // TEXT UNDER THE H1 IN THE HEADER'S TITLE
 
@@ -21,9 +40,14 @@ h3 {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.34rem;
+    display: inline-block;
+    
+    @include respond (SCLaptop) {
+        font-size: 1.6rem;
+    }
 
     @include respond (phone) {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 1.9rem;
     }
 
@@ -40,6 +64,7 @@ h4 {
     line-height: 2.08rem; 
     margin-top:3rem;
     text-transform: uppercase;
+    display: inline-block;
     
     @include respond (phone) {
         margin-top:0;
@@ -51,6 +76,21 @@ h4 {
     @include greyParagraph;
 }
 
+.new-color {
+    color: #184293 !important;
+   /* color: #1f3d76 !important; */
+}
+
+.background-h1-cover {
+    padding: .1rem;
+
+}
+
+.main-title-linear {
+    background-image: linear-gradient(to right, #a00dcc 0%, #FF006B 30%, #a00dcc 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 /*****************************************************************************************************/
 
@@ -58,14 +98,14 @@ h4 {
 
 h2 {
     font-family:$font-primary;
-    font-size: 4.8rem;
+    font-size: 4.2rem;
     line-height: 4.5rem;
     font-weight: 700;
 
     @include respond (phone) {
         font-size: 3rem;
         width: 50%;
-        line-height: 3rem;
+        line-height: 3.5rem;
     }
 }
 
@@ -91,6 +131,7 @@ h2 {
 .name-of-business {
     font-size: 28px;
     margin-top: 1px;
+    margin-bottom: 1rem;
     font-weight: 700;
     line-height: 42px;
    
@@ -196,11 +237,13 @@ h2 {
         
         p {
             font-family: $font-display;
-            font-weight: 500;
-            font-size: 1.6rem;
+           // old font-weight: 500;
+            
+           font-size: 1.6rem;
             line-height: 2rem;
-            color: #6F6F6F;
-
+           // OLD color: #6F6F6F;
+            color: #4c4c4c;
+            
         }
     }
 
@@ -214,12 +257,36 @@ h2 {
     font-weight: 500;
 }
 
+.from-p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* darkblue */
+
+    color: #184293;
+
+    @include respond (phone) {
+        font-size: 10px;
+
+    }
+}
+
 .price {
-    @include linearOrange;
+     @include linearOrange;
     font-family: $font-primary;
     font-size: 2.8rem;
     line-height: 4.2rem;
     font-weight: 700;
+
+    @include respond (SMphone) {
+        font-size: 2.5rem;
+
+    }
 
     &-break {  
         line-height: 3.6rem;      
@@ -238,7 +305,8 @@ h2 {
     margin-top: 2rem;
     text-decoration: underline;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.2s;
+
 
 
 }
@@ -282,15 +350,10 @@ h2 {
     &-text {
         font-family: $font-display;
         font-weight: 400;
-        max-width: 25rem;
-        margin-top: 3rem;
-        position: relative;
+        letter-spacing: -0.02em;
         font-size: 1.5rem;
         line-height: 2.25rem;
 
-        @include respond (phone) {
-            max-width:100%
-        }
         
         span {
             @include linearOrange;
@@ -305,10 +368,10 @@ h2 {
             &::after {
                 content: "";
                 height: 1.6px;
-                width: 100%;
+                width: 67px;
                 display: block;
                 background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
-                top: 1.5rem;
+                top: 1.7rem;
                 opacity: 0;
                 transition: 0.2s;
                 position: absolute;
@@ -346,14 +409,43 @@ h2 {
 
 //DETAILED PACKAGES TABLE
 
+
+    .fonst-size-price {
+        font-size: 2rem !important;
+        line-height: 26px;
+        text-align: center;
+
+        @include respond (SCtablet) {
+            font-size: 1.6rem !important;
+            letter-spacing: -0.5px;
+        }
+
+        @include respond (phone) {
+            font-size: 1.3rem !important;
+            line-height: 17px;
+        }
+
+        @media screen and  (max-width: 380px ) { 
+            font-size: 1.2rem !important;
+
+        }
+
+    }
+
+
+
     .packagetitle {
         font-family: $font-primary;
         font-weight: 700;
-        font-size: 3.8rem;
+        font-size: 3.5rem;
         line-height: 5.8rem;
         text-align: center;
         @include linearBlue;
         position: relative;
+
+        @include respond (SCLaptop) {
+            font-size: 3rem ;
+        }
 
     }
 
@@ -371,10 +463,10 @@ h2 {
     .bposi,
     .bp {
             font-family: $font-display; 
-            font-weight: 500;
-            font-size: 15px;
+            font-weight: 400;
+            font-size: 14px;
             line-height: 2.1rem;
-            color: #6F6F6F;
+            color: $color-paragraph-2;
 
             span {
                 line-height: 2rem;
@@ -383,17 +475,285 @@ h2 {
                 @include respond (phone) {
                     line-height: 1.5rem;  
                     text-align: center;
-                    font-weight: bold;
-
                 }
             }
 
             @include respond (phone) {
-                font-size: 10px;
+                font-size: 12px;
                 line-height: 1.5rem;
             }
 
     }
 
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+
+//PRIVATE POLICY 
   
+.policy-title-mian {
+    font-size: 4rem !important;
+    color: $color-nav;
+    margin-bottom: 2rem !important;
+
+    @include respond (phone) {
+        font-size: 3rem !important;
+    }
+}
+
+.policy-title {
+    font-size: 3rem !important;
+    color: $color-nav;
+    margin-bottom: 1.2rem !important;
+    
+    @include respond (phone) {
+        font-size: 2.5rem !important;
+        width: 100%;
+    }
+
+}
+
+.policy-txt {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    color: $color-paragraph;
+    font-family: $font-display;
+    font-weight: lighter;
+}
+
+.policy-margin {
+    margin-top: 3rem !important;
+    margin-bottom: 1rem;
+}
+
+.policy-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.policy-margin-bottom li{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+
+//CSOMAG KISOKOS
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+
+//PRICE LIST
+
+.price-h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--colrpPriceText);
+    margin-bottom: 4rem;
+
+    h2 {
+        font-size: 5rem !important;
+        text-align: center;
+        line-height: 140%;
+
+        @include respond (tablet) {
+            font-size: 4rem !important;
+        }
+
+        @include respond (phone) {
+            font-size: 3rem !important;
+            width: 100% !important;
+        }
+
+        @include respond (SMphone) {
+            font-size: 2.6rem !important;
+            width: 100% !important;
+        }
+
+    }
+
+  }
+
+  th {
+    p {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 150%;
+
+      background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      @include respond (tablet) {
+        font-size: 22px;
+        }
+
+        @include respond (phone) {
+            font-size: 15px;
+        }
+
+        
+    }
+
+    span {
+      @include textprice;
+     
+      @include respond (tablet) {
+        font-size: 18px !important;
+
+        }
+        @include respond (phone) {
+            font-size: 14px !important;
+    
+        }
+    }
+
+  }
+
+  td {
+
+    .p-title {
+  
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 150%;
+      background: linear-gradient(265.45deg, #7000FF -35.65%, #00B2FF 69.11%, #00D0DD 142.99%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+   
+      @include respond (tablet) {
+        font-size: 24px;
+        }
+
+        @include respond (phone) {
+            font-size: 20px;
+            }
+
+        @include respond (SMphone) {
+            font-size: 15px;
+            }    
+   
+    }
+
+
+
+
+    span {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 130%;
+    
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: var(--colrpPriceText);
+      
+      @include respond (phone) {
+        font-size: 10px;
+        }
+
+    }
+
+  }
+
+  .extra {
+
+    p {
+      @include textprice;
+      color: #FFFFFF !important;
+      text-align: center;
+    }
+
+  }
+
+  .aud-container {
+
+    a {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      text-decoration-line: underline;
+      margin-top: 1rem;
+      color: var(--colrpPriceText);
+
+      @include respond (phone) {
+        font-size: 14px !important;
+    }
+
+
+    }
+  
+  }
+
+  // KARBANTARTÁS
+
+  .maintence-h1 {
+    h1 {
+        font-size: 5rem !important;
+    }
+  }
+
+  .td-price {
+    @include respond (phone) {
+        font-size: 14px !important;
+    }
+  }
+
+  .head-number {
+    
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 6rem;
+    @include linearBlue;
+
+}
+
+.head-text {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 20.8px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text-1 {
+    @include greyParagraph;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+.text-2 {
+    @include greyParagraph;
+    font-family: "Roboto", sans-serif;
+    color: #6f6f6f;
+    font-size: 1.4rem;
+
+}
+
+.processM-2-title {
+    @include linearOrange;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: .5rem;
+
+    @include respond (phone) {
+        font-size: 1.6rem;
+    }
+
+}
 

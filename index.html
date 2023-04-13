@@ -2,164 +2,174 @@
 <html lang="hu">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Weboldal készítés és üzemeltetés kis és középvállalatoknak megfizethető áron. Kiemelkedő ár-érték arányú weboldalak micro-, kis- és középvállalkozásoknak.
-        ">
-        <meta name="keywords" content="webdesign, weboldal készítés, üzemeltetés, karbantartás, webfejlesztés, weblap, wordpress,">
+        <meta name="description" content="Termékeink között szerepel a professzionális weboldal készítés és üzemeltetés, honlap design, tervezés és megvalósítás, valamint karbantartás szolgáltatás. Több éves tapasztalattal rendelkezünk az online jelenlét építésében, így garantáltan a legjobb eredményt érjük el az ügyfeleink számára. Válasszon minket, hogy biztosan sikeres legyen az online megjelenése!">
         <meta name="author" content="Team of Studio Bromo">   
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+        
+        <link rel="preload" href="https://fonts.gstatic.com/s/rubik/v26/iJWKBXyIfDnIV7nBrXw.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/rubik/v26/iJWKBXyIfDnIV7nPrXyi0A.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2" as="font" type="font/woff2" crossorigin>
+
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+         >        
         <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
         <link rel="icon" href="/favicon/favicon-32x32.png" sizes="16x16 32x32" type="image/png">
-        
-        <title>Weboldal készítés üzemeltetés és karbantartás &mdash; Studio Bromo </title>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag"></script>
+        <title>Weboldal készítés és üzemeltetés — Studio Bromo Webfejlesztő Ügynökség</title>
     </head>
     <body>
-        
     <!-- MOBILE NAVIGATION // NO JS // CHECK BOX -->
         <div class="mobilenav">
-
             <div class="nav_logo-mobile">
-                    <img src="/img/StudioBromo_logo_landscape.svg" alt="logo">
-                </div>
-
+                <img onclick="location.href='/'" width="132" height="45"  src="/img/StudioBromo_logo_landscape.svg" alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik">
+            </div>
             <input type="checkbox" class="mobilenav_checkbox " id="navi-toogle">
             <label for="navi-toogle" class="mobilenav_button"><span class="mobilenav_icon"></span></label>
-
             <div class="mobilenav_background">&nbsp;</div>
-
             <nav class="mobilenav_nav">
+                <div class="nav_logo-mobile">
+                    <img onclick="location.href='/'" width="132" height="45"  src="/img/StudioBromo_logo_landscape.svg" alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik">
+                </div>
                 <ul class="mobilenav_list">
-                     <li class="mobilenav_item"><a href="#featured" class="mobilenav_link">kiemelt munkáink</a></li> 
-                     <li class="mobilenav_item"><a href="#process" class="mobilenav_link">hogyan dolgozunk</a> </li>
-                     <li class="mobilenav_item"><a href="#packages" class="mobilenav_link">csomagjaink</a></li>
-                     <li class="mobilenav_item"><a href="#reviews" class="mobilenav_link">ügyfeleink rólunk</a></li> 
-                     <li class="mobilenav_item"><a href="#touch" class="mobilenav_link"><span>Kapcsolat</span></a></li>
+                   <li class="mobilenav_item"><a href="#featured" class="mobilenav_link">kiemelt munkáink</a></li> 
+                   <li class="mobilenav_item"><a href="#process" class="mobilenav_link">hogyan dolgozunk</a> </li>
+                   <li class="mobilenav_item"><a href="#packages" class="mobilenav_link">szolgáltatások</a></li>
+                   <li class="mobilenav_item"><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok" class="mobilenav_link modilnav-left-extra-item">Weboldal csomagok</a></li>
+                   <li class="mobilenav_item"><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok" class="mobilenav_link modilnav-left-extra-item">Üzemeltetés & karbantartás</a></li>
+                   <li class="mobilenav_item"><a href="/weboldal-igenyfelmeres" class="mobilenav_link modilnav-left-extra-item">igényfelmérő kérdőív</a></li>
+                   <li class="mobilenav_item"><a href="/szolgaltatas-reszletek" class="mobilenav_link modilnav-left-extra-item">szolgáltatás kisokos</a></li>
+                   <li class="mobilenav_item"><a href="/szolgaltatas-arak" class="mobilenav_link">árak</a></li>
+                   <li class="mobilenav_item"><a href="#reviews" class="mobilenav_link">ügyfeleink rólunk</a></li> 
+                   <li class="mobilenav_item"><a href="/weboldal-akciok" class="mobilenav_link">akciók</a></li> 
+                   <li class="mobilenav_item"><a href="#touch" class="mobilenav_link"><span>Kapcsolat</span></a></li>
                 </ul>
             </nav>
         </div>
-    
     <!-- MOBILE NAVIGATION END -->
-
-        <header class="header" id="home">
-
-
-             <!-- HEADER -->
-           
-            <nav class="nav margin-top-middle-2">
-                <div class="nav_logo">
-                    <img src="/img/StudioBromo_logo_landscape.svg" alt="logo">
+    <!-- HEADER -->
+        <!--  <div id="preloader"></div> -->
+    <header class="header" id="home">
+        <div class="nav-sticky-prefix">
+            <nav class="nav">
+                <div class="nav_logo dark-mode">
+                    <img onclick="location.href='/'" width="300" height="103"  src="/img/StudioBromo_logo_landscape.svg" alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik">
                 </div>
-
                 <ul class="nav_list">
-                        <li class="nav_item"><a href="#featured" class="nav_link">kiemelt munkáink</a></li>
-                         <li class="nav_item"><a href="#process" class="nav_link">hogyan dolgozunk</a></li> 
-                        <li class="nav_item"><a href="#packages" class="nav_link">csomagjaink</a></li>
-                       <li class="nav_item"><a href="#reviews" class="nav_link">ügyfeleink rólunk</a></li> 
-                        <li class="nav_item"><a href="#touch" class="nav_link"><span>Kapcsolat</span></a></li>
+                    <li class="nav_item"><a href="#featured" class="nav_link">kiemelt munkáink</a></li>
+                    <li class="nav_item"><a href="#process" class="nav_link">hogyan dolgozunk</a></li> 
+                    <li class="nav_item nav_dropdown">
+                        <a href="#" class="nav_link">szolgáltatások&nbsp;<samp class="dd-menu">&vellip;</samp></a>
+                        <a href="/weboldal-tervezesi-es-fejlesztesi-csomagok" class="hidden">Weboldal csomagok</a>
+                        <a href="/weboldal-uzemeltetes-es-karbantartas-csomagok" class="hidden">Üzemeltetés & karbantartás</a>
+                        <a href="/weboldal-igenyfelmeres" class="hidden">igényfelmérő kérdőív</a>
+                        <a href="/szolgaltatas-reszletek" class="hidden">szolgáltatás kisokos</a>
+                    </li>
+                    <li class="nav_item"><a href="/szolgaltatas-arak" class="nav_link">árak</a></li>
+                    <li class="nav_item"><a href="#reviews" class="nav_link">ügyfeleink rólunk</a></li> 
+                    <li class="nav_item"><a href="/weboldal-akciok" class="nav_link">akciók</a></li> 
+                    <li class="nav_item"><a href="#touch" class="nav_link"> <span> Kapcsolat</span></a></li>
                 </ul>
             </nav>
-            
-            <div class="header_title margin-bottom-middle">
-                <h1>Kiemelkedő ár-érték arányú weboldalak micro-, kis- és középvállalkozásoknak.</h1>
-            </div>
-            
-            <div class="header_main-text-container">
-                
-                <div class="header_main-text-container-1">
-                    <span class="dot"></span>
-                    <div class="text-bx-size"><h3>A <span>STUDIO BROMO</span>-nál hisszük, hogy a <span>kedvező árnak</span> és a <span>gyorsaságnak</span> nem kell a <span>minőség</span> rovására mennie.</h3>    </div>  
-                     <button type="button" onClick="document.getElementById('touch').scrollIntoView();" class="btn ">
-                        <span class="btn__visible">kapcsolatba lépek!</span>
-                    </button>  
+        </div>
+            <div id="effect-prefix" style="opacity: 0; width: 90%; max-width: 110rem;">
+                <div class="header_title margin-bottom-middle">
+                    <h1>Kiemelkedő ár-érték arányú weboldalak készítése kis- és középvállalkozásoknak.</h1>
                 </div>
-
-                <div class="header_main-text-container-1">
-                    <div class="multiply-dot">
+                <div class="header_main-text-container">
+                    <div class="header_main-text-container-1">
                         <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>   
-                    <div class="text-bx-size"><h3><span>Optimalizált folyamataink</span> segítségével <span>hatékony, prémium színvonalú</span> szolgáltatást nyújtunk.</h3>    </div> 
-                    <button type="button" onClick="document.getElementById('process').scrollIntoView();" class="btn-2 ">
-                        <div class="btnlineartrick">hogyan dolgozunk</div>
-                    </button>
+                        <div class="text-bx-size"><h2>A <b>STUDIO BROMO</b>-nál hisszük, hogy a kedvező árnak és a gyorsaságnak nem kell a <b>minőség</b> rovására mennie.</h2></div>  
+                        <button type="button" onClick="document.getElementById('touch').scrollIntoView();" class="btn">
+                           kapcsolatba lépek
+                        </button>  
+                    </div>
+                    <div class="header_main-text-container-1">
+                        <div class="multiply-dot">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>   
+                        <div class="text-bx-size"><h2><b>Optimalizált</b> folyamataink segítségével hatékony, <b>prémium</b> színvonalú weboldal szolgáltatásokat nyújtunk.</h2></div> 
+                        <button type="button" onClick="document.getElementById('process').scrollIntoView();" class="btn-2">
+                            <span class="btnlineartrick">hogyan dolgozunk</span>
+                        </button>
+                    </div>
                 </div>
-            
             </div>
-            
             <div class="header_main-services">
-                
                 <div class="header_main-services-box">   
-                    <img src="/img/speed.svg" alt="svg">
+                    <img src="/img/speed.svg" alt="Munkánk gyorsaságát reprezentáló kép">
                     <h4 class="header_main-services-box-h4 h4 mobile-invisible">gyorsaság,<br>hatékonyság</h4>
                     <h4 class="header_main-services-box-h4 h4 mobile-visible">gyorsaság, hatékonyság</h4>
                     <p class="header_main-services-box-text">Optimalizált folyamataink segítségével akár 2 héten belül elkészülhet weboldala.
                     </p>
                 </div>
-                
                 <div class="header_main-services-box">
-                    <img src="/img/price.svg" alt="svg">
+                    <img src="/img/price.svg" alt="Hihetetlenül kedvező weboldal árat reprezentáló kép">
                     <h4 class="header_main-services-box-h4 h4 mobile-invisible">kiemelkedő<br>ár-érték arány</h4>
                     <h4 class="header_main-services-box-h4 h4 mobile-visible">kiemelkedő<br>ár-érték arány</h4>
                     <p class="header_main-services-box-text">Ajánlatainkat árérzékeny, kisebb méretű vállalkozások igényeire szabtuk.
                     </p>
                 </div>
-
                 <div class="header_main-services-box">
-                    <img src="/img/service.svg" alt="svg">
+                    <img src="/img/service.svg" alt="Széleskörű weboldal szolgáltatás, mely kitért a tervezésre, publikálásra és karbantartásra">
                     <h4 class="header_main-services-box-h4 h4 mobile-invisible">TELJESKÖRŰ<br> SZOLGÁLTATÁS</h4>
                     <h4 class="header_main-services-box-h4 h4 mobile-visible">TELJESKÖRŰ SZOLGÁLTATÁS</h4>
                     <p class="header_main-services-box-text">Megtervezzük, elkészítjük, publikáljuk és karbantartjuk weboldalát.
                     </p>
                 </div>
-                
                 <div class="header_main-services-box">
-                    <img src="/img/quality.svg" alt="svg">
+                    <img src="/img/quality.svg" alt="Weboldal minősége melynek a több éves tapasztalat ad garanciát">
                     <h4 class="header_main-services-box-h4 h4 mobile-invisible">minőség<br>garancia</h4>
                     <h4 class="header_main-services-box-h4 h4 mobile-visible">minőség-garancia</h4>
                     <p class="header_main-services-box-text">Munkatársaink összesen több mint 20 év szakmai tapasztalattal rendelkeznek.
                     </p>
                 </div>
+            </div>
+    </header>
 
-        </header>
-
-        <!-- HEADER END -->
-        <!-- FEATURED WORK -->
+    <!-- HEADER END -->
+    <!-- FEATURED WORK -->
 
         <section class="works" id="featured">
             <div class="works_main-head">
                 <h2>Kiemelt munkáink</h2>
             </div>
-        
-        
-        
         <div class="works_contanier">
                  <div class="works_contanier-photo">
-
-                  <a href="#popup"><img src="/img/works1.png" alt="phot" class="forefect"></a>
+                  <a href="https://devayoga.hu/"><img src="/img/works1.png" alt="Deva Yoga stúdió weboldala melyet a Studio Bromo készített" class="forefect"></a>
                 </div> 
-
                 <div class="works_contanier_content-box">
                     <span class="dot"></span>
                     <p class="clinet">Clinet</p>
-                    <p class="name-of-business">Szegedszoli</p>
+                    <p class="name-of-business">Devá Yoga Studio</p>
+                    <div class="works_contanier_content-box_photo-mobile">
+                        <a href="https://devayoga.hu/"><img src="/img/works1.png" alt="Deva Yoga stúdió weboldala melyet a Studio Bromo készített" class="forefect"></a>
+                      </div> 
                     <div class="multiply-dot">
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
                     <p class="clinet">BUSINESS</p>
-                    <p class="name-of-business-2">Solarium</p>
+                    <p class="name-of-business-2">Jóga stúdió</p>
                     <div class="multiply-dot">
                         <span class="dot"></span>
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
                     <p class="clinet">TASK</p>
-                    <div class="works_text-box"><p class="name-of-business-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet posuere justo sapien a ante.
-                    </p></div>
+                    <div class="works_text-box">
+                        <p class="name-of-business-text">Az oldal-design megtervezése során a vállalkozás arculata volt az irányadó.
+                            Így a google térkép is egyedi megjelenést kapott. Továbbá fontos volt a 
+                            kiemelt keresőoptimalizálás, melynek köszönhetően a releváns kulcsszavakkal az oldal a google kereső első
+                            3 találati listájában szerepel. </p>
+                    </div>
                     <div class="multiply-dot">
                         <span class="dot"></span>
                         <span class="dot"></span>
@@ -168,39 +178,41 @@
                     </div>
                     <p class="clinet">Csomag</p>
                     <div class="works_contanier_content-box-pricebox">
-                        <div class="pricebox-name">Kezdő</div>
+                        <div class="pricebox-name">Extra</div>
                         <div class="pricebox-contanier">
-                            <div class="pricebox-contanier-price">299 000 Ft</div>
+                            <div class="pricebox-contanier-price">390 000 Ft</div>
                             <div class="pricebox-contanier-from">-TÓL</div>
                         </div>
                     </div>
-                    <p class="visit-the-website">weboldal megtekintése</p>
+                    <p class="visit-the-website"><a href="https://devayoga.hu/">weboldal megtekintése</a></p>
                 </div>
             </div>
-
-       
-
             <div  class="works_contanier">
                 <div class="works_contanier-photo">
-                    <a href="#popup"><img src="/img/works2.png" alt="phot" class="forefect"></a>
+                    <a href="https://etrendmuhely.hu/"><img src="/img/works2.png" alt="Étrendműhely weboldala, amely táplálkozási tanácsokkal foglalkozik és a Studio Bromo készített" class="forefect"></a>
                 </div> 
                <div class="works_contanier_content-box">
                    <span class="dot"></span>
                    <p class="clinet">Clinet</p>
-                   <p class="name-of-business">Szegedszoli</p>
+                  
+                   <p class="name-of-business">Étrendműhely</p>
+                   <div class="works_contanier_content-box_photo-mobile">
+                    <a href="https://etrendmuhely.hu/"><img src="/img/works2.png" alt="Étrendműhely weboldala, amely táplálkozási tanácsokkal foglalkozik és a Studio Bromo készített" class="forefect"></a>
+                    </div>
                    <div class="multiply-dot">
                        <span class="dot"></span>
                        <span class="dot"></span>
                    </div>
                    <p class="clinet">BUSINESS</p>
-                   <p class="name-of-business-2">Solarium</p>
+                   <p class="name-of-business-2">Táplálkozás tanácsadás</p>
                    <div class="multiply-dot">
                        <span class="dot"></span>
                        <span class="dot"></span>
                        <span class="dot"></span>
                    </div>
                    <p class="clinet">TASK</p>
-                   <div class="works_text-box"><p class="name-of-business-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet posuere justo sapien a ante.
+                   <div class="works_text-box"><p class="name-of-business-text">A weboldal kialakítása során nagy kiemelt figyelmet kapott egy modern,
+                    fiatalos design kialakítása. Mivel az ügyfél nem rendelkezett média elemekkel (képek), így ezeket mi biztosítottuk. 
                    </p></div>
                    <div class="multiply-dot">
                        <span class="dot"></span>
@@ -210,41 +222,43 @@
                    </div>
                    <p class="clinet">Csomag</p>
                    <div class="works_contanier_content-box-pricebox">
-                    <div class="pricebox-name">Kezdő</div>
+                    <div class="pricebox-name">Creative</div>
                     <div class="pricebox-contanier">
-                        <div class="pricebox-contanier-price">299 000 Ft</div>
+                        <div class="pricebox-contanier-price">290 000 Ft</div>
                         <div class="pricebox-contanier-from">-TÓL</div>
                     </div>
                 </div>
-                   <p class="visit-the-website">weboldal megtekintése</p>
-               </div>
+                <p class="visit-the-website"><a href="https://etrendmuhely.hu/">weboldal megtekintése</a></p>
+            </div>
            </div>
-
-        
-
            <div class="works_contanier">
             <div class="works_contanier-photo">
-                <a href="#popup"><img src="/img/works3.png" alt="phot" class="forefect"></a>
+                <a href="https://hogyisvan.hu/"><img src="/img/works3.png" alt="Hogyisvan, Szegedi zenekar weboldala. " class="forefect"></a>
             </div> 
-
            <div class="works_contanier_content-box">
                <span class="dot"></span>
                <p class="clinet">Clinet</p>
-               <p class="name-of-business">Szegedszoli</p>
+               <p class="name-of-business">HogyisVan?</p>
+               <div class="works_contanier_content-box_photo-mobile">
+                <a href="https://hogyisvan.hu/"><img src="/img/works3.png" alt="Hogyisvan, Szegedi zenekar weboldala. " class="forefect"></a>
+            </div> 
                <div class="multiply-dot">
                    <span class="dot"></span>
                    <span class="dot"></span>
                </div>
                <p class="clinet">BUSINESS</p>
-               <p class="name-of-business-2">Solarium</p>
+               <p class="name-of-business-2">Zenekari bemutató oldal</p>
                <div class="multiply-dot">
                    <span class="dot"></span>
                    <span class="dot"></span>
                    <span class="dot"></span>
                </div>
                <p class="clinet">TASK</p>
-               <div class="works_text-box"><p class="name-of-business-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet posuere justo sapien a ante.
-               </p></div>
+               <div class="works_text-box"><p class="name-of-business-text">
+                    A zenekar egyszerű oldal struktúrát, 
+                    viszont kreatív design megoldásokat kért.
+                    A megvalósítás során nagy figyelmet szenteltünk a zenekari image átadására. </p>
+            </div>
                <div class="multiply-dot">
                    <span class="dot"></span>
                    <span class="dot"></span>
@@ -253,323 +267,273 @@
                </div>
                <p class="clinet">Csomag</p>
                <div class="works_contanier_content-box-pricebox">
-                <div class="pricebox-name">Kezdő</div>
+                <div class="pricebox-name">Landing</div>
                 <div class="pricebox-contanier">
-                    <div class="pricebox-contanier-price">299 000 Ft</div>
+                    <div class="pricebox-contanier-price">190 000 Ft</div>
                     <div class="pricebox-contanier-from">-TÓL</div>
                 </div>
             </div>
-               <p class="visit-the-website">weboldal megtekintése</p>
-           </div>
+            <p class="visit-the-website"><a href="https://hogyisvan.hu/">weboldal megtekintése</a></p>
+        </div>
        </div>
-       <div class="cursor"></div>
     </section>
 
-       <!-- FEATURED WORK END -->
-        <!-- PROCESS WORK -->
+    <!-- FEATURED WORK END -->
+    <!-- PROCESS WORK -->
 
         <section class="process" id="process">
             <div class="process_main-head">
                 <h2>Hogyan dolgozunk?</h2>
             </div>
-        <div class="process_container">
-                       
+         <div class="process_container">          
             <div class="process_container_methods">
-
                 <div class="process_container_box ">
-                    
                     <div class="process_container_box-head">
                         <div class="head-number">1</div>
                     </div>
-
                     <div class="process_container_box-text">
                         <div class="head-text">Kapcsolat felvétele</div>
                         <div class="process-text">Kérjen bátran tájékoztatást csomagjainkról, munkamódszereinkről!
                             Megkeresésére <span>1 munkanapon belül válaszolunk..</span> </div>
                     </div>
                 </div>
-                
                  <div class="process_container_box ">
-                    
                     <div class="process_container_box-head">
                         <div class="head-number">2</div>
                     </div>
-                    
                     <div class="process_container-box-text">
                         <div class="head-text">igényfelmérés kérdőívvel, tanácsadás</div>
                         <div class="process-text">A folyamat <span>hatékonysága</span> érdekében kérjük egy <span>igényfelmérő kérdőív</span> kitöltésére, melyet akár közösen,
                         <span>segítségünkkel, szakmai tanácsadásadásunk</span> mellett is megvalósíthat.</div>
                     </div>
                 </div>
-                
                 <div class="process_container_box ">
-                    
                     <div class="process_container_box-head">
                         <div class="head-number">3</div>
                     </div>
-                    
                     <div class="process_container-box-text">
                         <div class="head-text">árajánlat és szerződéskötés</div>
                         <div class="process-text">Egyeztetéseink alapján összeállítjuk az ön <span>céljainak leginkább megfelelő</span> árajánlatunkat.
                          A szerződés megkötése után azonnal munkába állunk!</div>
                     </div>
                 </div>
-
-                <div class="process_container_box ">
-                    
+                <div class="process_container_box ">  
                     <div class="process_container_box-head">
                         <div class="head-number">4</div>
                     </div>
-                    
                     <div class="process_container-box-text">
                         <div class="head-text">dizájn előzetes</div>
                         <div class="process-text">A munka megkezdése után egy “dizájn előzetessel” jelentkezünk. <span>Ellenőrizheti</span>, hogy a dizájn <span>megfelel-e igényeinek</span>,
                              az egyeztetések után folytatjuk a munkát a teljes weboldallal. </div>
                     </div>
                 </div>
-
                 <div class="process_container_box ">
-                    
                     <div class="process_container_box-head">
                         <div class="head-number">5</div>
                     </div>
-                    
                     <div class="process_container-box-text">
                         <div class="head-text">teljes weboldal elkészítése és átadása</div>
                         <div class="process-text">Bemutatjuk az elkészült, már az <span>ön által biztosított tartalommal</span> feltöltött weboldalt.
                              Amennyiben szükséges, lehetősége van kisebb változtatások, javítások kérésére is.</div>
                     </div>
                 </div>
-
                 <div class="process_container_box ">
-                    
                     <div class="process_container_box-head">
                         <div class="head-number">6</div>
                     </div>
-
                     <div class="process_container-box-text">
                         <div class="head-text">élesítés</div>
                         <div class="process-text">A tervek jóváhagyása és <span>elkészülte után publikáljuk weboldalát.</span>A csomagban biztosított
                         <span>további szolgáltatásainkat</span> az élesítés után <span>bármikor igénybe veheti.</span></div>
                     </div>
                 </div>
-
-                <div class="process_container_methods_btn margin-btn-process">
+                <div class="process_container_methods_btn btnUp margin-btn-process">
                     <button type="button" onClick="document.getElementById('touch').scrollIntoView();" class="btn">                        <span class="btn__visible">KAPCSOLATBA LÉPEK</span>
                     </button>
                 </div>
-
             </div>
-
                 <div class="process_container_picture">
-                <img loading="lazy" src="/img/method.svg" alt="method">
+                <img loading="lazy" src="/img/method.svg" alt="Weboldal készítés munkafolyamatának az ábrázolása">
                  </div>
-        </div>
-            
-
+         </div>
         </section>
 
-         <!-- PROCESS END -->
-         <!-- PACKAGES -->
+     <!-- PROCESS END -->
+     <!-- PACKAGES -->
 
         <section class="packages" id="packages">
             <div class="packages_main-head">
-                <h2>Csomagjaink</h2>
+                <h2> Weboldal csomagjaink</h2>
             </div>       
             <div class="packages_container">
-               
-                <div class="packages_container-box">
-                    <div class="packages_container-box-title">Kezdő</div>
-                    <div class="packages_container-box-text"> Microvállalkozásoknak, magánszemélyeknek ajánljuk. Ha egyszerűbb weboldalt szeretne és nincs szüksége gyakran frissülő tartalomra, válassza Kezdő csomagunkat!</div>
+                <div class="packages_container-box ef1">
+                    <div class="packages_container-box-title ">Landing</div>
+                    <div class="packages_container-box-text"> Kisvállalkozásoknak, magánszemélyeknek ajánljuk. Ha egyszerűbb modern weboldalt szeretne és nincs szüksége gyakran frissülő tartalomra.</div>
                     <div class="packages_container-box-featuresbox">
-                        <div class="feature">
-                            <img loading="lazy"  src="/img/check-circle.svg" alt="#">
-                            <p class="check">1-5 aloldal</p>
+                        <div class="feature text-left1">
+                            <img loading="lazy"  src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
+                            <p class="check">1 aloldal</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy"  src="/img/check-circle.svg" alt="#">
-                            <p>Dizájn építőelemekből</p>
+                        <div class="feature text-left2">
+                            <img loading="lazy"  src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
+                            <p>Egyedi fejlesztés és design</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#">
+                        <div class="feature text-left3">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
                             <p>Ingyenes tárhely és domain</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#">
-                            <p>Weboldal telepítése</p>
-                        </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#">
+                        <div class="feature text-left4">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
                             <p>Mobilbarát kialakítás</p>
                         </div>
+                        <div class="feature text-left5">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
+                            <p>Keresőoptimalizáslás (SEO)</p>
+                        </div>
                     </div>
                     <div class="packages_container-box-pricebox">
-                        <div class="price">299 000 Ft</div>
+                        <div class="price">149 000Ft</div>
                         <div class="from">-tól</div>
                     </div>
-                    <button type="button" onclick="location.href='http://studiobromo.com/reszletek.php'" class="packages_container-box-learnmore learnmore">Részletek</button>
+                    <button type="button" onclick="location.href='weboldal-tervezesi-es-fejlesztesi-csomagok'" class="packages_container-box-learnmore learnmore">Részletek</button>
                 </div>
-
-                <div class="packages_container-box" >
+                <div class="packages_container-box ef3" >
                     <div>
-                        <div class="packages_container-box-title">Prémium</div>
+                        <div class="packages_container-box-title">Creative</div>
                     </div>
-
-                    <div class="packages_container-box-text">
+                    <div class="packages_container-box-text ">
                         <div class="packages_container-box-popular"><p>legnépszerűbb csomagunk!</p>
-                        </div>Optimális választás kis- és középvállalkozásoknak, komplexebb weboldal-stuktúra és rendszeresen frissülő tartalom esetén.
+                        </div>Optimális választás kis- és középvállalkozásoknak, komplexebb weboldal-stuktúra és gyakran frissülő tartalom esetén.
                     </div>
                     <div class="packages_container-box-featuresbox">
-                        <div class="feature">
-                            <img loading="lazy"  src="/img/check-circle.svg" alt="#">
-                            <p>5+ aloldal</p>
+                        <div class="feature text-left1">
+                            <img loading="lazy"  src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
+                            <p>1-5 aloldal</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#">
-                            <p>Dizájn építőelemekből</p>
+                        <div class="feature text-left2">
+                            <img loading="lazy"  src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
+                            <p>Minden ami Landing</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy"  src="/img/check-circle.svg" alt="#">
-                            <p>Kiemelt támogatottság</p>
+                        <div class="feature text-left3">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
+                            <p>Kiemelt támogatás</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#">
-                            <p>Rendszeres tartalomfrissítés</p>
+                        <div class="feature text-left4">
+                            <img loading="lazy"  src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
+                            <p>Arculathoz szabott térkép</p>
                         </div>
-                        
+                        <div class="feature text-left5">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
+                            <p>Egyedi email cím</p>
+                        </div>
                     </div>
                     <div class="packages_container-box-pricebox">
-                        <div class="price">599 000 Ft</div>
+                        <div class="price">249 000 Ft</div>
                         <div class="from">-tól</div>
                     </div>
-                    <button type="button" onclick="location.href='http://studiobromo.com/reszletek.php'" class="packages_container-box-learnmore learnmore">Részletek</button>
-              
-                </div><div class="packages_container-box">
-                    <div class="packages_container-box-title">Egyedi</div>
-                    <div class="packages_container-box-text">Amennyiben Kezdő vagy Prémium csomagjainkban nem találja meg, amit keres, forduljon hozzánk bátran egyedi ajánlatkéréssel!</div>
+                    <button type="button" onclick="location.href='weboldal-tervezesi-es-fejlesztesi-csomagok'"  class="packages_container-box-learnmore learnmore">Részletek</button>           
+                </div>
+                <div class="packages_container-box ef2 ">
+                    <div class="packages_container-box-title">Extra</div>
+                    <div class="packages_container-box-text">Arculathoz szabott, nagy terjedelmű tartalommal ellátott weboldal azoknak a vállalkozóknak, akiknek üzleti sikerük elengedhetetlen része az online térben való részvétel. </div>
                     <div class="packages_container-box-featuresbox">
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#"><p>Egyedi fejlesztés</p>
+                        <div class="feature text-left1">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon"><p>5 + aloldal</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#"><p>UX/UI dizájn</p>
+                        <div class="feature text-left2">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon"><p>SEO optimalizált tartalomírás</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#"><p>Arculattervezés</p>
+                        <div class="feature text-left3">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon"><p>Prémium képek</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#"><p>Keresőoptimalizálás</p>
+                        <div class="feature text-left4">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon"><p>Cloudflare integráció</p>
                         </div>
-                        <div class="feature">
-                            <img loading="lazy" src="/img/check-circle.svg" alt="#"><p>Weboldal audit</p>
+                        <div class="feature text-left5">
+                            <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon"><p>Heti tartalomfrissítés</p>
                         </div>
                     </div>
                     <div class="packages_container-box-pricebox">
-                        <div class="price">Kérjen ajánlatot!</div>
+                        <div class="price">349 000Ft</div>
+                        <div class="from">-tól</div>
+                       <!-- <div class="price">Kérjen ajánlatot!</div> -->
                     </div>
-                    <button type="button" onclick="location.href='http://studiobromo.com/reszletek.php'" class="packages_container-box-learnmore learnmore">Részletek</button>
+                    <button type="button" onclick="location.href='weboldal-tervezesi-es-fejlesztesi-csomagok'" class="packages_container-box-learnmore learnmore">Részletek</button>
                 </div>
             </div>
-            <div class="margin-top-middle margin-bottom-middle btn-invisible">
-                <button type="button" onClick="document.getElementById('touch').scrollIntoView();" class="btn">                    <span class="btn__visible">Kapcsolatba lépek!</span>
+            <div class="margin-top-middle margin-bottom-middle btn-invisible btnUp">
+                <button type="button" onClick="document.getElementById('touch').scrollIntoView();" class="btn">                    <span class="btn__visible">Kapcsolatba lépek</span>
                 </button>
          </section>
 
-         <!-- PACKAGES END -->
-         <!-- REVIEWS -->
+    <!-- PACKAGES END -->
+    <!-- REVIEWS -->
 
          <section class="reviews" id="reviews">
             <div class="packages_main-head">
-                
                 <h2>Ügyfeleink rólunk</h2>
             </div>
-             
             <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="reviews_container">
                         <div class="reviews_container_box ">
-                            <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                            <div class="reviews_container_box-name">Martina McNamara</div>
-                            <div class="reviews_container_box-filed">CEO</div>
-                            <div class="reviews_container_box-website">szegedszoli</div>
-                            <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span>WEBOLDAL</span></div>
+                            <img src="/img/costumer.png" width="116" height="111" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                            <div class="reviews_container_box-name">Devá Yoga Studio</div>
+                            <div class="reviews_container_box-filed">Vállakozás</div>
+                            <div class="reviews_container_box-website">Jóga</div>
+                            <div class="reviews_container_box-text">Miután elfogadtuk a design tervet, az oldal gyorsan elkészült. Elégedettek vagyunk az eredménnyel, és az üzemeltetéssel. A weboldalnak köszönhetően rendszeresen jelentkeznek be új vendégek és eredményesen fejlődik a vállalkozásunk.  <span onclick="location.href='https://devayoga.hu/'">WEBOLDAL</span></div>
                         </div>
                         <div class="reviews_container_box review-mobile-invisible">
-                            <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                            <div class="reviews_container_box-name">Martina McNamara</div>
-                            <div class="reviews_container_box-filed">CEO</div>
-                            <div class="reviews_container_box-website">szegedszoli</div>
-                            <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span> WEBOLDAL</span></div>
+                            <img src="/img/hlilla.png" width="113" height="110" alt="Ügyfelünk logója" class="reviews_container_box-pho ">
+                            <div class="reviews_container_box-name">Étrendműhely</div>
+                            <div class="reviews_container_box-filed">Tanácsadás</div>
+                            <div class="reviews_container_box-website">Étrend</div>
+                            <div class="reviews_container_box-text">Fiatalos, modern, de átlátható weboldalra volt szükségem a szolgáltatásaim bemutatására, hogy az ügyfeleimnek mindig naprakész információkkal tudjak szolgálni.  Nagyon tetszik a végeredmény, és ha valamit frissíteni kell, azt gyorsan elvégzik<span onclick="location.href='https://etrendmuhely.hu/'"> WEBOLDAL</span></div>
                         </div>
-
-                       
                         <div class="reviews_container_box review-mobile-invisible">
-                            <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                            <div class="reviews_container_box-name">Martina McNamara</div>
-                            <div class="reviews_container_box-filed">CEO</div>
-                            <div class="reviews_container_box-website">szegedszoli</div>
-                            <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span> WEBOLDAL</span></div>
+                            <img src="/img/musicBand.svg" width="116" height="111" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                            <div class="reviews_container_box-name">Hogyisvan Zenekar</div>
+                            <div class="reviews_container_box-filed">Bemutató oldal</div>
+                            <div class="reviews_container_box-website">Zenekar</div>
+                            <div class="reviews_container_box-text">Egy elérhetőségre, zenelejátszóra és néhány képre volt csak szükségünk, hogy bemutassuk zenekarunkat. A designel kapcsolatban nem voltak elvárásaink, szabad kezet adtunk. Meg vagyunk elégedve az oldallal, jó stílusa, visszaadja zenekar imázsát.  <span onclick="location.href='https://hogyisvan.hu/'"> WEBOLDAL</span></div>
                         </div>                        
                     </div>
                 </div>
-
             <div class="swiper-slide invisible">
-                 <div class="reviews_container">
-                    
-                        <div class="reviews_container_box ">
-                        <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                        <div class="reviews_container_box-name">Martina McNamara</div>
-                        <div class="reviews_container_box-filed">CEO</div>
-                        <div class="reviews_container_box-website">szegedszoli</div>
-                        <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span>VISIT WEBSITE.</span></div>
-                    </div>
-
-                    <div class="reviews_container_box review-mobile-invisible">
-                        <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                        <div class="reviews_container_box-name">Martina McNamara</div>
-                        <div class="reviews_container_box-filed">CEO</div>
-                        <div class="reviews_container_box-website">szegedszoli</div>
-                        <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span> VISIT WEBSITE.</span></div>
-                    </div>
-
-                    <div class="reviews_container_box review-mobile-invisible">
-                        <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                        <div class="reviews_container_box-name">Martina McNamara</div>
-                        <div class="reviews_container_box-filed">CEO</div>
-                        <div class="reviews_container_box-website">szegedszoli</div>
-                        <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span> VISIT WEBSITE.</span></div>
-                    </div>
-   
+               <div class="reviews_container">
+                   <div class="reviews_container_box ">
+                   <img src="/img/hlilla.png" width="113" height="110" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                   <div class="reviews_container_box-name">Étrendműhely</div>
+                   <div class="reviews_container_box-filed">Tanácsadás</div>
+                   <div class="reviews_container_box-website">Étrend</div>
+                   <div class="reviews_container_box-text">Fiatalos, modern, de átlátható weboldalra volt szükségem a szolgáltatásaim bemutatására, hogy az ügyfeleimnek mindig naprakész információkkal tudjak szolgálni.  Nagyon tetszik a végeredmény, és ha valamit frissíteni kell, azt gyorsan elvégzik<span onclick="location.href='https://etrendmuhely.hu/'"> WEBOLDAL</span></div>
+               </div>
+               <div class="reviews_container_box review-mobile-invisible">
+                   <img src="/img/costumer.png" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+               </div>
+               <div class="reviews_container_box review-mobile-invisible">
+                   <img src="/img/costumer.png" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+               </div>
                 </div>
             </div>
                 <div class="swiper-slide invisible">
                     <div class="reviews_container">
                     <div class="reviews_container_box ">
-                        <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                        <div class="reviews_container_box-name">Martina McNamara</div>
-                        <div class="reviews_container_box-filed">CEO</div>
-                        <div class="reviews_container_box-website">szegedszoli</div>
-                        <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span>VISIT WEBSITE.</span></div>
+                        <img src="/img/musicBand.svg" width="116" height="111"  alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                        <div class="reviews_container_box-name">Hogyisvan Zenekar</div>
+                        <div class="reviews_container_box-filed">Bemutató oldal</div>
+                        <div class="reviews_container_box-website">Zenekar</div>
+                        <div class="reviews_container_box-text">Egy elérhetőségre, zenelejátszóra és néhány képre volt csak szükségünk, hogy bemutassuk zenekarunkat. A designel kapcsolatban nem voltak elvárásaink, szabad kezet adtunk. Meg vagyunk elégedve az oldallal, jó stílusa, visszaadja zenekar imázsát.  <span onclick="location.href='https://hogyisvan.hu/'"> WEBOLDAL</span></div>
                     </div>
                     <div class="reviews_container_box review-mobile-invisible">
-                        <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                        <div class="reviews_container_box-name">Martina McNamara</div>
-                        <div class="reviews_container_box-filed">CEO</div>
-                        <div class="reviews_container_box-website">szegedszoli</div>
-                        <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span> VISIT WEBSITE.</span></div>
                     </div>
-                    <div class="reviews_container_box review-mobile-invisible">
-                        <img src="/img/costumer.png" alt="" class="reviews_container_box-pho">
-                        <div class="reviews_container_box-name">Martina McNamara</div>
-                        <div class="reviews_container_box-filed">CEO</div>
-                        <div class="reviews_container_box-website">szegedszoli</div>
-                        <div class="reviews_container_box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus a est laoreet sollicitudin. Phasellus nec diam magna. Curabitur molestie, urna id blandit hendrerit, nibh dolor mattis lectus, sit amet. <span> VISIT WEBSITE.</span></div>
+                    <div class="reviews_container_box review-mobile-invisible"> 
                     </div>
                 </div>
             </div>
             </div>
-                        <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -580,135 +544,152 @@
         <div class="contact_main-head">
             <h2 class="color-white">Kapcsolat</h2>
         </div>
-
         <div class="contact_container">
-
             <div class="contact_container-form">
                 <div class="main-text">
                         <div class="text-1"><p>Az üzenet elküldése után</p></div>
                         <div class="text-1"> <p><span>1 munkanapon belül </span> megkeressük!</p></div>
                 </div>
-
+                <!-- onsubmit="return validateRecaptcha();" -->
                 <div class="contact_container-form-mainbox">
-                    <form class="form"  action="mailer.php" name="contactForm"  method="post">
-
+                    <form  class="form" action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458" method="post">
                         <div class="form_group">
                             <div class="contact_name">Teljes név*</div>
-                            <input type="text" class="form_input" placeholder="FULL NAME" name ="name" id="name" required>
+                            <input type="text" class="form_input" placeholder="FULL NAME" name ="name" id="name">
                             <label for="name" class="form_label"> </label> 
                         </div>
-
                         <div class="form_group ">
                             <div class="contact_company">Cég/vállakozás*</div>
-                            <input type="text" name="company" class="form_input" placeholder="COMPANY" id="company"  >
+                            <input type="text" name="company" class="form_input" placeholder="COMPANY" id="company">
                             <label for="company" class="form_label"></label> 
                         </div>
-
                         <div class="form_group">
                             <div class="contact_phone">Telefonszám*</div>
-                            <input type="number" name="phone" class="form_input" placeholder="YOUR POSITION" id="phone"required>
+                            <input type="number" name="phone" class="form_input" placeholder="YOUR POSITION" id="phone">
                             <label for="position" class="form_label"> </label> 
                         </div>
-
                         <div class="form_radio">
-                            <div class="contact_callback">Visszahívást kérek*</div>
-                            
+                            <div class="contact_callback">Visszahívást kérek*</div>    
                             <div class="form_radio-position">
                                 <input type="checkbox" name="radio" class="form_radio-input" id="radio">
-                                <label for="radio" class="form_radio-label">9:00 - 12:00</label>
+                                <label for="radio" class="form_radio-label off-text-selection">9:00 - 12:00</label>
 
                             </div>
-
                             <div class="form_radio-position">
                                 <input type="checkbox" name="radio1" class="form_radio-input" id="radio1">
-                                <label for="radio1" class="form_radio-label">13:00 - 15:00</label> 
-
+                                <label for="radio1" class="form_radio-label off-text-selection">13:00 - 15:00</label> 
                              </div>
-
                              <div class="form_radio-position">
                                 <input type="checkbox" name="radio2" class="form_radio-input" id="radio2">
-                                <label for="radio2" class="form_radio-label">17:00 - 19:00</label> 
-
+                                <label for="radio2" class="form_radio-label off-text-selection">17:00 - 19:00</label> 
                             </div>
                         </div>
-                        
                         <div class="form_group">
                             <div class="contact_email">E-MAIL cím*</div>
                             <input type="email" name="email" class="form_input" placeholder="EMAIL" id="email" required>
                             <label for="email" class="form_label"></label> 
                         </div>
-
                         <div class="form_group">
                             <div class="contact_message">üzenet*</div>
-                            <textarea type="message" name="message"class="form_input form_input-textbox" placeholder="message" id="message" required ></textarea>
+                            <textarea  name="message"class="form_input form_input-textbox" placeholder="message" id="message" required ></textarea>
                             <label for="message" class="form_label"></label>  
                         </div>
-
+                        <div class="policy-input">
+                            <input type="checkbox" name="policy" class="policy-cbox" id="policy" required>
+                            <label for="policy" class="policy-input"> <p> Hozzájárulok adataim kezeléséhez az &nbsp;<a href="/adatvedelem">adatvédelmi szabályzat</a>&nbsp;alapján.</p>
+                            </label> 
+                        </div>
                         <div class="btn-form">
                             <input  id="submitBtn" type="submit" value="Üzenet Küldése" class="btn">
-                            
                         </div>
-                        <div class="form-input">
-                            <!-- Google reCAPTCHA box -->
-                            <div class="g-recaptcha" data-sitekey="6LcohXkdAAAAAOs9h1sTCOF9HPclUezN4cfTjTxa"></div>
-                        </div>
-                        
+                        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
                     </form> 
                 </div>
             </div>
-
-                <div class="contact_container_picture">
-                    <img loading="lazy" src="/img/contact.svg" alt="getintouch">
-                </div>
+               <div class="contact_container_picture">
+                   <img loading="lazy" src="/img/contact.svg" alt="Kapcsolat felvétele">
+               </div>
         </div>
-
     </section>
-
-      <!-- CONTACT FORM END -->
-      <!-- SECOUNDARY NAVIGATION  -->
-    <section class="nav-secound">
-        <nav class="nav_bottom">
-        <div class="nav_bottom_logo">
-                <img loading="lazy" src="/img/StudioBromo_logo_landscape.svg" alt="logo"  >
-        </div>
-        
-            <ul class="nav_bottom_list">
-                <li class="nav_bottom_item"><a href="#featured" class="nav_bottom_link">kiemelt munkáink</a></li>
-               <!-- <li class="nav_bottom_item"><a href="#process" class="nav_bottom_link">hogyan dolgozunk</a></li> -->
-                <li class="nav_bottom_item"><a href="#packages" class="nav_bottom_link">csomagjaink</a></li>
-               <!-- <li class="nav_bottom_item"><a href="#reviews" class="nav_bottom_link">ügyfeleink rólunk</a></li> -->
-                <li class="nav_bottom_item"><a href="#touch" class="nav_bottom_link"><span>Kapcsolat</span></a></li>
-        </ul>
-        </nav>
-    </section>
-
-     <!-- SECOUNDARY NAVIGATION END-->
-     <!-- FOOTER -->
-     
+    <!-- CONTACT FORM END -->
+     <!-- SECOUNDARY NAVIGATION  -->
+    <!-- FOOTER -->
     <footer class="footer">
+        <div class="f-c">
         <div class="footer_container">
-            <div class="footer_copiright">2021 All rights reserved</div>
-                <ul class="footer_nav-list">
-                    <li class="footer_nav-item"><a href="#" class="footer_nav-link">Privacy policy</a></li>
-                    <li class="footer_nav-item"><a href="#" class="footer_nav-link">Who knows what else</a></li>
-                </ul>
-        </div> 
-    </footer>
-    
-    <!-- FOOTER END-->
-    <!-- POP UP GALLERY -->
+            <div class="footer_container-text">
+              <div> <img src="/img/logo-white.svg" alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik"> </div>
+              <p class="mb-1">Weboldalak készítése és üzemeltetése kis- és középvállalkozásoknak.</p>
+              <p>Munkánk magában foglalja az alapos kutatást, tervezést, a fejlesztést modern technológiákkal, a tesztelést, az optimalizálást és a weboldal üzembe helyezését. Továbbá biztosítunk üzembe helyezés utáni támogatást is.</p>                            
+                <div class="footer_container-text-logo">
+                   <a href="https://www.facebook.com/stdbromo/">
+                     <img src="/img/footer-facebook-logo.svg" alt="Studio Bromo hivatalos facebook oldal logo">
+                    </a>
+                </div>
 
-    <div class="popup" id="popup">
-        <div class="popup_element"><a href="#works">BEZÁR (IDEIGLENES)</a>
-        </div>
+            </div>
+           <div class="footer_container-text">
+                <h2>Irányelvek</h2>
+                <div class="footer_container-text-line"></div>
+                    <ul>
+                        <li><a href="/adatvedelem">Adatkezelési tájékoztató</a></li>
+                        <li><a href="/sutik">Sütik</a></li>
+                        <li><a href="/rolunk">Rólunk</a></li>
+                    </ul>
+            </div>
+            <div class="footer_container-text">
+                <h2>Szolgáltatások</h2>
+                <div class="footer_container-text-line"></div>
+                    <ul>
+                        <li><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok">Weboldal készítés</a></li>
+                        <li><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok">Weboldal karbantartás</a></li>
+                        <li><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok">Weboldal üzemeltetés</a></li>
+                        <li><a href="https://www.audity.hu/">Audit</a></li>
+                        <li><a href="/szolgaltatas-arak">Szolgáltatás árak</a></li>
+
+                    </ul>
+            </div>
+            <div class="footer_container-text">
+                <h2>Segítség</h2>
+                <div class="footer_container-text-line"></div>
+                    <ul>
+                        <li><a href="/szolgaltatas-reszletek">Szolgáltatások részletei</a></li>
+                        <li><a href="/weboldal-igenyfelmeres">Ingyenes igényfelmérés</a></li>
+                    </ul>
+            </div>
+            <div class="footer_container-text">
+                <h2>Kapcsolat</h2>
+                <div class="footer_container-text-line"></div>
+                    <ul>
+                        <li>hello@studiobromo.hu</li>
+                        <li>06 30 544 0969</li>
+                    </ul>
+            </div>
+        </div> 
+      <!--  <div class="footer_container-partners">
+            <h3>Partnereink</h3>
+        </div> -->
     </div>
-    <!-- POP UP GALLERY END --> 
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <script src="/node_modules/swiper/swiper-bundle.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-        <script src="/mian.js"></script>
+        <div class="footer_reserved">
+            <p>© 2023 Studio Bromo</p>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEXBXRS1V7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DEXBXRS1V7');
+        </script>
+
+        <script src="js/scrollreveal.js"></script>
+        <script src="js/mian.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/chapcha.js"></script>
     </body>
 </html>
-
 

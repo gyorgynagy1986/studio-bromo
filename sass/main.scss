@@ -5,13 +5,19 @@
 
 //ABSTARCT
 @import "abstract/effects";
+@import "abstract/gridposition";
+@import "abstract/table";
+@import "abstract/cirlce";
 
 //COMPONENS
 @import "componens/swiper";
+@import "componens/cookie";
+@import "componens/modal";
 @import "componens/mobilenav";
 @import "componens/button";
 @import "componens/navigation";
 @import "componens/popup";
+@import "componens/subscriptions";
 
 
 // SECTIONS
@@ -25,11 +31,13 @@
 @import "layouts/home";
 @import "layouts/header";
 @import "layouts/footer";
-@import "layouts/gridposition";
 
 //PAGES
 @import "pages/detailed";
+@import "pages/prices";
 @import "pages/form";
+@import "pages/maintence";
+@import "pages/discount";
 
 
 

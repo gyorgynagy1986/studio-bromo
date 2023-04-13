@@ -1,77 +1,213 @@
 .footer {
     width: 100%;
-    min-height: 5rem; 
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    grid-row: 1;
+  
+    
+    .f-c {
+        width: 100%;
+        background: linear-gradient(180deg, #184293 0%, #49089B 197.88%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+        padding-left: 2%;
+        padding-right: 2%;
 
-    @include respond (phone) {
-        min-height: 20rem; 
+        @include respond (tablet) {
+            padding: 8rem 2rem 2rem 2rem;
+        }
     }
-
-    color: white;
-    background-color: $color-primary;
 
     &_container {
+      display: flex;
+
+
+        @include respond (SCtablet) {
+            flex-direction: column;
+        }
+
+
+        &-text {
+            min-width: 200px;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            @include respond (SCLaptop) {
+                min-width: 180px;
+            }
+
+            @include respond (tablet) {
+                min-width: 160px;
+
+            }
+        
+
+            &:first-child {
+                margin-right: 10rem;
+               
+                @include respond (SCLaptop) {
+                    margin-right: 4rem;
+
+                }
+
+                @include respond (tablet) {
+                    margin-right: 2rem;
+
+                }
+            }
+
+            img {
+                height: 50px;
+                width: auto;
+                margin-bottom: 4.4rem;
+            }
+
+            p {
+               font-family: 'Rubik';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 15px;
+               line-height: 130%;
+
+               color: #FFFFFF;
+
+               @include respond (tablet) {
+                font-size: 14px;
+            }
+
+            @include respond (SCtablet) {
+                font-size: 16px;
+
+            }
+
+            }
+
+            h2 {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                color: #FFFFFF;
+                margin-bottom: 4.4rem;
+
+                @include respond (tablet) {
+                    font-size: 14px;
+
+                }
+
+                @include respond (SCtablet) {
+                    font-size: 18px;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            ul {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                color: #FFFFFF;
+
+                @include respond (tablet) {
+                    font-size: 13px;
+
+    
+                }
+
+                @include respond (SCtablet) {
+                    font-size: 15px;
+                    margin-bottom: 4rem;
+                }
+                
+                li {
+                    list-style: none;
+                    margin-bottom: 1.6rem;
+                    border-bottom: 0px solid #FF006B;
+
+                    a {
+                        text-decoration: none;
+                        border-bottom: 0px solid #FF006B;
+                        
+                        &:hover {
+                            border-bottom: 1px solid #ff5e00ad;
+                        }
+                    }
+                }
+            }
+
+            &-line {
+                width: 150px;
+                height: 0px;
+                left: 734px;
+                top: 9103px;
+                border: 1px solid #ffffff46;
+
+                margin-bottom: 4.4rem;
+
+                @include respond (tablet) {
+                    max-width: 150px;
+
+
+                }
+
+                @include respond (SCtablet) {
+                    margin-bottom: 2rem;
+                }
+
+            }
+
+            &-logo {
+
+                margin-top: 4rem;
+                height: 100%;
+
+                
+                .webjawa-blog {
+                    height: 38px;
+                    width: auto;
+                }
+
+                img {
+                    height: 35px;
+                    width: auto;
+                    margin-right: 1.5rem;
+                }
+            }
+
+        }
+    }
+
+    .footer_container-partners {
         width: 100%;
-        grid-column: 2;
+        max-width: 60rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        color: #FF5C00;
+    }
+
+  
+    &_reserved {
+        height: 25px;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+
+        background-color: #FFFFFF;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         align-items: center;
 
-        @include respond (phone) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
-        }
-
+        background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
     }
-
-    &_copiright {
-        font-size: 1.4rem;
-        @include respond (phone) {
-            margin-bottom: 3rem;
-        }
-    }
-
-
-    &_nav-list {
-        display: flex;
-
-        @include respond (phone) {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-
-    &_nav-link {
-        text-decoration: none;
-        list-style: none;
-        color: white;
-        
-        
-    }
-
-    &_nav-item {
-        list-style: none;
-        font-size: 1.4rem;
-        text-decoration-line: underline;
-        
-
-    }
-
-    &_nav-item:not(:last-child){
-        margin-right: 5rem;
-
-        @include respond (phone) {
-            margin-right: 0;
-            margin-bottom: 3rem;
-        }
-    }
-
 }
