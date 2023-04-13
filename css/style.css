@@ -597,6 +597,21 @@ h2 {
       .price-h2 h2 {
         font-size: 2.6rem !important;
         width: 100% !important; } }
+  .price-h2 h1 {
+    font-size: 5rem !important;
+    text-align: center;
+    line-height: 140%; }
+    @media only screen and (max-width: 64.5em) {
+      .price-h2 h1 {
+        font-size: 4rem !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .price-h2 h1 {
+        font-size: 3rem !important;
+        width: 100% !important; } }
+    @media only screen and (max-width: 22.5em) {
+      .price-h2 h1 {
+        font-size: 2.6rem !important;
+        width: 100% !important; } }
 
 th p {
   font-family: 'Rubik';
@@ -3401,7 +3416,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       @media only screen and (max-width: 37.5em) {
         .detailed_container .featured-container {
           position: absolute;
-          top: 5%;
+          top: 6%;
           left: 50%;
           transform: translate(-50%, -50%);
           width: 23rem;
