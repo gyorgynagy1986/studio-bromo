@@ -67,7 +67,7 @@ const hoverHandler = function(e) {
   }
 }
 
-nav.addEventListener('mouseover', hoverHandler.bind(0.6))
+nav.addEventListener('mouseover', hoverHandler.bind(0))
 nav.addEventListener('mouseout', hoverHandler.bind(0));
 
 

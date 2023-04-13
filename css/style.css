@@ -1532,7 +1532,7 @@ th, td {
   bottom: 0;
   z-index: 11111111110000000000001;
   color: white;
-  opacity: .9;
+  opacity: 1;
   height: auto;
   font-family: "Rubik", sans-serif;
   font-size: 1.4rem;
@@ -1885,13 +1885,18 @@ th, td {
     font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
     font-weight: 500;
-    color: var(--nav); }
+    color: var(--nav);
+    transition: all .1s ease; }
+    .nav_link:link:hover, .nav_link:visited:hover {
+      background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
+      -webkit-background-clip: text;
+      color: transparent; }
     @media only screen and (max-width: 80em) {
       .nav_link:link, .nav_link:visited {
         font-size: 1.4rem; } }
     .nav_link:link span, .nav_link:visited span {
       color: #ffffff;
-      background: #253e6c;
+      background: #184293;
       padding: 1.5rem 2rem 1.5rem1 0.5rem;
       border-radius: 1rem;
       padding: 2rem;
@@ -1899,7 +1904,7 @@ th, td {
       padding-bottom: 1.5rem;
       transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
   .nav span:hover {
-    background: #354c77; }
+    background: #5d7cb6; }
 
 .nav-secound {
   width: 100%;
@@ -1992,12 +1997,13 @@ nav.sticky {
   content: '';
   background-color: var(--mainBcGroung);
   width: 26rem;
-  height: 17rem;
+  height: 14rem;
   position: absolute;
-  top: 30px;
+  top: 28px;
   right: -106px;
   border-radius: 10px;
-  opacity: 0; }
+  opacity: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
 
 .nav_dropdown:hover:before {
   opacity: 1; }
@@ -2015,16 +2021,16 @@ nav.sticky {
   text-transform: uppercase; }
 
 .hidden:nth-child(2) {
-  top: 40px; }
+  top: 45px; }
 
 .hidden:nth-child(3) {
-  top: 70px; }
+  top: 75px; }
 
 .hidden:nth-child(4) {
-  top: 100px; }
+  top: 105px; }
 
 .hidden:nth-child(5) {
-  top: 130px; }
+  top: 135px; }
 
 .hidden:nth-child(6) {
   top: 160px; }
@@ -2043,6 +2049,15 @@ nav.sticky {
 
 .nav_dropdown:hover .dd-menu {
   color: var(--nav); }
+
+.nav-active-color {
+  background-image: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%) !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important; }
+
+.nav-active-color-footer {
+  color: #FF5C00;
+  font-weight: bolder; }
 
 .popup {
   height: 100vh;
@@ -3022,6 +3037,23 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         transform: translateY(-1rem); }
       .header_main-text-container-1 .text-bx-size {
         height: 66px; }
+        .header_main-text-container-1 .text-bx-size h2 {
+          font-family: "Rubik", sans-serif;
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.34rem;
+          display: inline-block; }
+          @media only screen and (max-width: 80em) {
+            .header_main-text-container-1 .text-bx-size h2 {
+              font-size: 1.6rem; } }
+          @media only screen and (max-width: 37.5em) {
+            .header_main-text-container-1 .text-bx-size h2 {
+              font-size: 1.5rem;
+              line-height: 1.9rem;
+              margin-bottom: 2rem;
+              width: 100%; } }
+          .header_main-text-container-1 .text-bx-size h2 span {
+            font-weight: 600; }
         @media only screen and (max-width: 67.5em) {
           .header_main-text-container-1 .text-bx-size {
             height: 78px; } }
@@ -3133,7 +3165,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         height: 50px;
         width: auto;
         margin-bottom: 4.4rem; }
-      .footer_container-text h1 {
+      .footer_container-text p {
         font-family: 'Rubik';
         font-style: normal;
         font-weight: 400;
@@ -3141,10 +3173,10 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         line-height: 130%;
         color: #FFFFFF; }
         @media only screen and (max-width: 64.5em) {
-          .footer_container-text h1 {
+          .footer_container-text p {
             font-size: 14px; } }
         @media only screen and (max-width: 51.25em) {
-          .footer_container-text h1 {
+          .footer_container-text p {
             font-size: 16px; } }
       .footer_container-text h2 {
         font-family: 'Rubik';
