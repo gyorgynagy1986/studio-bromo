@@ -6,6 +6,7 @@
     
     @include respond (phone) {  
         padding-bottom: 5rem;
+        margin-top: 2rem !important;
     }
 }
 
