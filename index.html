@@ -143,7 +143,11 @@
             </div>
         <div class="works_contanier">
                  <div class="works_contanier-photo">
-                  <a href="https://devayoga.hu/"><img src="/img/works1.png" alt="Deva Yoga stúdió weboldala melyet a Studio Bromo készített" class="forefect"></a>
+                  <picture>
+                    <source srcset="/img/works1.png" type="image/webp" media="(min-width: 600px)">      <!-- desktop -->
+                    <source srcset="/img/works1.png" type="image/webp" media="(max-width: 600px)">      <!-- mobile -->
+                    <img src="/img/works1.png" alt="Deva Yoga stúdió weboldala melyet a Studio Bromo készített" class="forefect">
+                </picture>
                 </div> 
                 <div class="works_contanier_content-box">
                     <span class="dot"></span>
