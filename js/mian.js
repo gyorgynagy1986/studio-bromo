@@ -5,7 +5,8 @@ setTimeout(()=> {
   effectPrefix.style.opacity = '1'
 
 }, 10)
- 
+
+
  
  //MOBILE NAV HANDELER
 

@@ -2,10 +2,11 @@
 <html lang="hu">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Termékeink között szerepel a professzionális weboldal készítés és üzemeltetés, honlap design, tervezés és megvalósítás, valamint karbantartás szolgáltatás. Több éves tapasztalattal rendelkezünk az online jelenlét építésében, így garantáltan a legjobb eredményt érjük el az ügyfeleink számára. Válasszon minket, hogy biztosan sikeres legyen az online megjelenése!">
-        <meta name="author" content="Team of Studio Bromo">   
+        <meta name="description" content="Professzionális weboldal készítés és üzemeltetés, honlap design és karbantartás. Ismerje meg weboldal szolgáltatásainkat, hogy felépíthessük online jelenlétét">
+        <meta name="keywords" content="Weboldal tervezés, webfejlesztés, keresőoptimalizálás, weboldal készítés, responsív webdesign, ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet"> 
         
@@ -13,16 +14,25 @@
         <link rel="preload" href="https://fonts.gstatic.com/s/rubik/v26/iJWKBXyIfDnIV7nPrXyi0A.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link
+        rel="preload"
+        href="/img/StudioBromo_logo_landscape.svg"
+        as="image"
+        />
+
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
          >        
-        <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link  rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
         <link rel="icon" href="/favicon/favicon-32x32.png" sizes="16x16 32x32" type="image/png">
-        <script src="https://www.google.com/recaptcha/api.js?render=6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag"></script>
-        <title>Weboldal készítés és üzemeltetés — Studio Bromo Webfejlesztő Ügynökség</title>
+        
+        <title>Weboldal készítés és üzemeltetés</title>
     </head>
     <body>
     <!-- MOBILE NAVIGATION // NO JS // CHECK BOX -->
@@ -143,15 +153,21 @@
             </div>
         <div class="works_contanier">
                  <div class="works_contanier-photo">
-                  <a href="https://devayoga.hu/"><img src="/img/works1.png" alt="Deva Yoga stúdió weboldala melyet a Studio Bromo készített" class="forefect"></a>
+                  <picture>
+                    <source srcset="/img/webp/works1.webp" type="image/webp" >      <!-- desktop -->
+                    <img loading="lazy" src="/img/works1.png" alt="Deva Yoga stúdió weboldala melyet a Studio Bromo készített" class="forefect">
+                </picture>
                 </div> 
                 <div class="works_contanier_content-box">
                     <span class="dot"></span>
                     <p class="clinet">Clinet</p>
                     <p class="name-of-business">Devá Yoga Studio</p>
                     <div class="works_contanier_content-box_photo-mobile">
-                        <a href="https://devayoga.hu/"><img src="/img/works1.png" alt="Deva Yoga stúdió weboldala melyet a Studio Bromo készített" class="forefect"></a>
-                      </div> 
+                        <picture>
+                            <source srcset="/img/webp/works1.webp" type="image/webp">      <!-- desktop -->
+                            <img loading="lazy" src="/img/works1.png" alt="Deva Yoga stúdió weboldala melyet a Studio Bromo készített" class="forefect">
+                        </picture>
+                    </div> 
                     <div class="multiply-dot">
                         <span class="dot"></span>
                         <span class="dot"></span>
@@ -163,7 +179,7 @@
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
-                    <p class="clinet">TASK</p>
+                    <p class="clinet">Weboldal készítésének szempontjai</p>
                     <div class="works_text-box">
                         <p class="name-of-business-text">Az oldal-design megtervezése során a vállalkozás arculata volt az irányadó.
                             Így a google térkép is egyedi megjelenést kapott. Továbbá fontos volt a 
@@ -176,7 +192,7 @@
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
-                    <p class="clinet">Csomag</p>
+                    <p class="clinet">Weboldal csomag</p>
                     <div class="works_contanier_content-box-pricebox">
                         <div class="pricebox-name">Extra</div>
                         <div class="pricebox-contanier">
@@ -189,7 +205,10 @@
             </div>
             <div  class="works_contanier">
                 <div class="works_contanier-photo">
-                    <a href="https://etrendmuhely.hu/"><img src="/img/works2.png" alt="Étrendműhely weboldala, amely táplálkozási tanácsokkal foglalkozik és a Studio Bromo készített" class="forefect"></a>
+                    <picture>
+                        <source srcset="/img/webp/works2.webp" type="image/webp">      <!-- mobile -->
+                        <img loading="lazy" src="/img/works2.png" alt="Étrendműhely weboldala, amely táplálkozási tanácsokkal foglalkozik és a Studio Bromo készített" class="forefect">
+                    </picture>
                 </div> 
                <div class="works_contanier_content-box">
                    <span class="dot"></span>
@@ -197,8 +216,10 @@
                   
                    <p class="name-of-business">Étrendműhely</p>
                    <div class="works_contanier_content-box_photo-mobile">
-                    <a href="https://etrendmuhely.hu/"><img src="/img/works2.png" alt="Étrendműhely weboldala, amely táplálkozási tanácsokkal foglalkozik és a Studio Bromo készített" class="forefect"></a>
-                    </div>
+                    <picture>
+                        <source srcset="/img/webp/works2.webp" type="image/webp">      <!-- mobile -->
+                        <img loading="lazy" src="/img/works2.png" alt="Étrendműhely weboldala, amely táplálkozási tanácsokkal foglalkozik és a Studio Bromo készített" class="forefect">
+                    </picture>                    </div>
                    <div class="multiply-dot">
                        <span class="dot"></span>
                        <span class="dot"></span>
@@ -210,7 +231,7 @@
                        <span class="dot"></span>
                        <span class="dot"></span>
                    </div>
-                   <p class="clinet">TASK</p>
+                   <p class="clinet">Weboldal készítésének szempontjai</p>
                    <div class="works_text-box"><p class="name-of-business-text">A weboldal kialakítása során nagy kiemelt figyelmet kapott egy modern,
                     fiatalos design kialakítása. Mivel az ügyfél nem rendelkezett média elemekkel (képek), így ezeket mi biztosítottuk. 
                    </p></div>
@@ -220,7 +241,7 @@
                        <span class="dot"></span>
                        <span class="dot"></span>
                    </div>
-                   <p class="clinet">Csomag</p>
+                   <p class="clinet">Weboldal csomag</p>
                    <div class="works_contanier_content-box-pricebox">
                     <div class="pricebox-name">Creative</div>
                     <div class="pricebox-contanier">
@@ -233,14 +254,20 @@
            </div>
            <div class="works_contanier">
             <div class="works_contanier-photo">
-                <a href="https://hogyisvan.hu/"><img src="/img/works3.png" alt="Hogyisvan, Szegedi zenekar weboldala. " class="forefect"></a>
+                <picture>
+                    <source srcset="/img/webp/works3.webp" type="image/webp" >      <!-- mobile -->
+                    <img loading="lazy" src="/img/works3.png" alt="Hogyisvan, Szegedi zenekar weboldala. " class="forefect">
+                </picture>
             </div> 
            <div class="works_contanier_content-box">
                <span class="dot"></span>
                <p class="clinet">Clinet</p>
                <p class="name-of-business">HogyisVan?</p>
                <div class="works_contanier_content-box_photo-mobile">
-                <a href="https://hogyisvan.hu/"><img src="/img/works3.png" alt="Hogyisvan, Szegedi zenekar weboldala. " class="forefect"></a>
+                <picture>
+                    <source srcset="/img/webp/works3.webp" type="image/webp" >      <!-- mobile -->
+                    <img loading="lazy" src="/img/works3.png" alt="Hogyisvan, Szegedi zenekar weboldala. " class="forefect">
+                </picture>
             </div> 
                <div class="multiply-dot">
                    <span class="dot"></span>
@@ -253,9 +280,9 @@
                    <span class="dot"></span>
                    <span class="dot"></span>
                </div>
-               <p class="clinet">TASK</p>
+               <p class="clinet">Weboldal készítésének szempontjai</p>
                <div class="works_text-box"><p class="name-of-business-text">
-                    A zenekar egyszerű oldal struktúrát, 
+                    Az ügyfél egyszerű oldal struktúrát, 
                     viszont kreatív design megoldásokat kért.
                     A megvalósítás során nagy figyelmet szenteltünk a zenekari image átadására. </p>
             </div>
@@ -265,7 +292,7 @@
                    <span class="dot"></span>
                    <span class="dot"></span>
                </div>
-               <p class="clinet">Csomag</p>
+               <p class="clinet">Weboldal csomag</p>
                <div class="works_contanier_content-box-pricebox">
                 <div class="pricebox-name">Landing</div>
                 <div class="pricebox-contanier">
@@ -293,7 +320,7 @@
                     </div>
                     <div class="process_container_box-text">
                         <div class="head-text">Kapcsolat felvétele</div>
-                        <div class="process-text">Kérjen bátran tájékoztatást csomagjainkról, munkamódszereinkről!
+                        <div class="process-text">Kérjen bátran tájékoztatást weblap csomagjainkról, munkamódszereinkről!
                             Megkeresésére <span>1 munkanapon belül válaszolunk..</span> </div>
                     </div>
                 </div>
@@ -303,7 +330,7 @@
                     </div>
                     <div class="process_container-box-text">
                         <div class="head-text">igényfelmérés kérdőívvel, tanácsadás</div>
-                        <div class="process-text">A folyamat <span>hatékonysága</span> érdekében kérjük egy <span>igényfelmérő kérdőív</span> kitöltésére, melyet akár közösen,
+                        <div class="process-text">A weboldal elkészítésének <span>hatékonysága</span> érdekében kérjük egy <span>igényfelmérő kérdőív</span> kitöltésére, melyet akár közösen,
                         <span>segítségünkkel, szakmai tanácsadásadásunk</span> mellett is megvalósíthat.</div>
                     </div>
                 </div>
@@ -313,8 +340,8 @@
                     </div>
                     <div class="process_container-box-text">
                         <div class="head-text">árajánlat és szerződéskötés</div>
-                        <div class="process-text">Egyeztetéseink alapján összeállítjuk az ön <span>céljainak leginkább megfelelő</span> árajánlatunkat.
-                         A szerződés megkötése után azonnal munkába állunk!</div>
+                        <div class="process-text">Egyeztetéseink alapján összeállítjuk az ön <span>céljainak leginkább megfelelő honlap csomagot</span> árajánlatunkat.
+                         A szerződés megkötése után azonnal elkezdjük a weboldal elkészítését!</div>
                     </div>
                 </div>
                 <div class="process_container_box ">  
@@ -323,7 +350,7 @@
                     </div>
                     <div class="process_container-box-text">
                         <div class="head-text">dizájn előzetes</div>
-                        <div class="process-text">A munka megkezdése után egy “dizájn előzetessel” jelentkezünk. <span>Ellenőrizheti</span>, hogy a dizájn <span>megfelel-e igényeinek</span>,
+                        <div class="process-text">A munka megkezdése után egy website “dizájn előzetessel” jelentkezünk. <span>Ellenőrizheti</span>, hogy a weboldal dizájn <span>megfelel-e igényeinek</span>,
                              az egyeztetések után folytatjuk a munkát a teljes weboldallal. </div>
                     </div>
                 </div>
@@ -388,7 +415,7 @@
                         </div>
                         <div class="feature text-left5">
                             <img loading="lazy" src="/img/check-circle.svg" alt="weboldal szolgáltatás check ikon">
-                            <p>Keresőoptimalizáslás (SEO)</p>
+                            <p>Keresőoptimalizálás (SEO)</p>
                         </div>
                     </div>
                     <div class="packages_container-box-pricebox">
@@ -403,7 +430,7 @@
                     </div>
                     <div class="packages_container-box-text ">
                         <div class="packages_container-box-popular"><p>legnépszerűbb csomagunk!</p>
-                        </div>Optimális választás kis- és középvállalkozásoknak, komplexebb weboldal-stuktúra és gyakran frissülő tartalom esetén.
+                        </div>Optimális választás kis- és középvállalkozásoknak, komplexebb weboldal-struktúra és gyakran frissülő tartalom esetén.
                     </div>
                     <div class="packages_container-box-featuresbox">
                         <div class="feature text-left1">
@@ -478,21 +505,21 @@
                 <div class="swiper-slide">
                     <div class="reviews_container">
                         <div class="reviews_container_box ">
-                            <img src="/img/costumer.png" width="116" height="111" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                            <img loading="lazy" src="/img/costumer.png" width="116" height="111" alt="Ügyfelünk logója" class="reviews_container_box-pho">
                             <div class="reviews_container_box-name">Devá Yoga Studio</div>
                             <div class="reviews_container_box-filed">Vállakozás</div>
                             <div class="reviews_container_box-website">Jóga</div>
                             <div class="reviews_container_box-text">Miután elfogadtuk a design tervet, az oldal gyorsan elkészült. Elégedettek vagyunk az eredménnyel, és az üzemeltetéssel. A weboldalnak köszönhetően rendszeresen jelentkeznek be új vendégek és eredményesen fejlődik a vállalkozásunk.  <span onclick="location.href='https://devayoga.hu/'">WEBOLDAL</span></div>
                         </div>
                         <div class="reviews_container_box review-mobile-invisible">
-                            <img src="/img/hlilla.png" width="113" height="110" alt="Ügyfelünk logója" class="reviews_container_box-pho ">
+                            <img loading="lazy" src="/img/hlilla.png" width="113" height="110" alt="Ügyfelünk logója" class="reviews_container_box-pho ">
                             <div class="reviews_container_box-name">Étrendműhely</div>
                             <div class="reviews_container_box-filed">Tanácsadás</div>
                             <div class="reviews_container_box-website">Étrend</div>
                             <div class="reviews_container_box-text">Fiatalos, modern, de átlátható weboldalra volt szükségem a szolgáltatásaim bemutatására, hogy az ügyfeleimnek mindig naprakész információkkal tudjak szolgálni.  Nagyon tetszik a végeredmény, és ha valamit frissíteni kell, azt gyorsan elvégzik<span onclick="location.href='https://etrendmuhely.hu/'"> WEBOLDAL</span></div>
                         </div>
                         <div class="reviews_container_box review-mobile-invisible">
-                            <img src="/img/musicBand.svg" width="116" height="111" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                            <img loading="lazy" src="/img/musicBand.svg" width="116" height="111" alt="Ügyfelünk logója" class="reviews_container_box-pho">
                             <div class="reviews_container_box-name">Hogyisvan Zenekar</div>
                             <div class="reviews_container_box-filed">Bemutató oldal</div>
                             <div class="reviews_container_box-website">Zenekar</div>
@@ -503,24 +530,24 @@
             <div class="swiper-slide invisible">
                <div class="reviews_container">
                    <div class="reviews_container_box ">
-                   <img src="/img/hlilla.png" width="113" height="110" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                   <img loading="lazy" src="/img/hlilla.png" width="113" height="110" alt="Ügyfelünk logója" class="reviews_container_box-pho">
                    <div class="reviews_container_box-name">Étrendműhely</div>
                    <div class="reviews_container_box-filed">Tanácsadás</div>
                    <div class="reviews_container_box-website">Étrend</div>
                    <div class="reviews_container_box-text">Fiatalos, modern, de átlátható weboldalra volt szükségem a szolgáltatásaim bemutatására, hogy az ügyfeleimnek mindig naprakész információkkal tudjak szolgálni.  Nagyon tetszik a végeredmény, és ha valamit frissíteni kell, azt gyorsan elvégzik<span onclick="location.href='https://etrendmuhely.hu/'"> WEBOLDAL</span></div>
                </div>
                <div class="reviews_container_box review-mobile-invisible">
-                   <img src="/img/costumer.png" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                   <img  loading="lazy" src="/img/costumer.png" alt="Ügyfelünk logója" class="reviews_container_box-pho">
                </div>
                <div class="reviews_container_box review-mobile-invisible">
-                   <img src="/img/costumer.png" alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                   <img loading="lazy" src="/img/costumer.png" alt="Ügyfelünk logója" class="reviews_container_box-pho">
                </div>
                 </div>
             </div>
                 <div class="swiper-slide invisible">
                     <div class="reviews_container">
                     <div class="reviews_container_box ">
-                        <img src="/img/musicBand.svg" width="116" height="111"  alt="Ügyfelünk logója" class="reviews_container_box-pho">
+                        <img loading="lazy" src="/img/musicBand.svg" width="116" height="111" alt="Ügyfelünk logója" class="reviews_container_box-pho">
                         <div class="reviews_container_box-name">Hogyisvan Zenekar</div>
                         <div class="reviews_container_box-filed">Bemutató oldal</div>
                         <div class="reviews_container_box-website">Zenekar</div>
@@ -618,12 +645,12 @@
         <div class="f-c">
         <div class="footer_container">
             <div class="footer_container-text">
-              <div> <img src="/img/logo-white.svg" alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik"> </div>
+              <div> <img loading="lazy" src="/img/logo-white.svg" width="176" height="60" alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik"> </div>
               <p class="mb-1">Weboldalak készítése és üzemeltetése kis- és középvállalkozásoknak.</p>
               <p>Munkánk magában foglalja az alapos kutatást, tervezést, a fejlesztést modern technológiákkal, a tesztelést, az optimalizálást és a weboldal üzembe helyezését. Továbbá biztosítunk üzembe helyezés utáni támogatást is.</p>                            
                 <div class="footer_container-text-logo">
                    <a href="https://www.facebook.com/stdbromo/">
-                     <img src="/img/footer-facebook-logo.svg" alt="Studio Bromo hivatalos facebook oldal logo">
+                     <img src="/img/footer-facebook-logo.svg" width="48" height="48" loading="lazy" alt="Studio Bromo hivatalos facebook oldal logo">
                     </a>
                 </div>
 
@@ -685,11 +712,11 @@
             gtag('config', 'G-DEXBXRS1V7');
         </script>
 
-        <script src="js/scrollreveal.js"></script>
-        <script src="js/mian.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <script src="js/swiper.js"></script>
-        <script src="js/chapcha.js"></script>
+        <script  defer src="https://unpkg.com/scrollreveal"></script>
+        <script  defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script  defer src="https://www.google.com/recaptcha/api.js?render=6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag"></script>
+        <script  defer src="/js/jsminmainpage.js"></script>
+
     </body>
 </html>
 

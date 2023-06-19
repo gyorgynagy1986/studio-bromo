@@ -67,6 +67,15 @@
 .mb-5 {
   margin-bottom: 5rem !important; }
 
+.mb-9 {
+  margin-bottom: 9rem !important; }
+
+.mb-9-price {
+  margin-bottom: 9rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .mb-9-price {
+      margin-bottom: 2rem !important; } }
+
 .mb-10 {
   margin-bottom: 10rem !important; }
 
@@ -111,7 +120,7 @@
   line-height: 140% !important; }
 
 .header-mb {
-  margin-bottom: 15rem; }
+  margin-bottom: 9rem; }
   @media only screen and (max-width: 37.5em) {
     .header-mb {
       margin-bottom: 0rem; } }
@@ -586,6 +595,21 @@ h2 {
         width: 100% !important; } }
     @media only screen and (max-width: 22.5em) {
       .price-h2 h2 {
+        font-size: 2.6rem !important;
+        width: 100% !important; } }
+  .price-h2 h1 {
+    font-size: 5rem !important;
+    text-align: center;
+    line-height: 140%; }
+    @media only screen and (max-width: 64.5em) {
+      .price-h2 h1 {
+        font-size: 4rem !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .price-h2 h1 {
+        font-size: 3rem !important;
+        width: 100% !important; } }
+    @media only screen and (max-width: 22.5em) {
+      .price-h2 h1 {
         font-size: 2.6rem !important;
         width: 100% !important; } }
 
@@ -1531,7 +1555,7 @@ th, td {
   background-color: #8c72eb;
   position: fixed;
   bottom: 0;
-  z-index: 11111111110000000000001;
+  z-index: 99999;
   color: white;
   opacity: 1;
   height: auto;
@@ -1998,7 +2022,7 @@ nav.sticky {
   height: 10rem;
   opacity: 96%;
   background: #fff;
-  z-index: 1000001101010000;
+  z-index: 9999999;
   box-shadow: 0px 15px 25px -19px rgba(150, 150, 150, 0.24); }
 
 .nav-sticky-prefix {
@@ -2014,7 +2038,7 @@ nav.sticky {
 
 .nav_dropdown:before {
   content: '';
-  background-color: var(--mainBcGroung);
+  background-color: #f5faff;
   width: 26rem;
   height: 14rem;
   position: absolute;
@@ -2282,7 +2306,7 @@ nav.sticky {
       padding: 5rem;
       flex-direction: column;
       align-items: flex-start;
-      background-color: var(--secBcground);
+      background-color: white;
       grid-column: 1 / span 4;
       grid-row: 2 / 22;
       box-shadow: 10px 10px 30px rgba(24, 166, 245, 0.2);
@@ -3392,7 +3416,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       @media only screen and (max-width: 37.5em) {
         .detailed_container .featured-container {
           position: absolute;
-          top: 5%;
+          top: 6%;
           left: 50%;
           transform: translate(-50%, -50%);
           width: 23rem;
@@ -4084,7 +4108,8 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .maintence_main-head {
-      padding-bottom: 5rem; } }
+      padding-bottom: 5rem;
+      margin-top: 2rem !important; } }
 
 .processM_section-list {
   width: 90%;
@@ -4575,7 +4600,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
 
 .discountNav {
   background-color: white;
-  box-shadow: 0px 15px 25px -4px rgba(150, 150, 150, 0.24); }
+  box-shadow: 0px 15px 25px -4px rgba(150, 150, 150, 0.096); }
 
 .colorFooterDiscount {
   background-color: #7749d4 !important; }

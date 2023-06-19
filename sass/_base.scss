@@ -282,6 +282,18 @@ $font-display: 'Rubik', sans-serif;
     margin-bottom: 5rem !important;
 }
 
+.mb-9 {
+    margin-bottom: 9rem !important;
+}
+
+.mb-9-price {
+    margin-bottom: 9rem !important;
+    @include respond (phone) {
+        margin-bottom: 2rem !important;
+
+    }
+}
+
 .mb-10 {
     margin-bottom: 10rem !important;
 }
@@ -343,7 +355,7 @@ $font-display: 'Rubik', sans-serif;
 }
 
 .header-mb {
-    margin-bottom: 15rem;
+    margin-bottom: 9rem;
     @include respond (phone) {
         margin-bottom: 0rem;
     }
