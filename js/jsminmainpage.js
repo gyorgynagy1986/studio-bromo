@@ -163,10 +163,19 @@ const swiper = new Swiper(".swiper-container", {
   pagination: { el: ".swiper-pagination", clickable: !0 },
   navigation: { nextEl: ".swiper-button-left", prevEl: ".swiper-button-right" },
 });
-grecaptcha.ready(function () {
-  grecaptcha
-    .execute("6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag", { action: "homepage" })
-    .then(function (e) {
-      document.getElementById("captchaResponse").value = e;
-    });
-});
+
+
+
+setTimeout(()=> {
+    grecaptcha.ready(function () {
+        grecaptcha
+          .execute("6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag", { action: "homepage" })
+          .then(function (e) {
+            document.getElementById("captchaResponse").value = e;
+          });
+      });
+        
+  }, 1000)
+
+
+

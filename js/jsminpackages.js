@@ -71,6 +71,8 @@ packagesContainer.addEventListener("click", (e) => {
           .querySelectorAll(".fc-tech")
           .forEach((e) => (e.textContent = "WordPress"))));
 });
+
+
 grecaptcha.ready(function () {
   grecaptcha
     .execute("6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag", { action: "homepage" })
