@@ -36,14 +36,14 @@
             border-radius: 3px;
 
             img {
-                width:100%;
+                width:120%;
                 height:100%;
                 object-fit: cover;
                 display:block;
                 border-radius: 3px;
                // cursor:none;
-                clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0% 100%);
-                opacity: .5;
+              //  clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0% 100%);
+                opacity: .9;
                 @include respond (tablet) {
                  display: none;
                 }

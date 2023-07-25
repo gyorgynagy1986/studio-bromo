@@ -2290,13 +2290,12 @@ nav.sticky {
       grid-column: 2 / -1;
       border-radius: 3px; }
       .works_contanier-photo img {
-        width: 100%;
+        width: 120%;
         height: 100%;
         object-fit: cover;
         display: block;
         border-radius: 3px;
-        clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0% 100%);
-        opacity: .5; }
+        opacity: .9; }
         @media only screen and (max-width: 64.5em) {
           .works_contanier-photo img {
             display: none; } }
