@@ -25,12 +25,6 @@
         as="image"
         />
 
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.css
-        "
-        >  
-      
         <link  rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
         <link rel="icon" href="/favicon/favicon-32x32.png" sizes="16x16 32x32" type="image/png">
         
@@ -712,8 +706,16 @@
 
             gtag('config', 'G-DEXBXRS1V7');
         </script> -->
-        https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js
 
+        <script>
+            // Várakozás egy ideig (pl. 2 másodperc)
+            setTimeout(function() {
+              var link = document.createElement("link");
+              link.rel = "stylesheet";
+              link.href = "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css";
+              document.head.appendChild(link);
+            }, 2000);
+          </script>
 
 
 
