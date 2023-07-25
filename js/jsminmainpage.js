@@ -166,16 +166,5 @@ const swiper = new Swiper(".swiper-container", {
 
 
 
-setTimeout(()=> {
-    grecaptcha.ready(function () {
-        grecaptcha
-          .execute("6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag", { action: "homepage" })
-          .then(function (e) {
-            document.getElementById("captchaResponse").value = e;
-          });
-      });
-        
-  }, 1000)
-
 
 
