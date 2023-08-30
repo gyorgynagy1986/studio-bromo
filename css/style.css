@@ -1904,7 +1904,7 @@ th, td {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: linear-gradient(270deg, #FF5C00 50%, #FF5C00 100%);
+    background: linear-gradient(270deg, #FF5C00 50%, #ea691f 100%);
     opacity: 0;
     transition: all .2s ease-in-out; }
   @media only screen and (max-width: 37.5em) {
