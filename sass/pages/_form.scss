@@ -76,10 +76,11 @@
         .inputbox {
 
             background-color: $color-secondary-backgroung;
-            height: 55rem;
+            height: auto;
             box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.25);
             border-radius: 6px;
             padding-top: 5rem;
+            padding-bottom: 5rem;
             
             &_group {
                 margin: 0 auto;
@@ -170,7 +171,7 @@
                 @include formBoxTitles;
 
                 @include respond (phone) {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     line-height:2.3rem;
                     }
             }

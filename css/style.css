@@ -3640,10 +3640,11 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         font-weight: 500; }
     .section .igfelm .inputbox {
       background-color: var(--secBcground);
-      height: 55rem;
+      height: auto;
       box-shadow: -10px -10px 30px rgba(240, 250, 255, 0.6), 10px 10px 30px rgba(24, 166, 245, 0.25);
       border-radius: 6px;
-      padding-top: 5rem; }
+      padding-top: 5rem;
+      padding-bottom: 5rem; }
       .section .igfelm .inputbox_group {
         margin: 0 auto;
         width: 85%;
@@ -3774,7 +3775,7 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         margin-bottom: 1rem; }
         @media only screen and (max-width: 37.5em) {
           .section-secoundary .abyourb-group-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             line-height: 2.3rem; } }
       .section-secoundary .abyourb-group-text {
         font-family: "Rubik", sans-serif;
