@@ -3575,6 +3575,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
     transform: translateY(0);
     opacity: 1; } }
 
+* {
+  font-size: 16px; }
+
 .form_logo {
   margin-top: 3rem;
   width: 100%;
@@ -3653,9 +3656,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       .section .igfelm .inputbox_input {
         font-family: "Inter", sans-serif;
         height: 9rem;
-        font-weight: 300;
-        font-size: 1.8rem;
-        color: #6f6f6f;
+        font-weight: 200;
+        font-size: 1.6rem;
+        color: #2f2f2f;
         padding: 1.5rem 2rem;
         border: 2px solid rgba(25, 0, 255, 0.438);
         border-radius: 6px;
@@ -3810,9 +3813,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       .section-secoundary .abyourb-group-input {
         font-family: "Inter", sans-serif;
         height: 9rem;
-        font-weight: 300;
-        font-size: 1.8rem;
-        color: #6f6f6f;
+        font-weight: 200;
+        font-size: 1.6rem;
+        color: #2f2f2f;
         padding: 1.5rem 2rem;
         border: 2px solid rgba(25, 0, 255, 0.438);
         border-radius: 6px;
@@ -4002,9 +4005,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
         .section-quarter .webem-group-textbox-input {
           font-family: "Inter", sans-serif;
           height: 9rem;
-          font-weight: 300;
-          font-size: 1.8rem;
-          color: #6f6f6f;
+          font-weight: 200;
+          font-size: 1.6rem;
+          color: #2f2f2f;
           padding: 1.5rem 2rem;
           border: 2px solid rgba(25, 0, 255, 0.438);
           border-radius: 6px;
@@ -4065,9 +4068,9 @@ iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
       .section-fifth .tovinf-textbox-input {
         font-family: "Inter", sans-serif;
         height: 9rem;
-        font-weight: 300;
-        font-size: 1.8rem;
-        color: #6f6f6f;
+        font-weight: 200;
+        font-size: 1.6rem;
+        color: #2f2f2f;
         padding: 1.5rem 2rem;
         border: 2px solid rgba(25, 0, 255, 0.438);
         border-radius: 6px;
