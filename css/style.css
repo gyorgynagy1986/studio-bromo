@@ -2791,6 +2791,22 @@ nav.sticky {
   height: 3rem;
   margin-right: 1rem; }
 
+.phone-number {
+  padding-top: 2rem; }
+  .phone-number a {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold; }
+  .phone-number_phone {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem; }
+
+.email-icon {
+  width: 30px;
+  height: 30px; }
+
 .packages {
   height: 100%;
   width: 100%;
