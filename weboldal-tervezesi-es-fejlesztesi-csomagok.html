@@ -1,403 +1,842 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Kínálatunkban megtalálhatóak az olcsóbb wordpress weboldal csomagok, valamint az egyedi design tervvel készült egyedi fejlesztésű weboldalak egyaránt.">
-        <meta name="keywords" content="ingyenes domain, ingyenes hosting, ingyenes SSL, ingyenes webtárhely, weboldal készítés csomagok, weboldal szolgáltatások, modern design,  ">
-        <meta name="author" content="Team of Studio Bromo">   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Kínálatunkban megtalálhatóak az olcsóbb wordpress weboldal csomagok, valamint az egyedi design tervvel készült egyedi fejlesztésű weboldalak egyaránt."
+    />
+    <meta
+      name="keywords"
+      content="ingyenes domain, ingyenes hosting, ingyenes SSL, ingyenes webtárhely, weboldal készítés csomagok, weboldal szolgáltatások, modern design,  "
+    />
+    <meta name="author" content="Team of Studio Bromo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preload" href="https://fonts.gstatic.com/s/rubik/v26/iJWKBXyIfDnIV7nBrXw.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://fonts.gstatic.com/s/rubik/v26/iJWKBXyIfDnIV7nPrXyi0A.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/rubik/v26/iJWKBXyIfDnIV7nBrXw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/rubik/v26/iJWKBXyIfDnIV7nPrXyi0A.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
-        <link
-            rel="preload"
-            href="/img/StudioBromo_logo_landscape.svg"
-            as="image"
-        />
+    <link rel="preload" href="/img/StudioBromo_logo_landscape.svg" as="image" />
 
-        <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="icon" href="/favicon/favicon-32x32.png" sizes="16x16 32x32" type="image/png">
-        <script src="https://www.google.com/recaptcha/api.js?render=6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag"></script>
-        <title>Weboldal csomagok — részletek, csomag típusok és árak</title>
-    </head>
-    <body>
+    <link
+      rel="icon"
+      href="/favicon/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/favicon/favicon-32x32.png"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfA69YjAAAAABRkLoCxfl_r0JeVMTBD4WDjSnag"></script>
+    <title>Weboldal csomagok — részletek, csomag típusok és árak</title>
+    <!-- Hotjar Tracking Code for https://studiobromo.hu/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3735834, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
     <!-- HEADER -->
     <div class="mobilenav">
+      <div class="nav_logo-mobile">
+        <img
+          onclick="location.href='/'"
+          width="132"
+          height="45"
+          src="/img/StudioBromo_logo_landscape.svg"
+          alt="logo"
+        />
+      </div>
+      <input type="checkbox" class="mobilenav_checkbox" id="navi-toogle" />
+      <label for="navi-toogle" class="mobilenav_button"
+        ><span class="mobilenav_icon"></span
+      ></label>
+      <div class="mobilenav_background">&nbsp;</div>
+      <nav class="mobilenav_nav">
         <div class="nav_logo-mobile">
-            <img onclick="location.href='/'" width="132" height="45" src="/img/StudioBromo_logo_landscape.svg" alt="logo">
+          <img
+            onclick="location.href='/'"
+            width="132"
+            height="45"
+            src="/img/StudioBromo_logo_landscape.svg"
+            alt="logo"
+          />
         </div>
-        <input type="checkbox" class="mobilenav_checkbox " id="navi-toogle">
-        <label for="navi-toogle" class="mobilenav_button"><span class="mobilenav_icon"></span></label>
-        <div class="mobilenav_background">&nbsp;</div>
-        <nav class="mobilenav_nav">
-            <div class="nav_logo-mobile">
-                <img onclick="location.href='/'" width="132" height="45"  src="/img/StudioBromo_logo_landscape.svg" alt="logo">
-            </div>
-            <ul class="mobilenav_list">
-                    <li class="mobilenav_item"><a href="/#process" class="mobilenav_link">hogyan dolgozunk</a> </li>
-                    <li class="mobilenav_item"><a href="/#packages" class="mobilenav_link">szolgáltatások</a></li>
-                    <li class="mobilenav_item"><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok" class="mobilenav_link nav-active-color modilnav-left-extra-item">Weboldal csomagok</a></li>
-                    <li class="mobilenav_item"><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok" class="mobilenav_link modilnav-left-extra-item">Üzemeltetés & karbantartás</a></li>
-                    <li class="mobilenav_item"><a href="/weboldal-igenyfelmeres" class="mobilenav_link modilnav-left-extra-item">igényfelmérő kérdőív</a></li>
-                    <li class="mobilenav_item"><a href="/szolgaltatas-reszletek" class="mobilenav_link modilnav-left-extra-item">szolgáltatás kisokos</a></li>
-                    <li class="mobilenav_item"><a href="/szolgaltatas-arak" class="mobilenav_link">árak</a></li>
-                    <li class="mobilenav_item"><a href="/#reviews" class="mobilenav_link">ügyfeleink rólunk</a></li> 
-                    <li class="mobilenav_item"><a href="/weboldal-akciok" class="mobilenav_link">akciók</a></li> 
-                    <li class="mobilenav_item"><a href="/#touch" class="mobilenav_link"><span>Kapcsolat</span></a></li>
-             </ul>
-        </nav>
+        <ul class="mobilenav_list">
+          <li class="mobilenav_item">
+            <a href="/#process" class="mobilenav_link">hogyan dolgozunk</a>
+          </li>
+          <li class="mobilenav_item">
+            <a href="/#packages" class="mobilenav_link">szolgáltatások</a>
+          </li>
+          <li class="mobilenav_item">
+            <a
+              href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+              class="mobilenav_link nav-active-color modilnav-left-extra-item"
+              >Weboldal csomagok</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a
+              href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+              class="mobilenav_link modilnav-left-extra-item"
+              >Üzemeltetés & karbantartás</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a
+              href="/weboldal-igenyfelmeres"
+              class="mobilenav_link modilnav-left-extra-item"
+              >igényfelmérő kérdőív</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a
+              href="/szolgaltatas-reszletek"
+              class="mobilenav_link modilnav-left-extra-item"
+              >szolgáltatás kisokos</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a href="/szolgaltatas-arak" class="mobilenav_link">árak</a>
+          </li>
+          <li class="mobilenav_item">
+            <a href="/#reviews" class="mobilenav_link">ügyfeleink rólunk</a>
+          </li>
+          <li class="mobilenav_item">
+            <a href="/weboldal-akciok" class="mobilenav_link">akciók</a>
+          </li>
+          <li class="mobilenav_item">
+            <a href="/#touch" class="mobilenav_link"><span>Kapcsolat</span></a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <header class="header color-w header-mb" id="home">
-        <div class="nav-sticky-prefix">
-            <nav class="nav">
-                <div class="nav_logo dark-mode" onclick="location.href='/'">
-                    <img width="300" height="103"  src="/img/StudioBromo_logo_landscape.svg" alt="logo">
-                </div>
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="/#featured" class="nav_link">kiemelt munkáink</a></li>
-                    <li class="nav_item"><a href="/#process" class="nav_link">hogyan dolgozunk</a></li> 
-                    <li class="nav_item nav_dropdown">
-                        <a href="#" class="nav_link">szolgáltatások&nbsp;<samp class="dd-menu">&vellip;</samp></a>
-                        <a href="/weboldal-tervezesi-es-fejlesztesi-csomagok" class="hidden nav-active-color">Weboldal csomagok</a>
-                        <a href="/weboldal-uzemeltetes-es-karbantartas-csomagok" class="hidden">Üzemeltetés & karbantartás</a>
-                        <a href="/weboldal-igenyfelmeres" class="hidden">igényfelmérő kérdőív</a>
-                        <a href="/szolgaltatas-reszletek" class="hidden">szolgáltatás kisokos</a>
-                    </li>
-                    <li class="nav_item"><a href="/szolgaltatas-arak" class="nav_link">árak</a></li>
-                    <li class="nav_item"><a href="/#reviews" class="nav_link">ügyfeleink rólunk</a></li> 
-                    <li class="nav_item"><a href="/weboldal-akciok" class="nav_link">akciók</a></li> 
-                    <li class="nav_item"><a href="/#touch" class="nav_link"> <span> Kapcsolat</span></a></li>
-                </ul>
-            </nav>
+      <div class="nav-sticky-prefix">
+        <nav class="nav">
+          <div class="nav_logo dark-mode" onclick="location.href='/'">
+            <img
+              width="300"
+              height="103"
+              src="/img/StudioBromo_logo_landscape.svg"
+              alt="logo"
+            />
+          </div>
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="/#featured" class="nav_link">kiemelt munkáink</a>
+            </li>
+            <li class="nav_item">
+              <a href="/#process" class="nav_link">hogyan dolgozunk</a>
+            </li>
+            <li class="nav_item nav_dropdown">
+              <a href="#" class="nav_link"
+                >szolgáltatások&nbsp;<samp class="dd-menu">&vellip;</samp></a
+              >
+              <a
+                href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+                class="hidden nav-active-color"
+                >Weboldal csomagok</a
+              >
+              <a
+                href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+                class="hidden"
+                >Üzemeltetés & karbantartás</a
+              >
+              <a href="/weboldal-igenyfelmeres" class="hidden"
+                >igényfelmérő kérdőív</a
+              >
+              <a href="/szolgaltatas-reszletek" class="hidden"
+                >szolgáltatás kisokos</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="/szolgaltatas-arak" class="nav_link">árak</a>
+            </li>
+            <li class="nav_item">
+              <a href="/#reviews" class="nav_link">ügyfeleink rólunk</a>
+            </li>
+            <li class="nav_item">
+              <a href="/weboldal-akciok" class="nav_link">akciók</a>
+            </li>
+            <li class="nav_item">
+              <a href="/#touch" class="nav_link"> <span> Kapcsolat</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="detailed">
+      <div class="detailed_main-head">
+        <h1 class="title-prefix">Weboldal csomagjaink</h1>
+      </div>
+
+      <div class="detailed_container">
+        <div class="featured-container dn">
+          <div class="toogle-container">
+            <div class="toogle-container_csomagok">
+              <button data-id="1" class="tg-bg toogle-egyedi">Egyedi</button>
+              <button class="toogle-wp">WordPress</button>
+            </div>
+          </div>
         </div>
-        </header>
-     <section class="detailed">
-        <div class="detailed_main-head">
-            <h1 class="title-prefix"> Weboldal csomagjaink</h1>
+        <div class="b1 packagetitle">Landing</div>
+        <div class="b2 packagetitle">Creative</div>
+        <div class="b3 packagetitle">Extra</div>
+
+        <div class="b4 bposi-title">
+          <div class="price fonst-size-price">
+            <span class="p-landing"> 249 000 ft</span> <br />
+            <span class="from-p">- fix</span>
+          </div>
         </div>
-
-        
-        <div class="detailed_container">
-                <div class="featured-container dn">
-                    <div class="toogle-container">
-                        <div class="toogle-container_csomagok">
-                                <button  data-id="1" class=" tg-bg toogle-egyedi"> Egyedi</button>
-                                <button  class="toogle-wp">WordPress</button>
-                            </div>
-                        </div>
-                    </div>
-                <div class="b1 packagetitle">Landing</div>
-                <div class="b2 packagetitle">Creative</div>
-                <div class="b3 packagetitle">Extra</div>
-            
-                <div class="b4 bposi-title"><div class="price fonst-size-price"> <span class="p-landing"> 249 000 ft</span> <br/> <span class="from-p">- fix</span></div></div>
-                <div class="b5 bposi-title descript"><div class="price fonst-size-price"> <span class="p-creative"> 349 000 ft</span><br/><span class="from-p">- fix</span></div></div>
-                <div class="b6 bposi-title descript"><div class="price fonst-size-price"> <span class="p-extra"> 449 000 ft</span> <br/><span class="from-p">- tól</span></div></div>
-
-                <div class="b7 bp">Fejlesztési technológia</div>
-                <div class="b8 bposi"><span class="fc-tech" >Egyedi fejlesztés</span></div>
-                <div class="b9 bposi"><span class="fc-tech">Egyedi fejlesztés</span></div>
-                <div class="b10 bposi"><span class="fc-tech">Egyedi fejlesztés</span></div>
-               
-                <div class="b11 bp ">Teljeskörű<br> igényfelmérés</div>
-                <div class="b12 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b13 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b14 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-               
-                <div class="b15 bp">Arculathoz igazított<br> megjelenés<br>és egyedi design</div>
-                <div class="b16 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b17 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b18 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-               
-                <div class="b19 for-toogle-1 bp"> Dizájn-terv előzetes</div>
-                <div class="b20 for-toogle-1 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b21 for-toogle-1 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b22 for-toogle-1 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                
-                <div class="b19 for-toogle hidden-reszletek bp"> Dizájn-terv előzetes</div>
-                <div class="b20 for-toogle hidden-reszletek bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-                <div class="b21 for-toogle hidden-reszletek bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-                <div class="b22 for-toogle hidden-reszletek bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-              
-                <div class="b23 bp">Ingyenes domain <br>(1 év)</div>
-                <div class="b24 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b25 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b26 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                
-                <div class="b27 bp">Ingyenes webtárhely<br> (1 év)</div>
-                <div class="b28 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b29 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b30 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b31 bp">Az elkészült oldal <br>feltöltése <br> a webtárhelyre</div>
-                <div class="b32 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b33 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b34 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b35 bp">Ingyenes SSL<br> tanúsítvány</div>
-                <div class="b36 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b37 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b38 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b39 bp">Egyedi e-mail cím</div>
-                <div class="b40 bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-                <div class="b41 bposi"><span>3 db</span></div>
-                <div class="b42 bposi"><span>Korlátlan</span></div>
-
-                <div class="b43 bp">Optimalizálás mobilra<br> és tabletre</div>
-                <div class="b44 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b45 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b46 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b47 bp">Ingyenes támogatási<br>csomag (3 hónapig)</div>
-                <div class="b48 bposi"><span>Alap</span></div>
-                <div class="b49 bposi"><span>Kiemelt</span></div>
-                <div class="b50 bposi"><span>Kiemelt</span></div>
-
-                <div class="b51 bp">Tartalomfrissítés<br>alap támogatási csomaggal</div>
-                <div class="b52 bposi"><span>havonta</span></div>
-                <div class="b53 bposi"><span>kéthetente</span></div>
-                <div class="b54 bposi"><span>hetente</span></div>
-
-                <div class="b55 bp">Tartalomfrissítés<br>kiemelt támogatási csomaggal</div>
-                <div class="b56 bposi"><span>72 órán belül</span></div>
-                <div class="b57 bposi"><span>48 órán belül</span></div>
-                <div class="b58 bposi"><span>24 órán belül</span></div>
-
-                <div class="b59 bp">Keresőoptimalizálás<br> (+ Google search Console)</div>
-                <div class="b60 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b61 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b62 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b63 bp">Látogatói statisztikák<br>(Google Analytics)</div>
-                <div class="b64 bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-                <div class="b65 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b66 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b67 bp">Biztonsági másolat</div>
-                <div class="b68 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b69 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b70 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b71 bp">Cloudflare integráció</div>
-                <div class="b72 bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-                <div class="b73 bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-                <div class="b74 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b75 bp">SEO optimalizált<br>tartalomírás</div>
-                <div class="b76 bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-                <div class="b77 bposi"><img src="/img/checknegative.svg" alt="check status photo"></div>
-                <div class="b78 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b79 bp">Jogtiszta képek<br>az arculathoz</div>
-                <div class="b80 bposi"><span>alap</span></div>
-                <div class="b81 bposi"><span>alap</span></div>
-                <div class="b82 bposi"><span>prémium</span></div>
-
-                <div class="b83 bp">Google térkép<br>integráció</div>
-                <div class="b84 bposi"><span>alap</span></div>
-                <div class="b85 bposi"><span>arculathoz szabott</span></div>
-                <div class="b86 bposi"><span>arculathoz szabott</span></div>
-
-                <div class="b87 bp">Belső levélküldés<br>integráció</div>
-                <div class="b88 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b89 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-                <div class="b90 bposi"><img src="/img/check.svg" alt="check status photo"></div>
-
-                <div class="b91 bp">Aloldalak száma</div>
-                <div class="b92 bposi"><span>1 (landing)</span></div>
-                <div class="b93 bposi"><span>1-5</span></div>
-                <div class="b94 bposi"><span>5 +</span></div>
-
-                <div class="b95 bp">Gyorsaság garancia</div>
-                <div class="b96 bposi"><img src="/img/check.svg" alt="checked"></div>
-                <div class="b97 bposi"><img src="/img/check.svg" alt="checked"></div>
-                <div class="b98 bposi"><img src="/img/check.svg" alt="checked"></div>
+        <div class="b5 bposi-title descript">
+          <div class="price fonst-size-price">
+            <span class="p-creative"> 349 000 ft</span><br /><span
+              class="from-p"
+              >- fix</span
+            >
+          </div>
         </div>
-
-        <div class="extra-detailed mb-10">
-            <h2 class="fs-3 mb-3">Személyre szabott ajánlatkérés</h2>
-            <p class="head-text-packages ">Amennyiben nem biztos abban, hogy melyik weboldal-csomag illene az ön vállalkozásához, kérem töltse ki az <b><a style="color: #283c61;" href="/weboldal-igenyfelmeres">igényfelmérő kérdőívet</a></b> és 24 órán belül (munkanapokon) felkeressük ajánlatunkkal.  </p>
-            <p class="head-text-packages mt-2">A teljes szolgáltatás lista részletes leírása és feltételei megtekinthetők itt : <b><a style="color: #283c61;" href="/szolgaltatas-reszletek">szolgáltatás kisokos</a></b>.</p>
-        </div>
-     </section>
-     
-    <!-- CONTACT FORM  -->
-
-    <section class="contact" id="touch">
-        <div class="contact_main-head">
-            <h2 class="color-white">Kapcsolat</h2>
-            <div class="phone-number">
-                <div class="phone-number_phone">
-                   <img class="email-icon"src="/img/icons/phone.svg" alt="studio bromo telefonos elérhetőségre">
-                   <a href="tel:+36305440969">06 30 544 09 69</a>
-               </div>
-                <div class="phone-number_phone">
-                   <img class="email-icon" src="/img/icons/email.svg" alt="studio bromo email címe">
-                   <a href="mailto:hello@studiobromo.hu">hello@studiobromo.hu</a>
-               </div>
+        <div class="b6 bposi-title descript">
+          <div class="price fonst-size-price">
+            <span class="p-extra"> 449 000 ft</span> <br /><span class="from-p"
+              >- tól</span
+            >
           </div>
         </div>
 
-        <div class="contact_container">
-            <div class="contact_container-form">
-                <div class="main-text">
-                        <div class="text-1"><p>Az üzenet elküldése után</p></div>
-                        <div class="text-1"> <p><span>1 munkanapon belül </span> megkeressük!</p></div>
-                </div>
-                <!-- onsubmit="return validateRecaptcha();" -->
-                <div class="contact_container-form-mainbox">
-                    <form  class="form" action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458" method="post">
-                        <div class="form_group">
-                            <div class="contact_name">Teljes név*</div>
-                            <input type="text" class="form_input" placeholder="FULL NAME" name ="name" id="name">
-                            <label for="name" class="form_label"> </label> 
-                        </div>
-                        <div class="form_group ">
-                            <div class="contact_company">Cég/vállakozás*</div>
-                            <input type="text" name="company" class="form_input" placeholder="COMPANY" id="company">
-                            <label for="company" class="form_label"></label> 
-                        </div>
-                        <div class="form_group">
-                            <div class="contact_phone">Telefonszám*</div>
-                            <input type="number" name="phone" class="form_input" placeholder="YOUR POSITION" id="phone">
-                            <label for="position" class="form_label"> </label> 
-                        </div>
-                        <div class="form_radio">
-                            <div class="contact_callback">Visszahívást kérek*</div>    
-                            <div class="form_radio-position">
-                                <input type="checkbox" name="radio" class="form_radio-input" id="radio">
-                                <label for="radio" class="form_radio-label off-text-selection">9:00 - 12:00</label>
-
-                            </div>
-                            <div class="form_radio-position">
-                                <input type="checkbox" name="radio1" class="form_radio-input" id="radio1">
-                                <label for="radio1" class="form_radio-label off-text-selection">13:00 - 15:00</label> 
-                             </div>
-                             <div class="form_radio-position">
-                                <input type="checkbox" name="radio2" class="form_radio-input" id="radio2">
-                                <label for="radio2" class="form_radio-label off-text-selection">17:00 - 19:00</label> 
-                            </div>
-                        </div>
-                        <div class="form_group">
-                            <div class="contact_email">E-MAIL cím*</div>
-                            <input type="email" name="email" class="form_input" placeholder="EMAIL" id="email" required>
-                            <label for="email" class="form_label"></label> 
-                        </div>
-                        <div class="form_group">
-                            <div class="contact_message">üzenet*</div>
-                            <textarea type="message" name="message"class="form_input form_input-textbox" placeholder="message" id="message" required ></textarea>
-                            <label for="message" class="form_label"></label>  
-                        </div>
-                        <div class="policy-input">
-                            <input type="checkbox" name="policy" class="policy-cbox" id="policy" required>
-                            <label for="policy" class="policy-input"> <p> Hozzájárulok adataim kezeléséhez az &nbsp;<a href="/adatvedelem">adatvédelmi szabályzat</a>&nbsp;alapján.</p>
-                            </label> 
-                        </div>
-                        <div class="btn-form">
-                            <input  id="submitBtn" type="submit" value="Üzenet Küldése" class="btn">
-                        </div>
-                        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-                    </form> 
-                </div>
-            </div>
-
-                <div class="contact_container_picture">
-                    <img loading="lazy" src="/img/contact.svg" alt="getintouch">
-                </div>
+        <div class="b7 bp">Fejlesztési technológia</div>
+        <div class="b8 bposi">
+          <span class="fc-tech">Egyedi fejlesztés</span>
+        </div>
+        <div class="b9 bposi">
+          <span class="fc-tech">Egyedi fejlesztés</span>
+        </div>
+        <div class="b10 bposi">
+          <span class="fc-tech">Egyedi fejlesztés</span>
         </div>
 
+        <div class="b11 bp">
+          Teljeskörű<br />
+          igényfelmérés
+        </div>
+        <div class="b12 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b13 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b14 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b15 bp">
+          Arculathoz igazított<br />
+          megjelenés<br />és egyedi design
+        </div>
+        <div class="b16 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b17 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b18 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b19 for-toogle-1 bp">Dizájn-terv előzetes</div>
+        <div class="b20 for-toogle-1 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b21 for-toogle-1 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b22 for-toogle-1 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b19 for-toogle hidden-reszletek bp">
+          Dizájn-terv előzetes
+        </div>
+        <div class="b20 for-toogle hidden-reszletek bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+        <div class="b21 for-toogle hidden-reszletek bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+        <div class="b22 for-toogle hidden-reszletek bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+
+        <div class="b23 bp">Ingyenes domain <br />(1 év)</div>
+        <div class="b24 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b25 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b26 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b27 bp">
+          Ingyenes webtárhely<br />
+          (1 év)
+        </div>
+        <div class="b28 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b29 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b30 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b31 bp">
+          Az elkészült oldal <br />feltöltése <br />
+          a webtárhelyre
+        </div>
+        <div class="b32 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b33 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b34 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b35 bp">
+          Ingyenes SSL<br />
+          tanúsítvány
+        </div>
+        <div class="b36 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b37 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b38 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b39 bp">Egyedi e-mail cím</div>
+        <div class="b40 bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+        <div class="b41 bposi"><span>3 db</span></div>
+        <div class="b42 bposi"><span>Korlátlan</span></div>
+
+        <div class="b43 bp">
+          Optimalizálás mobilra<br />
+          és tabletre
+        </div>
+        <div class="b44 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b45 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b46 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b47 bp">Ingyenes támogatási<br />csomag (3 hónapig)</div>
+        <div class="b48 bposi"><span>Alap</span></div>
+        <div class="b49 bposi"><span>Kiemelt</span></div>
+        <div class="b50 bposi"><span>Kiemelt</span></div>
+
+        <div class="b51 bp">
+          Tartalomfrissítés<br />alap támogatási csomaggal
+        </div>
+        <div class="b52 bposi"><span>havonta</span></div>
+        <div class="b53 bposi"><span>kéthetente</span></div>
+        <div class="b54 bposi"><span>hetente</span></div>
+
+        <div class="b55 bp">
+          Tartalomfrissítés<br />kiemelt támogatási csomaggal
+        </div>
+        <div class="b56 bposi"><span>72 órán belül</span></div>
+        <div class="b57 bposi"><span>48 órán belül</span></div>
+        <div class="b58 bposi"><span>24 órán belül</span></div>
+
+        <div class="b59 bp">
+          Keresőoptimalizálás<br />
+          (+ Google search Console)
+        </div>
+        <div class="b60 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b61 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b62 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b63 bp">Látogatói statisztikák<br />(Google Analytics)</div>
+        <div class="b64 bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+        <div class="b65 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b66 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b67 bp">Biztonsági másolat</div>
+        <div class="b68 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b69 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b70 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b71 bp">Cloudflare integráció</div>
+        <div class="b72 bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+        <div class="b73 bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+        <div class="b74 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b75 bp">SEO optimalizált<br />tartalomírás</div>
+        <div class="b76 bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+        <div class="b77 bposi">
+          <img src="/img/checknegative.svg" alt="check status photo" />
+        </div>
+        <div class="b78 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b79 bp">Jogtiszta képek<br />az arculathoz</div>
+        <div class="b80 bposi"><span>alap</span></div>
+        <div class="b81 bposi"><span>alap</span></div>
+        <div class="b82 bposi"><span>prémium</span></div>
+
+        <div class="b83 bp">Google térkép<br />integráció</div>
+        <div class="b84 bposi"><span>alap</span></div>
+        <div class="b85 bposi"><span>arculathoz szabott</span></div>
+        <div class="b86 bposi"><span>arculathoz szabott</span></div>
+
+        <div class="b87 bp">Belső levélküldés<br />integráció</div>
+        <div class="b88 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b89 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+        <div class="b90 bposi">
+          <img src="/img/check.svg" alt="check status photo" />
+        </div>
+
+        <div class="b91 bp">Aloldalak száma</div>
+        <div class="b92 bposi"><span>1 (landing)</span></div>
+        <div class="b93 bposi"><span>1-5</span></div>
+        <div class="b94 bposi"><span>5 +</span></div>
+
+        <div class="b95 bp">Gyorsaság garancia</div>
+        <div class="b96 bposi"><img src="/img/check.svg" alt="checked" /></div>
+        <div class="b97 bposi"><img src="/img/check.svg" alt="checked" /></div>
+        <div class="b98 bposi"><img src="/img/check.svg" alt="checked" /></div>
+      </div>
+
+      <div class="extra-detailed mb-10">
+        <h2 class="fs-3 mb-3">Személyre szabott ajánlatkérés</h2>
+        <p class="head-text-packages">
+          Amennyiben nem biztos abban, hogy melyik weboldal-csomag illene az ön
+          vállalkozásához, kérem töltse ki az
+          <b
+            ><a style="color: #283c61" href="/weboldal-igenyfelmeres"
+              >igényfelmérő kérdőívet</a
+            ></b
+          >
+          és 24 órán belül (munkanapokon) felkeressük ajánlatunkkal.
+        </p>
+        <p class="head-text-packages mt-2">
+          A teljes szolgáltatás lista részletes leírása és feltételei
+          megtekinthetők itt :
+          <b
+            ><a style="color: #283c61" href="/szolgaltatas-reszletek"
+              >szolgáltatás kisokos</a
+            ></b
+          >.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM  -->
+
+    <section class="contact" id="touch">
+      <div class="contact_main-head">
+        <h2 class="color-white">Kapcsolat</h2>
+        <div class="phone-number">
+          <div class="phone-number_phone">
+            <img
+              class="email-icon"
+              src="/img/icons/phone.svg"
+              alt="studio bromo telefonos elérhetőségre"
+            />
+            <a href="tel:+36305440969">06 30 544 09 69</a>
+          </div>
+          <div class="phone-number_phone">
+            <img
+              class="email-icon"
+              src="/img/icons/email.svg"
+              alt="studio bromo email címe"
+            />
+            <a href="mailto:hello@studiobromo.hu">hello@studiobromo.hu</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact_container">
+        <div class="contact_container-form">
+          <div class="main-text">
+            <div class="text-1"><p>Az üzenet elküldése után</p></div>
+            <div class="text-1">
+              <p><span>1 munkanapon belül </span> megkeressük!</p>
+            </div>
+          </div>
+          <!-- onsubmit="return validateRecaptcha();" -->
+          <div class="contact_container-form-mainbox">
+            <form
+              class="form"
+              action="https://getform.io/f/b9b72f4a-944c-46d1-96ec-e1cbfb5a0458"
+              method="post"
+            >
+              <div class="form_group">
+                <div class="contact_name">Teljes név*</div>
+                <input
+                  type="text"
+                  class="form_input"
+                  placeholder="FULL NAME"
+                  name="name"
+                  id="name"
+                />
+                <label for="name" class="form_label"> </label>
+              </div>
+              <div class="form_group">
+                <div class="contact_company">Cég/vállakozás*</div>
+                <input
+                  type="text"
+                  name="company"
+                  class="form_input"
+                  placeholder="COMPANY"
+                  id="company"
+                />
+                <label for="company" class="form_label"></label>
+              </div>
+              <div class="form_group">
+                <div class="contact_phone">Telefonszám*</div>
+                <input
+                  type="number"
+                  name="phone"
+                  class="form_input"
+                  placeholder="YOUR POSITION"
+                  id="phone"
+                />
+                <label for="position" class="form_label"> </label>
+              </div>
+              <div class="form_radio">
+                <div class="contact_callback">Visszahívást kérek*</div>
+                <div class="form_radio-position">
+                  <input
+                    type="checkbox"
+                    name="radio"
+                    class="form_radio-input"
+                    id="radio"
+                  />
+                  <label for="radio" class="form_radio-label off-text-selection"
+                    >9:00 - 12:00</label
+                  >
+                </div>
+                <div class="form_radio-position">
+                  <input
+                    type="checkbox"
+                    name="radio1"
+                    class="form_radio-input"
+                    id="radio1"
+                  />
+                  <label
+                    for="radio1"
+                    class="form_radio-label off-text-selection"
+                    >13:00 - 15:00</label
+                  >
+                </div>
+                <div class="form_radio-position">
+                  <input
+                    type="checkbox"
+                    name="radio2"
+                    class="form_radio-input"
+                    id="radio2"
+                  />
+                  <label
+                    for="radio2"
+                    class="form_radio-label off-text-selection"
+                    >17:00 - 19:00</label
+                  >
+                </div>
+              </div>
+              <div class="form_group">
+                <div class="contact_email">E-MAIL cím*</div>
+                <input
+                  type="email"
+                  name="email"
+                  class="form_input"
+                  placeholder="EMAIL"
+                  id="email"
+                  required
+                />
+                <label for="email" class="form_label"></label>
+              </div>
+              <div class="form_group">
+                <div class="contact_message">üzenet*</div>
+                <textarea
+                  type="message"
+                  name="message"
+                  class="form_input form_input-textbox"
+                  placeholder="message"
+                  id="message"
+                  required
+                ></textarea>
+                <label for="message" class="form_label"></label>
+              </div>
+              <div class="policy-input">
+                <input
+                  type="checkbox"
+                  name="policy"
+                  class="policy-cbox"
+                  id="policy"
+                  required
+                />
+                <label for="policy" class="policy-input">
+                  <p>
+                    Hozzájárulok adataim kezeléséhez az &nbsp;<a
+                      href="/adatvedelem"
+                      >adatvédelmi szabályzat</a
+                    >&nbsp;alapján.
+                  </p>
+                </label>
+              </div>
+              <div class="btn-form">
+                <input
+                  id="submitBtn"
+                  type="submit"
+                  value="Üzenet Küldése"
+                  class="btn"
+                />
+              </div>
+              <input
+                type="hidden"
+                id="captchaResponse"
+                name="g-recaptcha-response"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div class="contact_container_picture">
+          <img loading="lazy" src="/img/contact.svg" alt="getintouch" />
+        </div>
+      </div>
     </section>
     <!-- CONTACT FORM END -->
     <!-- FOOTER -->
-   <footer class="footer">
-    <div class="f-c">
-    <div class="footer_container">
-      
-        <div class="footer_container-text">
-          <div> <img src="/img/logo-white.svg" alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik"> </div>
-          <p class="mb-1">Weboldalak készítése és üzemeltetése kis- és középvállalkozásoknak.</p>
-          <p>Munkánk magában foglalja az alapos kutatást, tervezést, a fejlesztést modern technológiákkal, a tesztelést, az optimalizálást és a weboldal üzembe helyezését. Továbbá biztosítunk üzembe helyezés utáni támogatást is.</p>                        
-            <div class="footer_container-text-logo">
-               <a href="https://www.facebook.com/stdbromo/">
-                 <img src="/img/footer-facebook-logo.svg" alt="Studio Bromo hivatalos facebook oldal logo">
-                </a>
+    <footer class="footer">
+      <div class="f-c">
+        <div class="footer_container">
+          <div class="footer_container-text">
+            <div>
+              <img
+                src="/img/logo-white.svg"
+                alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik"
+              />
             </div>
-        </div>
-       <div class="footer_container-text">
+            <p class="mb-1">
+              Weboldalak készítése és üzemeltetése kis- és
+              középvállalkozásoknak.
+            </p>
+            <p>
+              Munkánk magában foglalja az alapos kutatást, tervezést, a
+              fejlesztést modern technológiákkal, a tesztelést, az
+              optimalizálást és a weboldal üzembe helyezését. Továbbá
+              biztosítunk üzembe helyezés utáni támogatást is.
+            </p>
+            <div class="footer_container-text-logo">
+              <a href="https://www.facebook.com/stdbromo/">
+                <img
+                  src="/img/footer-facebook-logo.svg"
+                  alt="Studio Bromo hivatalos facebook oldal logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer_container-text">
             <h2>Irányelvek</h2>
             <div class="footer_container-text-line"></div>
-                <ul>
-                    <li><a href="/adatvedelem">Adatkezelési tájékoztató</a></li>
-                    <li><a href="/sutik">Sütik</a></li>
-                    <li><a href="/rolunk">Rólunk</a></li>
-                </ul>
-        </div>
-        <div class="footer_container-text">
+            <ul>
+              <li><a href="/adatvedelem">Adatkezelési tájékoztató</a></li>
+              <li><a href="/sutik">Sütik</a></li>
+              <li><a href="/rolunk">Rólunk</a></li>
+            </ul>
+          </div>
+          <div class="footer_container-text">
             <h2>Szolgáltatások</h2>
             <div class="footer_container-text-line"></div>
-                <ul>
-                    <li><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok">Weboldal készítés</a></li>
-                    <li><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok">Weboldal karbantartás</a></li>
-                    <li><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok">Weboldal üzemeltetés</a></li>
-                    <li><a href="https://www.audity.hu/">Audit</a></li>
-                    <li><a href="/szolgaltatas-arak">Szolgáltatás árak</a></li>
-
-                </ul>
-        </div>
-        <div class="footer_container-text">
+            <ul>
+              <li>
+                <a href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+                  >Weboldal készítés</a
+                >
+              </li>
+              <li>
+                <a href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+                  >Weboldal karbantartás</a
+                >
+              </li>
+              <li>
+                <a href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+                  >Weboldal üzemeltetés</a
+                >
+              </li>
+              <li><a href="https://www.audity.hu/">Audit</a></li>
+              <li><a href="/szolgaltatas-arak">Szolgáltatás árak</a></li>
+            </ul>
+          </div>
+          <div class="footer_container-text">
             <h2>Segítség</h2>
             <div class="footer_container-text-line"></div>
-                <ul>
-                    <li><a href="/szolgaltatas-reszletek">Szolgáltatások részletei</a></li>
-                    <li><a href="/weboldal-igenyfelmeres">Ingyenes igényfelmérés</a></li>
-                </ul>
-        </div>
-        <div class="footer_container-text">
+            <ul>
+              <li>
+                <a href="/szolgaltatas-reszletek">Szolgáltatások részletei</a>
+              </li>
+              <li>
+                <a href="/weboldal-igenyfelmeres">Ingyenes igényfelmérés</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_container-text">
             <h2>Kapcsolat</h2>
             <div class="footer_container-text-line"></div>
-                <ul>
-                    <li>hello@studiobromo.hu</li>
-                    <li>06 30 544 0969</li>
-                </ul>
+            <ul>
+              <li>hello@studiobromo.hu</li>
+              <li>06 30 544 0969</li>
+            </ul>
+          </div>
         </div>
-    </div> 
-  <!--  <div class="footer_container-partners">
+        <!--  <div class="footer_container-partners">
     </div> -->
-</div>
-    <div class="footer_reserved">
+      </div>
+      <div class="footer_reserved">
         <p>© 2023 Studio Bromo</p>
-    </div>
-</footer>
-<!-- FOOTER END -->
-  <!--  <script defer src="js/reszletek.js"></script>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!--  <script defer src="js/reszletek.js"></script>
     <script defer src="js/chapcha.js"></script>
     -->
     <script defer src="js/jsminpackages.js"></script>
     <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-DEXBXRS1V7"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DEXBXRS1V7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag("config", "G-DEXBXRS1V7");
-  </script>
-    </body>
+      gtag("config", "G-DEXBXRS1V7");
+    </script>
+  </body>
 </html>
