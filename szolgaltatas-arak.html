@@ -1,222 +1,443 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Weboldal készítés és szolgáltatásaink árai. Kínálunk weboldal karbantartási és üzemeltetési csomagokat, valamint Audit árakat (UX/UI) partnerünkkel.">
-        <meta name="author" content="Team of Studio Bromo">   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/style.css">
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-         />        
-        <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="icon" href="/favicon/favicon-32x32.png" sizes="16x16 32x32" type="image/png"> 
-        <title>Árak — Weboldal és karbantartási csomagok árai</title>
-    </head>
-    <body>
-        
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Weboldalkészítés és szolgáltatásaink árai. Kínálunk Weboldal-karbantartási és üzemeltetési csomagokat, valamint Audit árakat (UX/UI) partnerünkkel."
+    />
+    <meta name="author" content="Team of Weboldalkészítés Szeged" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="icon"
+      href="/favicon/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/favicon/favicon-32x32.png"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
+    <title>Árak — Weboldal és karbantartási csomagok árai</title>
+    <!-- Hotjar Tracking Code for https://studiobromo.hu/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3735834, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
     <!-- MOBILE NAVIGATION // NO JS // CHECK BOX -->
-        <div class="mobilenav">
+    <div class="mobilenav">
+      <div class="nav_logo-mobile">
+        <img
+          onclick="location.href='/'"
+          width="132"
+          height="45"
+          src="/img/StudioBromo_logo_landscape.svg"
+          alt="logo"
+        />
+      </div>
 
-            <div class="nav_logo-mobile">
-               <img  onclick="location.href='/'" width="132" height="45" src="/img/StudioBromo_logo_landscape.svg" alt="logo">
-            </div>
+      <input type="checkbox" class="mobilenav_checkbox" id="navi-toogle" />
+      <label for="navi-toogle" class="mobilenav_button"
+        ><span class="mobilenav_icon"></span
+      ></label>
 
-            <input type="checkbox" class="mobilenav_checkbox " id="navi-toogle">
-            <label for="navi-toogle" class="mobilenav_button"><span class="mobilenav_icon"></span></label>
+      <div class="mobilenav_background">&nbsp;</div>
 
-            <div class="mobilenav_background">&nbsp;</div>
-
-            <nav class="mobilenav_nav">
-                <div class="nav_logo-mobile">
-                    <img  onclick="location.href='/'" width="132" height="45"  src="/img/StudioBromo_logo_landscape.svg" alt="logo">
-                </div>
-                <ul class="mobilenav_list">
-                    <li class="mobilenav_item"><a href="/#featured" class="mobilenav_link">kiemelt munkáink</a></li> 
-                    <li class="mobilenav_item"><a href="/#process" class="mobilenav_link">hogyan dolgozunk</a> </li>
-                    <li class="mobilenav_item"><a href="/#packages" class="mobilenav_link">szolgáltatások</a></li>
-                    <li class="mobilenav_item"><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok" class="mobilenav_link modilnav-left-extra-item">Weboldal csomagok</a></li>
-                    <li class="mobilenav_item"><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok" class="mobilenav_link modilnav-left-extra-item">Üzemeltetés & karbantartás</a></li>
-                    <li class="mobilenav_item"><a href="/weboldal-igenyfelmeres" class="mobilenav_link modilnav-left-extra-item">igényfelmérő kérdőív</a></li>
-                    <li class="mobilenav_item"><a href="/szolgaltatas-reszletek" class="mobilenav_link modilnav-left-extra-item">szolgáltatás kisokos</a></li>
-                    <li class="mobilenav_item"><a href="/szolgaltatas-arak" class="mobilenav_link nav-active-color">árak</a></li>
-                    <li class="mobilenav_item"><a href="/#reviews" class="mobilenav_link">ügyfeleink rólunk</a></li> 
-                    <li class="mobilenav_item"><a href="/weboldal-akciok" class="mobilenav_link">akciók</a></li> 
-                    <li class="mobilenav_item"><a href="/#touch" class="mobilenav_link"><span>Kapcsolat</span></a></li>
-                 </ul>
-            </nav>
+      <nav class="mobilenav_nav">
+        <div class="nav_logo-mobile">
+          <img
+            onclick="location.href='/'"
+            width="132"
+            height="45"
+            src="/img/StudioBromo_logo_landscape.svg"
+            alt="logo"
+          />
         </div>
-    
+        <ul class="mobilenav_list">
+          <li class="mobilenav_item">
+            <a href="/#featured" class="mobilenav_link">kiemelt munkáink</a>
+          </li>
+          <li class="mobilenav_item">
+            <a href="/#process" class="mobilenav_link">hogyan dolgozunk</a>
+          </li>
+          <li class="mobilenav_item">
+            <a href="/#packages" class="mobilenav_link">szolgáltatások</a>
+          </li>
+          <li class="mobilenav_item">
+            <a
+              href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+              class="mobilenav_link modilnav-left-extra-item"
+              >Weboldal csomagok</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a
+              href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+              class="mobilenav_link modilnav-left-extra-item"
+              >Üzemeltetés & karbantartás</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a
+              href="/weboldal-igenyfelmeres"
+              class="mobilenav_link modilnav-left-extra-item"
+              >igényfelmérő kérdőív</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a
+              href="/szolgaltatas-reszletek"
+              class="mobilenav_link modilnav-left-extra-item"
+              >szolgáltatás kisokos</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a href="/szolgaltatas-arak" class="mobilenav_link nav-active-color"
+              >árak</a
+            >
+          </li>
+          <li class="mobilenav_item">
+            <a href="/#reviews" class="mobilenav_link">ügyfeleink rólunk</a>
+          </li>
+          <li class="mobilenav_item">
+            <a href="/weboldal-akciok" class="mobilenav_link">akciók</a>
+          </li>
+          <li class="mobilenav_item">
+            <a href="/#touch" class="mobilenav_link"><span>Kapcsolat</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <!-- MOBILE NAVIGATION END -->
 
-        <header class="header price-header mb-9-price color-w "  id="home">
-             <!-- HEADER -->
-        <div class="nav-sticky-prefix">
-            <nav class="nav">
-                <div class="nav_logo dark-mode" onclick="location.href='/'">
-                    <img width="300" height="103"  src="/img/StudioBromo_logo_landscape.svg" alt="logo">
-                </div>
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="/#featured" class="nav_link">kiemelt munkáink</a></li>
-                    <li class="nav_item"><a href="/#process" class="nav_link">hogyan dolgozunk</a></li> 
-                    <li class="nav_item nav_dropdown">
-                        <a href="#" class="nav_link">szolgáltatások&nbsp;<samp class="dd-menu">&vellip;</samp></a>
-                        <a href="/weboldal-tervezesi-es-fejlesztesi-csomagok" class="hidden">Weboldal csomagok</a>
-                        <a href="/weboldal-uzemeltetes-es-karbantartas-csomagok" class="hidden">Üzemeltetés & karbantartás</a>
-                        <a href="/weboldal-igenyfelmeres" class="hidden">igényfelmérő kérdőív</a>
-                        <a href="/szolgaltatas-reszletek" class="hidden">szolgáltatás kisokos</a>
-                    </li>
-                    <li class="nav_item"><a href="/szolgaltatas-arak" class="nav_link nav-active-color">árak</a></li>
-                    <li class="nav_item"><a href="/#reviews" class="nav_link">ügyfeleink rólunk</a></li> 
-                    <li class="nav_item"><a href="/weboldal-akciok" class="nav_link">akciók</a></li> 
-                    <li class="nav_item"><a href="/#touch" class="nav_link"> <span> Kapcsolat</span></a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header price-header mb-9-price color-w" id="home">
+      <!-- HEADER -->
+      <div class="nav-sticky-prefix">
+        <nav class="nav">
+          <div class="nav_logo dark-mode" onclick="location.href='/'">
+            <img
+              width="300"
+              height="103"
+              src="/img/StudioBromo_logo_landscape.svg"
+              alt="logo"
+            />
+          </div>
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="/#featured" class="nav_link">kiemelt munkáink</a>
+            </li>
+            <li class="nav_item">
+              <a href="/#process" class="nav_link">hogyan dolgozunk</a>
+            </li>
+            <li class="nav_item nav_dropdown">
+              <a href="#" class="nav_link"
+                >szolgáltatások&nbsp;<samp class="dd-menu">&vellip;</samp></a
+              >
+              <a
+                href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+                class="hidden"
+                >Weboldal csomagok</a
+              >
+              <a
+                href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+                class="hidden"
+                >Üzemeltetés & karbantartás</a
+              >
+              <a href="/weboldal-igenyfelmeres" class="hidden"
+                >igényfelmérő kérdőív</a
+              >
+              <a href="/szolgaltatas-reszletek" class="hidden"
+                >szolgáltatás kisokos</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="/szolgaltatas-arak" class="nav_link nav-active-color"
+                >árak</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="/#reviews" class="nav_link">ügyfeleink rólunk</a>
+            </li>
+            <li class="nav_item">
+              <a href="/weboldal-akciok" class="nav_link">akciók</a>
+            </li>
+            <li class="nav_item">
+              <a href="/#touch" class="nav_link"> <span> Kapcsolat</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class=" header main-price min-h-100vh color-w">
+    <main class="header main-price min-h-100vh color-w">
+      <div class="price-h2"><h1>Weboldal árak</h1></div>
 
-    <div class="price-h2"><h1>Weboldal árak</h1></div>
-
-    <table >
+      <table>
         <tr>
-          <th class="w270"><p>Weboldal<br>csomagok</p></th>
-          <th class="w420"><p>Építőelemes technológia</p><br><span>(WordPress)</span></th>
-          <th class="w420"><p>Egyedi design és fejlesztés</p><br><span>(Next.js)</span></th>
+          <th class="w270">
+            <p>Weboldal<br />csomagok</p>
+          </th>
+          <th class="w420">
+            <p>Templét alapú</p>
+            <br /><span>(WordPress)</span>
+          </th>
+          <th class="w420">
+            <p>Egyedi design és fejlesztés</p>
+            <br /><span>(Next.js)</span>
+          </th>
         </tr>
         <tr>
-          <td class="w270"><p class="p-title">Landing</p><br><span><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok">Részletek</a></span></td>
+          <td class="w270">
+            <p class="p-title">Landing</p>
+            <br /><span
+              ><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+                >Részletek</a
+              ></span
+            >
+          </td>
           <td class="w420"><p class="td-price">149 900 Ft</p></td>
           <td class="w420"><p class="td-price">249 900 Ft</p></td>
         </tr>
         <tr>
-            <td class="w270"> <p class="p-title">Creative</p> <br><span><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok">Részletek</a></span></td>
-            <td class="w420"><p class="td-price">249 900 Ft</p></td>
-            <td class="w420"><p class="td-price">349 900 Ft</p></td>
+          <td class="w270">
+            <p class="p-title">Creative</p>
+            <br /><span
+              ><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+                >Részletek</a
+              ></span
+            >
+          </td>
+          <td class="w420"><p class="td-price">249 900 Ft</p></td>
+          <td class="w420"><p class="td-price">349 900 Ft</p></td>
         </tr>
         <tr>
-            <td class="w270"><p class="p-title">Extra</p> <br> <span><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok">Részletek</a></span></td>
-            <td class="w420"><p class="td-price">349 900 Ft</p></td>
-            <td class="w420"><p class="td-price">449 900 Ft -tól</p></td>
+          <td class="w270">
+            <p class="p-title">Extra</p>
+            <br />
+            <span
+              ><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+                >Részletek</a
+              ></span
+            >
+          </td>
+          <td class="w420"><p class="td-price">349 900 Ft</p></td>
+          <td class="w420"><p class="td-price">449 900 Ft -tól</p></td>
         </tr>
       </table>
-    <div class="extra"><p>Kiegészítő szolgáltatás a fenti csomagokhoz</p></div>
-    <table>
+      <div class="extra">
+        <p>Kiegészítő szolgáltatás a fenti csomagokhoz</p>
+      </div>
+      <table>
         <tr>
-          <td class="w270"><p class="p-title p-title-1 ">Webshop</p></span></td>
-          <td class="w420"> <p class="td-price"> + 100 000 Ft</p></td>
-          <td class="w420"> <p class="td-price">-</p> </td>
+          <td class="w270"><p class="p-title p-title-1">Webshop</p></td>
+          <td class="w420"><p class="td-price">+ 100 000 Ft</p></td>
+          <td class="w420"><p class="td-price">-</p></td>
         </tr>
       </table>
 
       <div class="price-h2 tac mgt8">
-        <h2> Weboldal üzemeltetés <br> és karbantartás ár</h2>
-        <h3 class="processM-2-title ">Havidíjas támogatási csomagok</h3>
-     </div>
-      
+        <h2>
+          Weboldal-üzemeltetés <br />
+          és karbantartás ár
+        </h2>
+        <h3 class="processM-2-title">Havidíjas támogatási csomagok</h3>
+      </div>
 
       <table>
         <tr>
-          <td class="w270"><p class="p-title">Alap</p> <br> <span><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok">Részletek</a></span></td>
+          <td class="w270">
+            <p class="p-title">Alap</p>
+            <br />
+            <span
+              ><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+                >Részletek</a
+              ></span
+            >
+          </td>
           <td class=""><p class="td-price">14 900 Ft/hó</p></td>
         </tr>
         <tr>
-            <td class="w270"> <p class="p-title">Kiemelt/hó</p> <br> <span><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok">Részletek</a></span></td>
-            <td class=""><p class="td-price">24 900 Ft/hó</p></td>
+          <td class="w270">
+            <p class="p-title">Kiemelt/hó</p>
+            <br />
+            <span
+              ><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+                >Részletek</a
+              ></span
+            >
+          </td>
+          <td class=""><p class="td-price">24 900 Ft/hó</p></td>
         </tr>
-            <tr>
-                <td class="w270"><p class="p-title">Óradíj</p></td>
-                <td class=""><p class="td-price">9 900 Ft</p></td>
-            </tr>
-       </table>
-
+        <tr>
+          <td class="w270"><p class="p-title">Óradíj</p></td>
+          <td class=""><p class="td-price">9 900 Ft</p></td>
+        </tr>
+      </table>
 
       <div class="price-h2 mgt8"><h2>Audit</h2></div>
 
       <table class="last-table">
         <tr>
-          <td class="w270"><p class="p-title">Teljesítmény</p> <br> </a></span></td>
+          <td class="w270">
+            <p class="p-title">Teljesítmény</p>
+            <br />
+          </td>
           <td class=""><p class="td-price">9 900 Ft</p></td>
         </tr>
         <tr>
-            <td class="w270"> <p class="p-title">UX / UI</p> <br> <span><a href="https://www.audity.hu/"></a></span></td>
-            <td class=""><p class="td-price"> <div class="aud-container"><img src="/img/audity.svg" alt="audity"> <a href="https://www.audity.hu/">www.audity.hu</a></div></p></td>
+          <td class="w270">
+            <p class="p-title">UX / UI</p>
+            <br />
+            <span><a href="https://www.audity.hu/"></a></span>
+          </td>
+          <td class="">
+            <p class="td-price"></p>
+            <div class="aud-container">
+              <img src="/img/audity.svg" alt="audity" />
+              <a href="https://www.audity.hu/">www.audity.hu</a>
+            </div>
+          </td>
         </tr>
         <tr>
-            <td class="w270"><p class="p-title">SEO (Keresőmotor)</p></span></td>
-            <td class=""><p class="td-price">9 900 Ft</p></td>
+          <td class="w270"><p class="p-title">SEO (Keresőmotor)</p></td>
+          <td class=""><p class="td-price">9 900 Ft</p></td>
         </tr>
       </table>
-
     </main>
-     <!-- SECOUNDARY NAVIGATION END-->
-<!-- FOOTER -->
-   <footer class="footer">
-    <div class="f-c">
-    <div class="footer_container">
-      
-        <div class="footer_container-text">
-          <div> <img src="/img/logo-white.svg" alt="Studio Bromo logója, amely weboldal készítéssel és üzemeltetéssel foglalkozik"> </div>
-          <p class="mb-1">Weboldalak készítése és üzemeltetése kis- és középvállalkozásoknak.</p>
-          <p>Munkánk magában foglalja az alapos kutatást, tervezést, a fejlesztést modern technológiákkal, a tesztelést, az optimalizálást és a weboldal üzembe helyezését. Továbbá biztosítunk üzembe helyezés utáni támogatást is.</p>                        
-            <div class="footer_container-text-logo">
-               <a href="https://www.facebook.com/stdbromo/">
-                 <img src="/img/footer-facebook-logo.svg" alt="Studio Bromo hivatalos facebook oldal logo">
-                </a>
+    <!-- SECOUNDARY NAVIGATION END-->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="f-c">
+        <div class="footer_container">
+          <div class="footer_container-text">
+            <div>
+              <img
+                src="/img/logo-white.svg"
+                alt="Weboldalkészítés Szeged logója, amely Weboldalkészítéssel és üzemeltetéssel foglalkozik"
+              />
             </div>
-        </div>
-       <div class="footer_container-text">
+            <p class="mb-1">
+              Weboldalak készítése és üzemeltetése kis- és
+              középvállalkozásoknak.
+            </p>
+            <p>
+              Munkánk magában foglalja az alapos kutatást, tervezést, a
+              fejlesztést modern technológiákkal, a tesztelést, az
+              optimalizálást és a weboldal üzembe helyezését. Továbbá
+              biztosítunk üzembe helyezés utáni támogatást is.
+            </p>
+            <div class="footer_container-text-logo">
+              <a href="https://www.facebook.com/stdbromo/">
+                <img
+                  src="/img/footer-facebook-logo.svg"
+                  alt="Weboldalkészítés Szeged hivatalos facebook oldal logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer_container-text">
             <h2>Irányelvek</h2>
             <div class="footer_container-text-line"></div>
-                <ul>
-                    <li><a href="/adatvedelem">Adatkezelési tájékoztató</a></li>
-                    <li><a href="/sutik">Sütik</a></li>
-                    <li><a href="/rolunk">Rólunk</a></li>
-                </ul>
-        </div>
-        <div class="footer_container-text">
+            <ul>
+              <li><a href="/adatvedelem">Adatkezelési tájékoztató</a></li>
+              <li><a href="/sutik">Sütik</a></li>
+              <li><a href="/rolunk">Rólunk</a></li>
+            </ul>
+          </div>
+          <div class="footer_container-text">
             <h2>Szolgáltatások</h2>
             <div class="footer_container-text-line"></div>
-                <ul>
-                    <li><a href="/weboldal-tervezesi-es-fejlesztesi-csomagok">Weboldal készítés</a></li>
-                    <li><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok">Weboldal karbantartás</a></li>
-                    <li><a href="/weboldal-uzemeltetes-es-karbantartas-csomagok">Weboldal üzemeltetés</a></li>
-                    <li><a href="https://www.audity.hu/">Audit</a></li>
-                    <li><a href="/szolgaltatas-arak">Szolgáltatás árak</a></li>
-
-                </ul>
-        </div>
-        <div class="footer_container-text">
+            <ul>
+              <li>
+                <a href="/weboldal-tervezesi-es-fejlesztesi-csomagok"
+                  >Weboldalkészítés</a
+                >
+              </li>
+              <li>
+                <a href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+                  >Weboldal-karbantartás</a
+                >
+              </li>
+              <li>
+                <a href="/weboldal-uzemeltetes-es-karbantartas-csomagok"
+                  >Weboldal-üzemeltetés</a
+                >
+              </li>
+              <li><a href="https://www.audity.hu/">Audit</a></li>
+              <li><a href="/szolgaltatas-arak">Szolgáltatás árak</a></li>
+            </ul>
+          </div>
+          <div class="footer_container-text">
             <h2>Segítség</h2>
             <div class="footer_container-text-line"></div>
-                <ul>
-                    <li><a href="/szolgaltatas-reszletek">Szolgáltatások részletei</a></li>
-                    <li><a href="/weboldal-igenyfelmeres">Ingyenes igényfelmérés</a></li>
-                </ul>
-        </div>
-        <div class="footer_container-text">
+            <ul>
+              <li>
+                <a href="/szolgaltatas-reszletek">Szolgáltatások részletei</a>
+              </li>
+              <li>
+                <a href="/weboldal-igenyfelmeres">Ingyenes igényfelmérés</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_container-text">
             <h2>Kapcsolat</h2>
             <div class="footer_container-text-line"></div>
-                <ul>
-                    <li>hello@studiobromo.hu</li>
-                    <li>06 30 544 0969</li>
-                </ul>
+            <ul>
+              <li>06 30 544 0969</li>
+            </ul>
+          </div>
         </div>
-    </div> 
-  <!--  <div class="footer_container-partners">
+        <!--  <div class="footer_container-partners">
     </div> -->
-</div>
-    <div class="footer_reserved">
-        <p>© 2023 Studio Bromo</p>
-    </div>
-</footer>
-<!-- FOOTER END-->
-        <script src="js/mian.js"></script>
-    </body>
+      </div>
+      <div class="footer_reserved">
+        <p>
+          Minden jog fenntartva © Weboldalkészítés Szeged 2024 | A webodlalt készítette és
+          üzemelteti <a href="https://studiobromo.hu/">Studio Bromo</a>
+        </p>
+        <p></p>
+      </div>
+    </footer>
+    <!-- FOOTER END-->
+    <script src="js/mian.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DEXBXRS1V7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DEXBXRS1V7");
+    </script>
+  </body>
 </html>
-
-

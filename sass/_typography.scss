@@ -6,12 +6,13 @@ a {
 }
 
 h1 {
-  font-size: 5.2rem;
+  font-size: 5.8rem;
   font-family: $font-primary;
   font-weight: 700;
   line-height: 6.68rem;
   letter-spacing: -0.03em;
   display: block;
+  @include linearOrange;
 
   @include respond(SCLaptop) {
     font-size: 4rem;
@@ -20,7 +21,7 @@ h1 {
 
   @include respond(phone) {
     font-size: 2.6rem;
-    line-height: 3.1rem;
+    line-height: 4rem;
   }
 
   @include respond(SMphone) {
@@ -334,6 +335,7 @@ h2 {
       display: inline-block;
       font-size: 1.3rem;
       line-height: 150%;
+      margin-top: 1rem;
       cursor: pointer;
       position: relative;
 

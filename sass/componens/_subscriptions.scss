@@ -1,158 +1,144 @@
+.subscribe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 920px;
+  min-height: 370px;
+  height: auto;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  background: #ffffff;
+  box-shadow:
+    10px 10px 30px rgba(240, 250, 255, 0.9),
+    -10px -10px 30px rgba(240, 250, 255, 0.9);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 
-.subscribe{
-    position: relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 920px;
-    min-height: 370px;
-    height: auto;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    background: #FFFFFF;
-    box-shadow: 10px 10px 30px rgba(240, 250, 255, 0.9), -10px -10px 30px rgba(240, 250, 255, 0.9);
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+  @include respond(tablet) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 
-    @include respond (tablet) { 
-      padding-left: 5rem;
-      padding-right: 5rem;
-    }
+  @include respond(phone) {
+    padding-top: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
 
-    @include respond (phone) {
-      padding-top:6rem;
-      padding-left: 2rem;
-      padding-right: 2rem; 
-      padding-bottom: 2rem;
-    
-      margin-bottom: 4rem;
+    margin-bottom: 4rem;
+  }
 
-    
-    }    
+  &-container {
+    // height: fit-content;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
-    &-container {
-       
-       // height: fit-content;
-       // display: flex;
-       // justify-content: center;
-       // align-items: center;
+    &__text {
+      display: none;
 
-        &__text {
-             display: none;
+      h1 {
+        background: linear-gradient(92.12deg, #184293 -107.9%, #ff007a 493.05%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
 
-             h1 {
-               background: linear-gradient(92.12deg, #184293 -107.9%, #FF007A 493.05%);
-               -webkit-background-clip: text;
-               -webkit-text-fill-color: transparent;
-               background-clip: text;
-               text-fill-color: transparent;
-
-               margin-bottom: 2.5rem;
-
-             }
-
-            p {
-              font-family: "Roboto", sans-serif;       
-                font-weight: 400;
-                font-size: 17px;
-                line-height: 161%;
-                align-items: center;
-                letter-spacing: 0.025em;
-                color: $color-paragraph-new;
-
-                @include respond (phone) {
-                  font-size: 16px;
-                  letter-spacing: 0.06em;
-
-              }
-                           
-            }
-        
-        }
-       
-    }
-
-    .design-pattern {
-        position: absolute;
-        right:0;
-        top: -8rem;
-
-        @include respond (phone) {
-          top: -20rem;
+        margin-bottom: 2.5rem;
       }
 
-        img {
-            height: 100%;
-            width: 100%;
+      p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 161%;
+        align-items: center;
+        letter-spacing: 0.025em;
+        color: $color-paragraph-new;
+
+        @include respond(phone) {
+          font-size: 16px;
+          letter-spacing: 0.06em;
         }
+      }
+    }
+  }
+
+  .design-pattern {
+    position: absolute;
+    right: 0;
+    top: -8rem;
+
+    @include respond(phone) {
+      top: -20rem;
     }
 
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 
 .subscribe-active {
-    display: block;
+  display: block;
 }
-
-
 
 .subscribe-btn__container {
-    position: absolute;
-    width: 100%;
-    top:-20px;
-    display: flex;
-    justify-content: center;
-    gap:2rem;
+  position: absolute;
+  width: 100%;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 
-    .btns {
-        width: 216px;
-        height: 51px;
-       
-        background: #6381b9;
-        border-radius: 6px;
-        border: none;
-        font-family: $font-display;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 47%;
-        letter-spacing: 0.005em;
-        color: #FFFFFF;
-        cursor: pointer;
-        transform: translateY(0);
-        transition: all .1s;
+  .btns {
+    width: 216px;
+    height: 51px;
 
-        &:hover {
-          background: #ff5c00;
-        }
+    background: #6381b9;
+    border-radius: 6px;
+    border: none;
+    font-family: $font-display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 47%;
+    letter-spacing: 0.005em;
+    color: #ffffff;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: all 0.1s;
 
-        @include respond (tablet) {
-          height: 45px;
-          font-size: 18px;
-      }
-
-        @include respond (phone) {
-          height: 43px;
-          font-size: 18px;
-      }
-
+    &:hover {
+      background: #ff5c00;
     }
 
-}
+    @include respond(tablet) {
+      height: 45px;
+      font-size: 18px;
+    }
 
+    @include respond(phone) {
+      height: 43px;
+      font-size: 18px;
+    }
+  }
+}
 
 .button-effect-active {
-    background: #184293 !important;
-    box-shadow: 5px 5px 20px rgba(255, 0, 122, 0.16);
-    transform: translateY(-5%) !important;
+  background: #184293 !important;
+  box-shadow: 5px 5px 20px rgba(255, 0, 122, 0.16);
+  transform: translateY(-5%) !important;
 }
-
 
 // ANIMATION
 
 .fade-in {
-	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 /* ----------------------------------------------
@@ -167,23 +153,19 @@
  * animation fade-in
  * ----------------------------------------
  */
- @-webkit-keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  
-  
-  
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

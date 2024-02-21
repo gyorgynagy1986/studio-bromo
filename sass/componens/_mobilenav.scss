@@ -1,27 +1,22 @@
 .mobilenav {
+  display: none;
 
+  @include respond(tablet) {
+    position: relative;
+    display: block;
+  }
+
+  &_checkbox {
     display: none;
-    
-    @include respond (tablet) {
-        position: relative;
-        display: block;
-        }
+  }
 
-    &_checkbox {
-        display: none;
-
+  &_item {
+    @include respond(phone) {
+      border-bottom: 1px solid rgba(136, 136, 136, 0.089);
     }
+  }
 
-    &_item {
-        
-        @include respond (phone) {
-           border-bottom: 1px solid rgba(136, 136, 136, 0.089);
-        
-        }
-        
-    }
-
-    &_button {
+  &_button {
     position: fixed;
     border-radius: 50%;
     width: 5.5rem;
@@ -29,188 +24,162 @@
     top: 1rem;
     right: 1rem;
     text-align: center;
-    z-index:2000;
+    z-index: 2000;
     cursor: pointer;
     background-color: white;
+  }
+
+  &_background {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 0rem;
+    right: -1rem;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    transition: 0s;
+  }
+
+  &_nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1500;
+    transition: 0s;
+    visibility: hidden;
+  }
+
+  &_list {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    z-index: 1;
+    text-align: center;
+
+    @include respond(phone) {
+      text-align: left;
+      width: 100%;
+      top: 50%;
     }
 
-    &_background {
-     height: 1rem;
-     width: 1rem;
-     border-radius: 50%;
-     position: fixed;
-     top: 0rem;
-     right: -1rem;
-     z-index:1000;
-     background-color: rgb(255, 255, 255);
-     transition: 0s;
+    @media screen and (max-height: 568px) {
+      top: 50%;
     }
 
-    &_nav {
-        height: 100vh;
-        width:100%;
-        position: fixed;
-        top:0;
-        left:0;
-        opacity: 0;
-        z-index: 1500;
-        transition:  0s;
-        visibility: hidden;
-       
-}
+    @media screen and (max-height: 500px) {
+      top: 55%;
+    }
+  }
 
-    &_list {
-        position: absolute;
-        width: 100%;
-        top:40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        list-style: none;
-        z-index: 1;
-        text-align: center;
-
-        @include respond (phone) {
-            text-align: left;
-            width: 100%;
-            top:50%;
-        }
-
-        @media screen and (max-height: 568px) {
-            top:50%;
-        }
-
-        @media screen and (max-height: 500px) {
-            top:55%;
-        }
+  &_link {
+    font-family: $font-display;
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2b3d60;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+    span {
+      @include linearOrange;
     }
 
-
-    &_link {
-            font-family: $font-display;
-            display:inline-block;
-            margin-top: 2rem;
-            font-size: 2rem;
-            font-weight: 500;
-            color: #2b3d60;
-            text-decoration: none;
-            text-transform: uppercase;
-            cursor: pointer;
-            z-index: 1;
-                        span 
-
-                        {
-                @include linearOrange;
-            }
-
-            @include respond (phone) {
-                margin-left: 2rem;
-             }
-
-           
-             @media screen and (max-height: 692px) {
-                font-size: 1.6rem;
-
-            }
-
-            @media screen and (max-height: 500px) {
-                font-size: 1.4rem;
-
-            }
-            
-            @media screen and (min-height: 1024px) {
-                font-size: 3rem;
-
-            }
-          
-    }
-
-    &_checkbox:checked ~ &_background {
-        transform: scale(500);
-    }
-
-    &_checkbox:checked ~ .close {
-        visibility: hidden;
-    }
-
-    &_checkbox:checked ~ &_nav {
-        opacity: 1;
-        width: 100%;
-        visibility: visible;
-
-    }
-
- 
-
-
-    // ICON
-
-    &_icon {
-        margin-top: 27px;
-        margin-left: 15px;
-        
-        &,
-        &::before,
-        &::after {
-            width: 2.5rem;
-            height: 3.6px;
-            background-color: $color-primary;
-            display: inline-block;
-            content: "";
-            position: absolute;
-            left:0;
-            transition: all .2s;
-        
-        }
-
-
-
-        &::before {
-            top:-.8rem
-        }
-
-        &::after {
-            top: .8rem;
-        }
-
-    } 
-
-
-
-  &_checkbox:checked + &_button &_icon  {
-        background-color: transparent;
-    }
-
-
-    &_checkbox:checked + &_button &_icon::before {
-        top:0;
-        transform:rotate(135deg);
-    }
-
-    &_checkbox:checked + &_button &_icon::after {
-        top:0;
-        transform:rotate(-135deg);
-    }
-    
-}
-
-.modilnav-left-extra-item {
-    font-size: 1.8rem;
-    text-align: left;
-
-    @include respond (phone) {
-        margin-left: 3rem;
-    
+    @include respond(phone) {
+      margin-left: 2rem;
     }
 
     @media screen and (max-height: 692px) {
-        font-size: 1.5rem;
+      font-size: 1.6rem;
+    }
 
+    @media screen and (max-height: 500px) {
+      font-size: 1.4rem;
     }
 
     @media screen and (min-height: 1024px) {
-        font-size: 2.5rem;
+      font-size: 3rem;
+    }
+  }
 
+  &_checkbox:checked ~ &_background {
+    transform: scale(500);
+  }
+
+  &_checkbox:checked ~ .close {
+    visibility: hidden;
+  }
+
+  &_checkbox:checked ~ &_nav {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+
+  // ICON
+
+  &_icon {
+    margin-top: 27px;
+    margin-left: 15px;
+
+    &,
+    &::before,
+    &::after {
+      width: 2.5rem;
+      height: 3.6px;
+      background-color: $color-primary;
+      display: inline-block;
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
     }
 
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &_checkbox:checked + &_button &_icon {
+    background-color: transparent;
+  }
+
+  &_checkbox:checked + &_button &_icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &_checkbox:checked + &_button &_icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
 }
 
+.modilnav-left-extra-item {
+  font-size: 1.8rem;
+  text-align: left;
+
+  @include respond(phone) {
+    margin-left: 3rem;
+  }
+
+  @media screen and (max-height: 692px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-height: 1024px) {
+    font-size: 2.5rem;
+  }
+}

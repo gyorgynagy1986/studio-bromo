@@ -1,127 +1,118 @@
 .circle {
-    width: 100%;
-    height: 25%;
-    grid-row:1;
-    display: flex;
-    justify-content: center;
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    
+  width: 100%;
+  height: 25%;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / span 2;
+  grid-row: 1;
 
-    @media only screen and (max-width: 1107px) {
-        display: none;
-    }
+  @media only screen and (max-width: 1107px) {
+    display: none;
+  }
 
+  @include respond(phone) {
+    display: none;
+  }
 
-    @include respond (phone) {
-        display: none;
-
-    }
-
-    &-half-top {
-        width: 6rem;
-        @include circlehalf;
-        transform: translateY(-45%);
-    }
+  &-half-top {
+    width: 6rem;
+    @include circlehalf;
+    transform: translateY(-45%);
+  }
 }
 
 .circle-2 {
-    width: 100%;
-    height: 25%;
-    grid-row:1;
-    display: flex;
-    justify-content: center;
-    grid-column: 2 / span 2;
-    grid-row: 1;
-    
-    @media only screen and (max-width: 1107px) {
-        display: none;
-    }
+  width: 100%;
+  height: 25%;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  grid-column: 2 / span 2;
+  grid-row: 1;
 
-    @include respond (phone) {
-        display: none;
-       
-    }
+  @media only screen and (max-width: 1107px) {
+    display: none;
+  }
 
-     &-half-top {
-        width: 6rem;
-        @include circlehalf;
-        transform: translateY(-45%);
-     }
- }
+  @include respond(phone) {
+    display: none;
+  }
 
- .circle-3 {
-    grid-column: 1 / span 2;
-    grid-row: 2;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
+  &-half-top {
+    width: 6rem;
+    @include circlehalf;
+    transform: translateY(-45%);
+  }
+}
 
-    @media only screen and (max-width: 1107px) {
-        display: none;
-    }
+.circle-3 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
 
-    @include respond (phone) {
-        display: none;
-    }
-    
-    
- &-half-bottom {
-        width: 6rem;
-        @include circlehalf;
-        transform: translateY(460%) rotate(180deg);
-    }
+  @media only screen and (max-width: 1107px) {
+    display: none;
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
+
+  &-half-bottom {
+    width: 6rem;
+    @include circlehalf;
+    transform: translateY(460%) rotate(180deg);
+  }
 }
 
 .circle-4 {
-    grid-column: 2 / span 2;
-    grid-row: 2;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
 
-    @media only screen and (max-width: 1107px) {
-        display: none;
-    }
+  @media only screen and (max-width: 1107px) {
+    display: none;
+  }
 
-    @include respond (phone) {
-        display: none;
-      
-    }
-    
-    
-    &-half-bottom {
-        width: 6rem;
-        @include circlehalf;
-        transform: translateY(460%) rotate(180deg);
-    }
+  @include respond(phone) {
+    display: none;
+  }
+
+  &-half-bottom {
+    width: 6rem;
+    @include circlehalf;
+    transform: translateY(460%) rotate(180deg);
+  }
 }
 
 .circle-5 {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
+  @media only screen and (max-width: 1107px) {
+    display: none;
+  }
 
-    @media only screen and (max-width: 1107px) {
-        display: none;
-    }
+  @include respond(phone) {
+    display: none;
+  }
 
-    @include respond (phone) {
-        display: none;
-
-    }
-    
-    &-half-bottom {
-        height: 6rem;
-        width: 6rem;
-        @include circlehalf;
-        transform: translateX(55%) rotate(90deg);
-    }
+  &-half-bottom {
+    height: 6rem;
+    width: 6rem;
+    @include circlehalf;
+    transform: translateX(55%) rotate(90deg);
+  }
 }

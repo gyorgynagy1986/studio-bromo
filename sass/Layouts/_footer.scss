@@ -1,213 +1,195 @@
 .footer {
+  width: 100%;
+
+  .f-c {
     width: 100%;
-  
-    
-    .f-c {
-        width: 100%;
-        background: linear-gradient(180deg, #184293 0%, #49089B 197.88%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10rem;
-        padding-left: 2%;
-        padding-right: 2%;
+    background: linear-gradient(180deg, #184293 0%, #49089b 197.88%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-left: 2%;
+    padding-right: 2%;
 
-        @include respond (tablet) {
-            padding: 8rem 2rem 2rem 2rem;
-        }
+    @include respond(tablet) {
+      padding: 8rem 2rem 2rem 2rem;
+    }
+  }
+
+  &_container {
+    display: flex;
+
+    @include respond(SCtablet) {
+      flex-direction: column;
     }
 
-    &_container {
+    &-text {
+      min-width: 200px;
+      max-width: 350px;
       display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
 
+      @include respond(SCLaptop) {
+        min-width: 180px;
+      }
 
-        @include respond (SCtablet) {
-            flex-direction: column;
+      @include respond(tablet) {
+        min-width: 160px;
+      }
+
+      &:first-child {
+        margin-right: 10rem;
+
+        @include respond(SCLaptop) {
+          margin-right: 4rem;
         }
 
-
-        &-text {
-            min-width: 200px;
-            max-width: 350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-
-            @include respond (SCLaptop) {
-                min-width: 180px;
-            }
-
-            @include respond (tablet) {
-                min-width: 160px;
-
-            }
-        
-
-            &:first-child {
-                margin-right: 10rem;
-               
-                @include respond (SCLaptop) {
-                    margin-right: 4rem;
-
-                }
-
-                @include respond (tablet) {
-                    margin-right: 2rem;
-
-                }
-            }
-
-            img {
-                height: 50px;
-                width: auto;
-                margin-bottom: 4.4rem;
-            }
-
-            p {
-               font-family: 'Rubik';
-               font-style: normal;
-               font-weight: 400;
-               font-size: 15px;
-               line-height: 130%;
-
-               color: #FFFFFF;
-
-               @include respond (tablet) {
-                font-size: 14px;
-            }
-
-            @include respond (SCtablet) {
-                font-size: 16px;
-
-            }
-
-            }
-
-            h2 {
-                font-family: 'Rubik';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 100%;
-                color: #FFFFFF;
-                margin-bottom: 4.4rem;
-
-                @include respond (tablet) {
-                    font-size: 14px;
-
-                }
-
-                @include respond (SCtablet) {
-                    font-size: 18px;
-                    margin-bottom: 2rem;
-                }
-            }
-
-            ul {
-                font-family: 'Rubik';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 100%;
-                color: #FFFFFF;
-
-                @include respond (tablet) {
-                    font-size: 13px;
-
-    
-                }
-
-                @include respond (SCtablet) {
-                    font-size: 15px;
-                    margin-bottom: 4rem;
-                }
-                
-                li {
-                    list-style: none;
-                    margin-bottom: 1.6rem;
-                    border-bottom: 0px solid #FF006B;
-
-                    a {
-                        text-decoration: none;
-                        border-bottom: 0px solid #FF006B;
-                        
-                        &:hover {
-                            border-bottom: 1px solid #ff5e00ad;
-                        }
-                    }
-                }
-            }
-
-            &-line {
-                width: 150px;
-                height: 0px;
-                left: 734px;
-                top: 9103px;
-                border: 1px solid #ffffff46;
-
-                margin-bottom: 4.4rem;
-
-                @include respond (tablet) {
-                    max-width: 150px;
-
-
-                }
-
-                @include respond (SCtablet) {
-                    margin-bottom: 2rem;
-                }
-
-            }
-
-            &-logo {
-
-                margin-top: 4rem;
-                height: 100%;
-
-                
-                .webjawa-blog {
-                    height: 38px;
-                    width: auto;
-                }
-
-                img {
-                    height: 35px;
-                    width: auto;
-                    margin-right: 1.5rem;
-                }
-            }
-
+        @include respond(tablet) {
+          margin-right: 2rem;
         }
-    }
+      }
 
-    .footer_container-partners {
-        width: 100%;
-        max-width: 60rem;
-        display: flex;
-        justify-content: center;
-        color: #FF5C00;
-    }
+      img {
+        height: 50px;
+        width: auto;
+        margin-bottom: 4.4rem;
+      }
 
-  
-    &_reserved {
-        height: 25px;
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 130%;
 
-        font-family: 'Rubik';
+        color: #ffffff;
+
+        @include respond(tablet) {
+          font-size: 14px;
+        }
+
+        @include respond(SCtablet) {
+          font-size: 16px;
+        }
+      }
+
+      h2 {
+        font-family: "Rubik";
         font-style: normal;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 16px;
+        line-height: 100%;
+        color: #ffffff;
+        margin-bottom: 4.4rem;
 
-        background-color: #FFFFFF;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include respond(tablet) {
+          font-size: 14px;
+        }
 
-        background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+        @include respond(SCtablet) {
+          font-size: 18px;
+          margin-bottom: 2rem;
+        }
+      }
+
+      ul {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #ffffff;
+
+        @include respond(tablet) {
+          font-size: 13px;
+        }
+
+        @include respond(SCtablet) {
+          font-size: 15px;
+          margin-bottom: 4rem;
+        }
+
+        li {
+          list-style: none;
+          margin-bottom: 1.6rem;
+          border-bottom: 0px solid #ff006b;
+
+          a {
+            text-decoration: none;
+            border-bottom: 0px solid #ff006b;
+
+            &:hover {
+              border-bottom: 1px solid #ff5e00ad;
+            }
+          }
+        }
+      }
+
+      &-line {
+        width: 150px;
+        height: 0px;
+        left: 734px;
+        top: 9103px;
+        border: 1px solid #ffffff46;
+
+        margin-bottom: 4.4rem;
+
+        @include respond(tablet) {
+          max-width: 150px;
+        }
+
+        @include respond(SCtablet) {
+          margin-bottom: 2rem;
+        }
+      }
+
+      &-logo {
+        margin-top: 4rem;
+        height: 100%;
+
+        .Weboldalkészítés Szeged-blog {
+          height: 38px;
+          width: auto;
+        }
+
+        img {
+          height: 35px;
+          width: auto;
+          margin-right: 1.5rem;
+        }
+      }
     }
+  }
+
+  .footer_container-partners {
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+    color: #ff5c00;
+  }
+
+  &_reserved {
+    height: 50px;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(270deg, #ff5c00 0%, #ff006b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 }

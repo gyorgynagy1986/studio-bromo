@@ -156,15 +156,30 @@ function cookieHandvet() {
       }));
 }
 setTimeout(cookieHandvet, 3e3);
+
 const swiper = new Swiper(".swiper-container", {
+  // Default settings for mobile
   slidesPerView: 1,
-  spaceBetween: 130,
-  loop: !1,
-  pagination: { el: ".swiper-pagination", clickable: !0 },
-  navigation: { nextEl: ".swiper-button-left", prevEl: ".swiper-button-right" },
+  spaceBetween: 10,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // Adjustments for larger screens
+  breakpoints: {
+    // when window width is >= 768px
+    1900: {
+      slidesPerView: 4,
+      spaceBetween: 5,
+    },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    1047: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+  },
 });
-
-
-
-
-

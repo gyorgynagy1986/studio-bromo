@@ -1,51 +1,46 @@
-
 *,
 *::before,
 *::after {
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 
-    -webkit-tap-highlight-color: transparent;
-  
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; // 10px/16xp = 62.5% = 1 rem
-    scroll-behavior: smooth;
-    @include respond (phone) {
-        scroll-behavior: auto;
-     }
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16xp = 62.5% = 1 rem
+  scroll-behavior: smooth;
+  @include respond(phone) {
+    scroll-behavior: auto;
+  }
 }
 
 body {
-    font-family: $font-primary;
-    color: $color-primary;
-    background-color: $color-secondary-backgroung;
-   
+  font-family: $font-primary;
+  color: $color-primary;
+  background-color: $color-secondary-backgroung;
 
- // @media screen and (max-width: 1600px) and (min-width: 600px) {
- //         zoom: 90%;
- //         -ms-zoom: 90%;
- //         -webkit-zoom: 90%;
- //   }
+  // @media screen and (max-width: 1600px) and (min-width: 600px) {
+  //         zoom: 90%;
+  //         -ms-zoom: 90%;
+  //         -webkit-zoom: 90%;
+  //   }
 
- //    @media only screen and (max-width: 600px) {
- //      zoom: 100%;
+  //    @media only screen and (max-width: 600px) {
+  //      zoom: 100%;
 
- //}
+  //}
 }
 
-
-
-iframe[src^='https://www.google.com/recaptcha/api2/anchor'] {
-    position: relative;
-    z-index: 9999; /* or any other value you want */
-  }
-
+iframe[src^='https://www.google.com/recaptcha/api2/anchor']
+{
+  position: relative;
+  z-index: 9999; /* or any other value you want */
+}
 
 .grecaptcha-badge {
-    z-index: 99999;
-    display:block !important;
- }
+  z-index: 99999;
+  display: block !important;
+}

@@ -1,374 +1,395 @@
 .contact {
-    @include sectionPosition;
-    background: linear-gradient(270deg, rgba(255, 92, 0, 0.8) 0%, rgba(255, 0, 107, 0.8) 100%);
-    &_main-head {
-        @include mainHeadTextPosition;
+  @include sectionPosition;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 92, 0, 0.8) 0%,
+    rgba(255, 0, 107, 0.8) 100%
+  );
+  &_main-head {
+    @include mainHeadTextPosition;
+  }
+
+  &-form-message {
+    font-size: 10rem;
+    width: 100%;
+    background: rgb(223, 240, 250);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+
+    &-center {
+      text-align: center;
+      width: 100%;
+      max-width: 60rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .head-title {
+        @include linearBlue;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 5rem;
+        margin-top: 5rem;
+      }
+      .head-title2 {
+        @include greyParagraph;
+        margin-top: 2rem;
+      }
+
+      .form-line {
+        width: 100%;
+        max-width: 730px;
+        margin-top: 2rem;
+        height: 0px;
+        border: 1px solid rgba(24, 66, 147, 0.2);
+      }
+
+      .center-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 7.5rem;
+      }
+    }
+  }
+
+  &_container {
+    width: 80%;
+    max-width: 110rem;
+    display: flex;
+    margin-bottom: 12rem;
+    position: relative;
+
+    @include respond(phone) {
+      width: 90%;
+      margin-bottom: 4rem;
     }
 
-    &-form-message {
-        
-        font-size: 10rem;
+    &-form {
+      height: 100%;
+      z-index: 2;
+      width: 63.5rem;
+      background-color: #fff;
+      box-shadow:
+        -10px -10px 30px rgba(255, 245, 240, 0.2),
+        10px 10px 30px rgba(245, 24, 130, 0.64);
+      border-radius: 6px;
+
+      .main-text {
+        margin-top: 5rem;
+        margin-bottom: 4rem;
         width: 100%;
-        background: rgb(223, 240, 250);
-        color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .text-1 {
+          font-family: $font-primary;
+          width: 85%;
+          font-size: 2.8rem;
+          font-weight: 700;
+          line-height: 3.64rem;
+          color: inherit;
+          span {
+            @include linearOrange;
+          }
+
+          @include respond(phone) {
+            font-size: 2rem;
+            line-height: 2.6rem;
+          }
+        }
+      }
+
+      &-mainbox {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1.5rem;
 
-        &-center {
-            text-align: center;
-            width: 100%;
-            max-width: 60rem;
+        .form {
+          //** THIS IS THE FORM FOR INPUT ELEMENTS **//
 
-            img {
-                width: 100%;
-                height: 100%;
-            }
+          width: 85%;
 
-            .head-title {
-                @include linearBlue;
-                font-family: "Inter", sans-serif;
-                font-weight: 700;
-                font-size: 5rem;
-                margin-top: 5rem;
-            }
-            .head-title2 {
-                @include greyParagraph;
-                margin-top: 2rem;
-            }
-
-            .form-line {
-                width: 100%;
-                max-width: 730px;
-                margin-top: 2rem;
-                height: 0px;
-                border: 1px solid rgba(24, 66, 147, 0.2);
-            }
-
-            .center-button {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-top: 7.5rem;
-            }
-
-        }
-    }
-
-    &_container {
-        width: 80%;
-        max-width:110rem;
-        display: flex;
-        margin-bottom: 12rem;
-        position: relative;
-       
-
-        @include respond (phone) {
+          @include respond(phone) {
             width: 90%;
-            margin-bottom: 4rem;
-        }
+          }
 
-        &-form {
-            height:100%;
-            z-index: 2;
-            width: 63.5rem;
-            background-color: #fff;
-            box-shadow: -10px -10px 30px rgba(255, 245, 240, 0.2), 10px 10px 30px rgba(245, 24, 130, 0.64);
+          &_group {
+            position: relative;
+          }
+
+          .backg {
+            background-color: khaki;
+          }
+
+          &_group:not(:last-child) {
+            margin-bottom: 2rem;
+            position: relative;
+          }
+
+          &_input {
+            font-family: $font-primary;
+            font-weight: 300;
+            font-size: 1.8rem;
+            color: #6f6f6f;
+            padding: 1.5rem 2rem;
+            border: 2px solid rgba(25, 0, 255, 0.438);
             border-radius: 6px;
+            width: 100%;
+            display: block;
 
-            .main-text {
-                margin-top:5rem;
-                margin-bottom: 4rem;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                .text-1 {
-                    font-family: $font-primary;
-                    width: 85%;
-                    font-size: 2.8rem;
-                    font-weight: 700;
-                    line-height: 3.64rem;
-                    color:inherit;
-                    span {
-                        @include linearOrange;
-                    }
-
-                    @include respond (phone) {
-                        font-size: 2rem;
-                        line-height: 2.6rem;
-
-                    }
-                }
-
+            &-textbox {
+              font-size: 2rem;
+              height: 15rem;
+              resize: none;
             }
 
-            &-mainbox {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            &::placeholder {
+              opacity: 0;
+            }
 
-                .form {     //** THIS IS THE FORM FOR INPUT ELEMENTS **//
+            &:focus {
+              outline: none;
+              border: 0 1rem 2rem rgba(black, 0.1);
+              border-bottom: 3px solid $color-primary;
+            }
 
-                    width: 85%;
+            &:focus:invalid {
+              border-bottom: 3px solid orangered;
+            }
 
-                    @include respond (phone) {
-                        width: 90%;
-                    }
-    
-                    &_group {position: relative;}
+            &::-webkit-input-placeholder {
+              color: #93183d;
+            }
+          }
 
-                    .backg {
-                        background-color: khaki;
-                    }
+          &_label {
+            font-size: 1.2rem;
+            margin-left: 2rem;
+            margin-top: 0.7rem;
+            transition: all 0.3s;
+            display: block;
+            text-transform: uppercase;
+            opacity: 0;
+          }
 
-                    &_group:not(:last-child) {
-                        margin-bottom:2rem;
-                        position: relative;
-                    }
-    
-                        &_input {
-                        font-family:$font-primary;
-                        font-weight: 300;
-                        font-size: 1.8rem;
-                        color: #6f6f6f;
-                        padding: 1.5rem 2rem;
-                        border: 2px solid rgba(25, 0, 255, 0.438);
-                        border-radius: 6px;
-                        width: 100%;
-                        display: block;
-    
-                        &-textbox {
-                            font-size: 2rem;
-                            height: 15rem;
-                            resize: none;
-                        }
-    
-                        &::placeholder {
-                            opacity: 0;
-                        }
-    
-                        &:focus {
-                            outline: none;
-                            border: 0 1rem 2rem rgba(black, .1);
-                            border-bottom: 3px solid $color-primary;
-                        }
-    
-                        &:focus:invalid {
-                            border-bottom: 3px solid orangered;
-                        }
-                        
-                        &::-webkit-input-placeholder {
-                            color: #93183d;
-                        }
-                    }
-    
-                    &_label {
-                        font-size: 1.2rem;
-                        margin-left: 2rem;
-                        margin-top: .7rem;
-                        transition: all .3s;
-                        display: block;
-                        text-transform:uppercase;
-                        opacity: 0;
-                    }
-    
-                    &_input:placeholder-shown + .form_label {
-                        opacity: 0;
-                        visibility: hidden;
-                        transform: translateY(-6rem);
-                    }
+          &_input:placeholder-shown + .form_label {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-6rem);
+          }
 
-                    // VISSZAHÍVÁS GOMBOK FUNKCIÓ
+          // VISSZAHÍVÁS GOMBOK FUNKCIÓ
 
-                    &_radio {
+          &_radio {
+            height: 9rem;
+            border: 2px solid rgba(25, 0, 255, 0.438);
+            border-radius: 6px;
+            margin-bottom: 4.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
 
-                        height: 9rem;
-                        border: 2px solid rgba(25, 0, 255, 0.438);
-                        border-radius: 6px;
-                        margin-bottom: 4.4rem;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        position: relative;
+            @include respond(phone) {
+              height: 8.5rem;
+            }
 
-                        @include respond (phone) {
-                            height: 8.5rem;
-                        }
+            &-position {
+              width: 15rem;
+              height: 5rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 6px;
+              cursor: pointer;
+              position: relative;
+              background: rgba(167, 223, 255, 0.2);
 
-                        &-position {
-                                
-                            width: 15rem;
-                            height: 5rem;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            border-radius: 6px; 
-                            cursor: pointer;
-                            position: relative;
-                            background: rgba(167, 223, 255, 0.2);
+              &:hover {
+                background: rgba(151, 215, 252, 0.432);
+              }
 
-                            &:hover {
-                                background: rgba(151, 215, 252, 0.432);
-                            }
+              @include respond(phone) {
+                width: 8.5rem;
+                height: 4rem;
 
-                            @include respond (phone) {
-                                width: 8.5rem;
-                                height: 4rem;
+                &:hover {
+                  background: rgba(167, 223, 255, 0.2);
+                }
+              }
+            }
 
-                                &:hover {
-                                    background: rgba(167, 223, 255, 0.2);
-                                }
-    
-                            }
-                        }
+            &-position:not(:last-child) {
+              margin-right: 2rem;
 
-                        &-position:not(:last-child) { 
-                            margin-right: 2rem;
+              @include respond(phone) {
+                margin-right: 1rem;
+              }
+            }
 
-                            @include respond (phone) {
-                                margin-right: 1rem;
-                            }
-                        }
-                        
-                        &-input {
-                            width: 1rem;
-                            height: 1rem;
-                            visibility: hidden;
-                            cursor: pointer;
+            &-input {
+              width: 1rem;
+              height: 1rem;
+              visibility: hidden;
+              cursor: pointer;
 
-                            &:focus {
-                                outline: none; 
-                            }
-                        }
+              &:focus {
+                outline: none;
+              }
+            }
 
-                        &-label {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            font-family: $font-display;
-                            font-size: 1.4rem;
-                            font-weight: 500;
-                            color: $color-primary;
-                            position: absolute;
-                            cursor: pointer;
-                            width: 15rem;
-                            height: 5rem;
-                            border-radius: 6px;
-                            backface-visibility: hidden;
+            &-label {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: $font-display;
+              font-size: 1.4rem;
+              font-weight: 500;
+              color: $color-primary;
+              position: absolute;
+              cursor: pointer;
+              width: 15rem;
+              height: 5rem;
+              border-radius: 6px;
+              backface-visibility: hidden;
 
-                            @include respond (phone) {
-                                font-size: 1rem;
-                                width: 8.5rem;
-                                height: 4rem;
-                            }
-                        }
+              @include respond(phone) {
+                font-size: 1rem;
+                width: 8.5rem;
+                height: 4rem;
+              }
+            }
 
-                       /* &-input:checked::after {
+            /* &-input:checked::after {
                             opacity: 1;
                             visibility: visible;
                         } */
 
-                        &-input:checked ~ .form_radio-label {
-                           color: white;
-                           background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%);
-                           
-                           @include respond (phone) {
-                            width: 9rem;
-                            height: 4rem;
+            &-input:checked ~ .form_radio-label {
+              color: white;
+              background: linear-gradient(270deg, #ff5c00 0%, #ff006b 100%);
 
-                        }
-                     } 
-
-                    }
-
-                    // VISSZAHÍVÁS GOMBOK FUNKCIÓ
-                }
+              @include respond(phone) {
+                width: 9rem;
+                height: 4rem;
+              }
             }
-        }
+          }
 
-        &_picture {
-            width: 90%;
-            height: 90%;
-            z-index:1;
-            position: absolute;
-            top: 8rem;
-            left: 20rem;
-
-            @include respond (SCLaptop) {
-                width: 80%;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                
-            }
-
-            @include respond (tablet) {
-                display: none;
-            }
-        }
-
-    }
-
-      //** BUTTON POSITON IN THE FORM! THE MAIN BUTTON SETTING IN THE BUTTON SCSS!! **//
-    
-      .btn-form {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: auto;
-        margin-bottom: 5.5rem;
-       
-        @include respond (phone) {
-            justify-content: center;
-            margin-bottom: 4rem;
+          // VISSZAHÍVÁS GOMBOK FUNKCIÓ
         }
       }
-
-    //** TEXT ABOVE THE FORM INPUT ELEMENT **//
-
-    &_name {
-        @include texaAboveInputElemnt; }
-    &_company {
-        @include texaAboveInputElemnt; }
-    &_phone {
-        @include texaAboveInputElemnt; }
-    &_callback {
-        @include texaAboveInputElemnt;
-    }
-    &_email {
-            @include texaAboveInputElemnt;}
-
-    &_message {
-        @include texaAboveInputElemnt;
-        top:-8% !important;
-        left:5% !important; 
     }
 
+    &_picture {
+      width: 90%;
+      height: 90%;
+      z-index: 1;
+      position: absolute;
+      top: 8rem;
+      left: 20rem;
+
+      @include respond(SCLaptop) {
+        width: 80%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include respond(tablet) {
+        display: none;
+      }
+    }
+  }
+
+  //** BUTTON POSITON IN THE FORM! THE MAIN BUTTON SETTING IN THE BUTTON SCSS!! **//
+
+  .btn-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 5.5rem;
+
+    @include respond(phone) {
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+  }
+
+  //** TEXT ABOVE THE FORM INPUT ELEMENT **//
+
+  &_name {
+    @include texaAboveInputElemnt;
+  }
+  &_company {
+    @include texaAboveInputElemnt;
+  }
+  &_phone {
+    @include texaAboveInputElemnt;
+  }
+  &_callback {
+    @include texaAboveInputElemnt;
+  }
+  &_email {
+    @include texaAboveInputElemnt;
+  }
+
+  &_message {
+    @include texaAboveInputElemnt;
+    top: -8% !important;
+    left: 5% !important;
+  }
 }
 
 //msgsent.php háttérkolor formázása
 
 .bgclr {
-    background-color: rgb(223, 240, 250);
+  background-color: rgb(223, 240, 250);
 }
 
 .policy-input {
-    font-family: $font-display;
-    margin-bottom: 2rem;
-    font-size: 1.7rem;
-    color: #020202;
-    font-weight: 300;
-    display: flex;
+  font-family: $font-display;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  color: #020202;
+  font-weight: 300;
+  display: flex;
 }
 
 .policy-cbox {
-    width: 3rem;
-    height: 3rem;
-    margin-right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.phone-number {
+  padding-top: 2rem;
+  a {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  &_phone {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+
+.email-icon {
+  width: 30px;
+  height: 30px;
 }

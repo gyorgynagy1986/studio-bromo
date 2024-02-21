@@ -1,79 +1,74 @@
 .main-price {
   padding: 2rem;
 
-  @include respond (phone) {
+  @include respond(phone) {
     padding: 1rem;
-    }
-
+  }
 }
 
 .price-header {
   margin-bottom: 15.5rem;
 
-  @include respond (phone) {
+  @include respond(phone) {
     margin-bottom: 5.5rem;
-    }
-
-
+  }
 }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1110px;
+}
+
+tr {
+  height: 127px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #18429333;
+}
+
+.extra {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px 10px 10px;
+  width: 100%;
+  max-width: 1110px;
+  height: 57px;
+  background: linear-gradient(90deg, #00ba77 0%, #00bfbf 100%);
+}
+
+.border {
+  border: none;
+}
+
+.td-price {
+  @include textprice;
+}
+
+.aud-container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
     width: 100%;
-    max-width: 1110px;
-  }
-  
-  tr {
-    height: 127px;
-  }
+    max-width: 131.35px;
+    height: auto;
 
-  th, td {
-    text-align: center;
-    padding: 8px;
-    border: 1px solid #18429333;
-    
-  }
-  
-  .extra {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 15px 10px 10px;
-    width: 100%;
-    max-width: 1110px;
-    height: 57px;
-    background: linear-gradient(90deg, #00BA77 0%, #00BFBF 100%);
-
-  }
-
-  .border {
-    border:none;
-  }
-
-  .td-price {
-    @include textprice;
-  }
-
-  .aud-container {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    img {
-      width: 100%;
-      max-width: 131.35px;
-      height: auto;
-
-      @include respond (phone) {
-        width: 80%;
-
-        }
+    @include respond(phone) {
+      width: 80%;
     }
   }
+}
 
-  .last-table {
-    margin-bottom: 8rem;
-  }
+.last-table {
+  margin-bottom: 8rem;
+}
