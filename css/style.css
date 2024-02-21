@@ -1952,7 +1952,8 @@ td {
       top: 1.5rem;
       left: 1.5rem; }
       .nav_logo-mobile img {
-        height: 4.5rem; }
+        height: 4.5rem;
+        width: auto; }
   .nav_list {
     display: flex;
     grid-column: 2;
@@ -2018,6 +2019,7 @@ td {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: start;
     grid-column: 2;
     grid-row: 1;
     cursor: pointer; }
@@ -2026,9 +2028,13 @@ td {
     .nav_bottom_logo-mobile {
       position: absolute;
       top: 1rem;
-      left: 1rem; }
+      left: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: start; }
       .nav_bottom_logo-mobile img {
-        height: 4.5rem; }
+        height: 4.5rem;
+        width: auto; }
   .nav_bottom_list {
     display: flex;
     grid-column: 2;
