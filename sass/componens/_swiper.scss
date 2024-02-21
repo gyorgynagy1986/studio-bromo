@@ -5,16 +5,15 @@
   margin-right: auto;
   margin-bottom: 10rem;
 
-  @include respond (tablet) {
+  @include respond(tablet) {
     width: 80%;
-}
+  }
 
-  @include respond (phone) {
+  @include respond(phone) {
     width: 90%;
-}
+  }
 
-overflow: hidden;
-  
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -33,37 +32,33 @@ overflow: hidden;
   align-items: center;
 }
 .swiper-pagination-bullet-active {
-background: linear-gradient(270deg, #FF5C00 0%, #FF006B 100%) !important;
+  background: linear-gradient(270deg, #ff5c00 0%, #ff006b 100%) !important;
 }
 
-
 .swiper-pagination {
-position: relative !important;
-margin-top: 4rem !important;
+  position: relative !important;
+  margin-top: 4rem !important;
 }
 
 .swiper-pagination-bullet {
-width:2.3rem !important;
-height: 2.3rem !important;
-display: none !important;
-
-@include respond (tablet) {
+  width: 2.3rem !important;
+  height: 2.3rem !important;
   display: inline-block !important;
 
+  @include respond(tablet) {
+    display: inline-block !important;
+  }
 }
 
+.swiper-button-left,
+.swiper-button-right {
+  cursor: pointer;
+  z-index: 20;
 }
-
-.swiper-button-left, .swiper-button-right {
-cursor: pointer;
-z-index: 20;
-}
-
 
 .swpb {
-display: flex;
-justify-content: center;
-align-items: center;
-width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
 }
-
