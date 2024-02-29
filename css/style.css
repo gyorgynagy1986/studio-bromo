@@ -2318,6 +2318,9 @@ nav.sticky {
       .works_main-head {
         margin-top: 4rem;
         margin-bottom: 3rem; } }
+    .works_main-head-h3 {
+      margin-top: 1rem;
+      opacity: .8; }
   .works_contanier {
     width: 90%;
     max-width: 110rem;
