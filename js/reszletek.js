@@ -79,9 +79,9 @@ packagesContainer.addEventListener("click", (e) => {
 
   if (e.target.dataset.id === "1") {
     console.log("works");
-    document.querySelector(".p-landing").textContent = "249 000 ft";
-    document.querySelector(".p-creative").textContent = "349 000 ft";
-    document.querySelector(".p-extra").textContent = "449 000 ft";
+    document.querySelector(".p-landing").textContent = "299 000 ft";
+    document.querySelector(".p-creative").textContent = "399 000 ft";
+    document.querySelector(".p-extra").textContent = "Árajánlat";
     document
       .querySelectorAll(".fc-tech")
       .forEach((el) => (el.textContent = "Egyedi fejlesztés"));
@@ -95,7 +95,7 @@ packagesContainer.addEventListener("click", (e) => {
     console.log("else");
     document.querySelector(".p-landing").textContent = "149 000 ft";
     document.querySelector(".p-creative").textContent = "249 000 ft";
-    document.querySelector(".p-extra").textContent = "349 000 ft";
+    document.querySelector(".p-extra").textContent = "-";
     document
       .querySelectorAll(".for-toogle")
       .forEach((el) => el.classList.remove("hidden-reszletek"));

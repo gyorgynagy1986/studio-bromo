@@ -1,5 +1,4 @@
 const effectPrefix = document.getElementById("effect-prefix");
-console.log(effectPrefix);
 
 setTimeout(() => {
   effectPrefix.style.opacity = "1";

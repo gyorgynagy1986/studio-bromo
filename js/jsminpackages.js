@@ -46,9 +46,9 @@ packagesContainer.addEventListener("click", (e) => {
     (buttons.forEach((e) => e.classList.remove("tg-bg")),
     t.classList.add("tg-bg"),
     "1" === e.target.dataset.id
-      ? ((document.querySelector(".p-landing").textContent = "249 000 ft"),
-        (document.querySelector(".p-creative").textContent = "349 000 ft"),
-        (document.querySelector(".p-extra").textContent = "449 000 ft"),
+      ? ((document.querySelector(".p-landing").textContent = "299 000 ft"),
+        (document.querySelector(".p-creative").textContent = "399 000 ft"),
+        (document.querySelector(".p-extra").textContent = "Árajánlat"),
         document
           .querySelectorAll(".fc-tech")
           .forEach((e) => (e.textContent = "Egyedi fejlesztés")),
@@ -60,7 +60,7 @@ packagesContainer.addEventListener("click", (e) => {
           .forEach((e) => e.classList.add("hidden-reszletek")))
       : ((document.querySelector(".p-landing").textContent = "149 000 ft"),
         (document.querySelector(".p-creative").textContent = "249 000 ft"),
-        (document.querySelector(".p-extra").textContent = "349 000 ft"),
+        (document.querySelector(".p-extra").textContent = "-"),
         document
           .querySelectorAll(".for-toogle")
           .forEach((e) => e.classList.remove("hidden-reszletek")),
